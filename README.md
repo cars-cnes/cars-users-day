@@ -1,6 +1,6 @@
-# TP: Using CNES Softwares for 3D Reconstruction
+# TP: Using CNES Software for 3D Reconstruction
 
-Welcome to this tutorial on using open-source softwares developed by CNES for 3D reconstruction. This TP was created for the release of version 1.0 of CARS and the CARS Users Day (January 30, 2026).
+Welcome to this tutorial on using open-source software developed by CNES for 3D reconstruction. This TP was created for the release of version 1.0 of CARS and the CARS Users Day (January 30, 2026).
 
 ## Software Used
 
