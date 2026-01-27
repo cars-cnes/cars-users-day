@@ -28,9 +28,5 @@ The tutorial will focus on two areas around Toulouse:
 2. Click on "New Notebook"
 3. In the menu, go to "File" > "Open Notebook" and select the `.ipynb` file present in the GitHub repository
 
-### Step 2: Download the Data
-1. Download both `ROI_INDUS` and `ROI_STADIUM` folders from the GitHub repository
-2. In Google Colab, mount your Google Drive to store the data:
-   ```python
-   from google.colab import drive
-   drive.mount('/content/drive')
+### Step 2: Run the collab
+Run and enjoy :)
