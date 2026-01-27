@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "envelopes_intersection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Type": "Polygon" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 1.438575879538103, 43.586452608508878 ], [ 1.438548380282779, 43.579286618393972 ], [ 1.43410189121131, 43.579343772650752 ], [ 1.428756446125343, 43.579521682759825 ], [ 1.428771244250358, 43.586795993697557 ], [ 1.438575879538103, 43.586452608508878 ] ] ] } }
+]
+}

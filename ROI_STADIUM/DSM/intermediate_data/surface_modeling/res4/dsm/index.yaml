@@ -1,0 +1,8 @@
+dsm: dsm.tif
+image: image.tif
+mask: null
+classification: null
+performance_map: null
+contributing_pair: null
+filling: null
+weights: null

@@ -1,0 +1,16 @@
+activate_ground_anchors: false
+developer_mode: false
+dsm_path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/surface_modeling/res1/dump_dir/dem_generation/dem_max.tif
+dsm_z_accuracy: null
+generate_dhm: true
+ground_mask_path: null
+max_ground_slope: 20.0
+max_object_size: 8
+memory_mode: false
+mp_context: forkserver
+nb_max_workers: 1
+num_inner_iter: 5
+num_outer_iter: 25
+output_dir: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/surface_modeling/res1/dump_dir/dem_generation/dem_max_bulldozer
+prevent_unhook_iter: 10
+reg_filtering_iter: null

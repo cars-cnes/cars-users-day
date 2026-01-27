@@ -1,0 +1,56 @@
+sensors:
+  img1:
+    image:
+      bands:
+        b0:
+          path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img1/stack.tif
+          band: 0
+        b1:
+          path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img1/stack.tif
+          band: 1
+        b2:
+          path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img1/stack.tif
+          band: 2
+        b3:
+          path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img1/stack.tif
+          band: 3
+      no_data: 0
+    geomodel: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/RPC_PAN.XML
+    mask: null
+    classification: null
+  img2:
+    image:
+      bands:
+        b0:
+          path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img2/stack.tif
+          band: 0
+        b1:
+          path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img2/stack.tif
+          band: 1
+        b2:
+          path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img2/stack.tif
+          band: 2
+        b3:
+          path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img2/stack.tif
+          band: 3
+      no_data: 0
+    geomodel: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/RPC_PAN.XML
+    mask: null
+    classification: null
+pairing:
+- - img1
+  - img2
+roi: null
+dsm_to_fill: null
+initial_elevation:
+  dem: null
+  geoid: /softs/projets/3d/jupyter/cars-1.0.0-rc3/lib/python3.12/site-packages/cars/pipelines/parameters/../../conf/geoid/egm96.grd
+low_res_dsm: null
+loaders:
+  image: pivot
+  classification: pivot
+filling:
+  fill_with_geoid: null
+  interpolate_from_borders: null
+  fill_with_endogenous_dem: null
+  fill_with_exogenous_dem: null

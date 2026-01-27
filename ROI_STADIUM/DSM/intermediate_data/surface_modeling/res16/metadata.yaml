@@ -1,0 +1,127 @@
+version: 1.0.0rc3
+applications:
+  grid_generation:
+    img1_img2:
+      epipolar_size_x: 111
+      epipolar_size_y: 111
+      epipolar_origin_x: -150.0
+      epipolar_origin_y: -150.0
+      epipolar_spacing_x: 30.0
+      epipolar_spacing_y: 30.0
+      disp_to_alt_ratio: 41.141990397303644
+      left_azimuth_angle: 151.07529833209725
+      left_elevation_angle: 72.10802529459934
+      right_azimuth_angle: 111.37718832888098
+      right_elevation_angle: 77.73273941233022
+      convergence_angle: 11.439744135962643
+  resampling:
+    img1_img2:
+      method: bicubic
+  sparse_matching:
+    img1_img2:
+      disp_lower_bound: -218.7546084447543
+      disp_upper_bound: 24.3060676049727
+  match_filtering:
+    img1_img2:
+      number_matches: 89
+      raw_number_matches: 92
+      before_correction_epi_error_mean: -0.003619327973783686
+      before_correction_epi_error_std: 0.5383094638237939
+      before_correction_epi_error_max: 3.312417984008789
+  disparity_range_computation:
+    img1_img2:
+      minimum_disparity: -29.477061867668013
+      maximum_disparity: 10.62924931762307
+  dense_matching:
+    img1_img2:
+      global_disp_min: -30.0
+      global_disp_max: 11.0
+  triangulation:
+    img1_img2:
+      alt_reference: geoid
+  outlier_removal:
+    small_components: {}
+    statistical: {}
+  rasterization:
+    epsg: 2154
+    dsm_no_data: -32768.0
+    texture_no_data: 3.4028234663852886e+38
+pair_preprocessing:
+  img1_img2:
+    left_envelope:
+      type: FeatureCollection
+      name: left_envelope
+      crs:
+        type: name
+        properties:
+          name: urn:ogc:def:crs:OGC:1.3:CRS84
+      features:
+      - type: Feature
+        properties:
+          Type: Polygon
+        geometry:
+          type: Polygon
+          coordinates:
+          - - - 1.428375649812659
+              - 43.587281063080965
+            - - 1.438209694775161
+              - 43.58693591394932
+            - - 1.438181073056599
+              - 43.579680816960355
+            - - 1.42834921659658
+              - 43.5800245846377
+            - - 1.428375649812659
+              - 43.587281063080965
+    right_envelope:
+      type: FeatureCollection
+      name: right_envelope
+      crs:
+        type: name
+        properties:
+          name: urn:ogc:def:crs:OGC:1.3:CRS84
+      features:
+      - type: Feature
+        properties:
+          Type: Polygon
+        geometry:
+          type: Polygon
+          coordinates:
+          - - - 1.428292645775697
+              - 43.58701318194937
+            - - 1.438132523252771
+              - 43.58688115499493
+            - - 1.438099775569555
+              - 43.57942239046337
+            - - 1.428262199905521
+              - 43.57955268255384
+            - - 1.428292645775697
+              - 43.58701318194937
+    envelopes_intersection:
+      type: FeatureCollection
+      name: envelopes_intersection
+      crs:
+        type: name
+        properties:
+          name: urn:ogc:def:crs:OGC:1.3:CRS84
+      features:
+      - type: Feature
+        properties:
+          Type: Polygon
+        geometry:
+          type: Polygon
+          coordinates:
+          - - - 1.42834921659658
+              - 43.5800245846377
+            - - 1.42837466999148
+              - 43.58701208138613
+            - - 1.438132523252771
+              - 43.58688115499493
+            - - 1.438100922494409
+              - 43.57968361939881
+            - - 1.42834921659658
+              - 43.5800245846377
+    envelopes_intersection_bounding_box:
+    - 1.42834921659658
+    - 43.57968361939881
+    - 1.438132523252771
+    - 43.58701208138613

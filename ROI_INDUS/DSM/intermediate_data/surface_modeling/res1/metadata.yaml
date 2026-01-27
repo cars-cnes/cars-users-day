@@ -1,0 +1,23 @@
+version: 1.0.0rc3
+applications:
+  grid_generation:
+    img1_img2:
+      epipolar_size_x: 1794
+      epipolar_size_y: 1794
+      epipolar_origin_x: -150.0
+      epipolar_origin_y: -150.0
+      epipolar_spacing_x: 30.0
+      epipolar_spacing_y: 30.0
+      disp_to_alt_ratio: 2.552379688818291
+      left_azimuth_angle: 150.86889437618498
+      left_elevation_angle: 72.09607662070998
+      right_azimuth_angle: 111.23570829756443
+      right_elevation_angle: 77.68245041256081
+      convergence_angle: 11.427522165053272
+  resampling:
+    img1_img2:
+      method: bicubic
+  sparse_matching:
+    img1_img2:
+      disp_lower_bound: -23.0
+      disp_upper_bound: 21.0

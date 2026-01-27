@@ -1,0 +1,143 @@
+input:
+  filling:
+    fill_with_endogenous_dem:
+    - 9
+    fill_with_geoid:
+    - 7
+    interpolate_from_borders:
+    - 8
+    fill_with_exogenous_dem: null
+  pairing:
+  - - img1
+    - img2
+  sensors:
+    img1:
+      classification:
+        path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img1/out/stackmask_first_band.tif
+        values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 255
+      geomodel:
+        path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img1/RPC_PAN.XML
+        model_type: RPC
+      image:
+        bands:
+          b0:
+            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img1/stack.tif
+            band: 0
+          b1:
+            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img1/stack.tif
+            band: 1
+          b2:
+            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img1/stack.tif
+            band: 2
+          b3:
+            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img1/stack.tif
+            band: 3
+        no_data: 0
+      mask: null
+    img2:
+      classification:
+        path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img2/out/stackmask_first_band.tif
+        values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 255
+      geomodel:
+        path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img2/RPC_PAN.XML
+        model_type: RPC
+      image:
+        bands:
+          b0:
+            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img2/stack.tif
+            band: 0
+          b1:
+            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img2/stack.tif
+            band: 1
+          b2:
+            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img2/stack.tif
+            band: 2
+          b3:
+            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/img2/stack.tif
+            band: 3
+        no_data: 0
+      mask: null
+  roi: null
+  dsm_to_fill: null
+  initial_elevation:
+    dem: null
+    geoid: /softs/projets/3d/jupyter/cars-1.0.0-rc3/lib/python3.12/site-packages/cars/pipelines/parameters/../../conf/geoid/egm96.grd
+  low_res_dsm: ROI_STADIUM/DSM/intermediate_data/surface_modeling/res4/dsm/dsm.tif
+  loaders:
+    image: pivot
+    classification: pivot
+advanced:
+  save_intermediate_data: false
+  land_cover_map: global_land_cover_map.tif
+  keep_low_res_dir: false
+  debug_with_roi: false
+  classification_to_configuration_mapping: config_mapping.json
+  phasing: null
+  use_endogenous_dem: true
+  dsm_merging_tile_size: 4000
+  ground_truth_dsm: {}
+  geometry_plugin: SharelocGeometry
+  pipeline: default
+  resolutions:
+  - 1
+output:
+  auxiliary:
+    classification:
+      1: 1
+      2: 2
+      3: 3
+      4: 4
+      5: 5
+      6: 6
+      7: 7
+      8: 8
+      9: 9
+      255: 255
+    contributing_pair: true
+    filling:
+      1: fill_with_geoid
+      2: interpolate_from_borders
+      3: fill_with_endogenous_dem
+      4: fill_with_exogenous_dem
+      5: other
+    image:
+    - b1
+    - b2
+    - b3
+    performance_map:
+    - 0
+    - 0.968
+    - 1.13375
+    - 1.295
+    - 1.604
+    - 2.423
+    - 3.428
+    weights: false
+    ambiguity: false
+  directory: /work/CAMPUS/users/belletva/cars-users-day/ROI_STADIUM/DSM/intermediate_data/surface_modeling/res1
+  epsg: 2154
+  geoid: true
+  resolution: 1.0
+  product_level:
+  - dsm
+  save_by_pair: false
