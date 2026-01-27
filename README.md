@@ -28,5 +28,5 @@ The tutorial will focus on two areas around Toulouse:
 2. Click on "New Notebook"
 3. In the menu, go to "File" > "Open Notebook" and select the `.ipynb` file present in the GitHub repository
 
-### Step 2: Run the collab
-Run and enjoy :)
+### Step 2: Run the Google Colab
+Run `tutorial.ipynb` and enjoy :)
