@@ -1,6 +1,6 @@
-# TP: Using CNES Software for 3D Reconstruction
+# TP: Using CNES Softwares for 3D Reconstruction
 
-Welcome to this tutorial on using open-source software developed by CNES for 3D reconstruction. This TP was created for the release of version 1.0 of CARS and the CARS Users Day (January 30, 2026).
+Welcome to this tutorial on using open-source softwares developed by CNES for 3D reconstruction. This TP was created for the release of version 1.0 of CARS and the CARS Users Day (January 30, 2026).
 
 ## Software Used
 
@@ -14,8 +14,8 @@ Welcome to this tutorial on using open-source software developed by CNES for 3D 
 
 ## Study Areas
 The tutorial will focus on two areas around Toulouse:
-- **ROI_INDUS**: An industrial area near to Toulouse
-- **ROI_STADIUM**: The area around the Toulouse stadium, located on an island surrounded by the Garonne River
+- **ROI_INDUS**: An industrial area 
+- **ROI_STADIUM**: The area around the Stadium, located on an island surrounded by the Garonne
 
 ## Prerequisites
 - A Google account to use Google Colab
