@@ -2,7 +2,7 @@ orchestrator:
   mode: multiprocessing
   mp_mode: forkserver
   max_ram_per_worker: 2000
-  nb_workers: 1
+  nb_workers: 3
   task_timeout: 600
   max_tasks_per_worker: 10
   dump_to_disk: true
@@ -14,20 +14,20 @@ input:
       image:
         bands:
           b0:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/stack.tif
             band: 0
           b1:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/stack.tif
             band: 1
           b2:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/stack.tif
             band: 2
           b3:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/stack.tif
             band: 3
         no_data: 0
       geomodel:
-        path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/RPC_PAN.XML
+        path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/RPC_PAN.XML
         model_type: RPC
       mask: null
       classification: null
@@ -35,20 +35,20 @@ input:
       image:
         bands:
           b0:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/stack.tif
             band: 0
           b1:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/stack.tif
             band: 1
           b2:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/stack.tif
             band: 2
           b3:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/stack.tif
             band: 3
         no_data: 0
       geomodel:
-        path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/RPC_PAN.XML
+        path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/RPC_PAN.XML
         model_type: RPC
       mask: null
       classification: null
@@ -58,8 +58,8 @@ input:
   roi: null
   dsm_to_fill: null
   initial_elevation:
-    dem: null
-    geoid: /softs/projets/3d/jupyter/cars-1.0.0-rc3/lib/python3.12/site-packages/cars/pipelines/parameters/../../conf/geoid/egm96.grd
+    dem: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/surface_modeling/res1/dump_dir/dem_generation/dem_median.tif
+    geoid: /softs/projets/3d/jupyter/envs/cars-1.0.0/lib/python3.12/site-packages/cars/pipelines/parameters/../../conf/geoid/egm96.grd
   low_res_dsm: ROI_INDUS/DSM/intermediate_data/surface_modeling/res4/dsm/dsm.tif
   loaders:
     image: pivot
@@ -168,7 +168,7 @@ surface_modeling:
       generate_ambiguity: true
       performance_map_method:
       - risk
-      method: auto
+      method: custom
       min_epi_tile_size: 300
       max_epi_tile_size: 1500
       epipolar_tile_margin_in_percent: 60
@@ -193,7 +193,39 @@ surface_modeling:
       threshold_disp_range_to_borders: false
       filter_incomplete_disparity_range: true
       loader: pandora
-      loader_conf: null
+      loader_conf:
+        input: {}
+        pipeline:
+          matching_cost:
+            matching_cost_method: census
+            window_size: 11
+            subpix: 1
+            band: b0
+          optimization:
+            optimization_method: sgm
+            overcounting: true
+            penalty:
+              P1: 20
+              P2: 80
+              penalty_method: sgm_penalty
+          cost_volume_confidence.cars_1:
+            confidence_method: ambiguity
+            eta_max: 0.99
+            eta_step: 0.04
+          cost_volume_confidence.cars_2:
+            confidence_method: risk
+            eta_max: 0.25
+            eta_step: 0.04
+          disparity:
+            disparity_method: wta
+            invalid_disparity: NaN
+          refinement:
+            refinement_method: vfit
+          filter:
+            filter_method: median
+            filter_size: 3
+          validation:
+            validation_method: cross_checking_fast
     triangulation:
       save_intermediate_data: false
       method: line_of_sight_intersection
@@ -251,7 +283,7 @@ surface_modeling:
     auxiliary_filling:
       save_intermediate_data: false
 output:
-  directory: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/surface_modeling/res1
+  directory: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/surface_modeling/res1
   auxiliary:
     image:
     - b1

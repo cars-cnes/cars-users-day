@@ -1,590 +1,294 @@
-2026-01-27 15:27:24,872 :: PROGRESS ::  Starting surface modeling pipeline for resolution 1/4
-2026-01-27 15:27:24,874 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 15:27:25,075 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0066% s Max ram : %625.02912% MiB Start Ram: %625.02912% MiB, End Ram: %625.02912% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:25,277 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %625.02912% MiB Start Ram: %625.02912% MiB, End Ram: %625.115136% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:25,277 :: INFO ::  Close cluster ...
-2026-01-27 15:27:25,283 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 15:27:25,293 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
-2026-01-27 15:27:25,293 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 15:27:25,294 :: INFO ::  auto mode : nb_workers will be set automatically
-2026-01-27 15:27:25,309 :: INFO ::  Available CPUs  in SLURM : 1
-2026-01-27 15:27:25,309 :: INFO ::  Available RAM  in SLURM : 7168
-2026-01-27 15:27:25,309 :: WARNING ::  Only one CPU detected.
-2026-01-27 15:27:25,310 :: INFO ::  Number of workers : 1
-2026-01-27 15:27:25,310 :: INFO ::  Max memory per worker : 2000 MB
-2026-01-27 15:27:25,494 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0215% s Max ram : %627.458048% MiB Start Ram: %627.453952% MiB, End Ram: %627.458048% MiB,  Max CPU usage: %10.0%
-2026-01-27 15:27:25,696 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0006% s Max ram : %627.458048% MiB Start Ram: %627.458048% MiB, End Ram: %627.494912% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:25,696 :: INFO ::  Close cluster ...
-2026-01-27 15:27:25,704 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 15:27:25,704 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:25,776 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:25,796 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:25,797 :: INFO ::  Grid generation method not specified, default  epipolar is used
-2026-01-27 15:27:25,797 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 15:27:25,797 :: INFO ::  Resampling method not specified, default bicubic is used
-2026-01-27 15:27:25,797 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 15:27:25,797 :: INFO ::  Sparse Matching method not specified, default  sift is used
-2026-01-27 15:27:25,797 :: INFO ::  The SparseMatching(sift) application will be used
-2026-01-27 15:27:25,798 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:25,869 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:25,889 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:25,889 :: INFO ::  The resolution of the output DSM will be 2.0 meters. 
-2026-01-27 15:27:25,889 :: INFO ::  Grid generation method not specified, default  epipolar is used
-2026-01-27 15:27:25,890 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 15:27:25,890 :: INFO ::  Grid correction method not specified, default  default is used
-2026-01-27 15:27:25,890 :: INFO ::  The GridCorrection(default) application will be used
-2026-01-27 15:27:25,890 :: INFO ::  Resampling method not specified, default bicubic is used
-2026-01-27 15:27:25,890 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 15:27:25,890 :: INFO ::  dense_match_filling method not specified, default zero_padding is used
-2026-01-27 15:27:25,890 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
-2026-01-27 15:27:25,890 :: INFO ::  Dense Matching method not specified, default census_sgm_default is used
-2026-01-27 15:27:25,891 :: INFO ::  The AbstractDenseMatching(census_sgm_default) application will be used
-2026-01-27 15:27:25,945 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
-2026-01-27 15:27:25,945 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
-2026-01-27 15:27:25,945 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
-2026-01-27 15:27:25,946 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
-2026-01-27 15:27:25,946 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
-2026-01-27 15:27:25,946 :: INFO ::  2 point cloud outlier removal apps registered:
+2026-01-29 16:22:35,572 :: PROGRESS ::  Starting surface modeling pipeline for resolution 1/4
+2026-01-29 16:22:35,573 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:22:35,774 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0062% s Max ram : %618.55744% MiB Start Ram: %618.55744% MiB, End Ram: %618.55744% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:35,976 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %618.55744% MiB Start Ram: %618.55744% MiB, End Ram: %618.647552% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:35,976 :: INFO ::  Close cluster ...
+2026-01-29 16:22:35,983 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:22:35,993 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-01-29 16:22:35,993 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:22:35,993 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-01-29 16:22:36,006 :: INFO ::  Available CPUs  in SLURM : 4
+2026-01-29 16:22:36,007 :: INFO ::  Available RAM  in SLURM : 28672
+2026-01-29 16:22:36,007 :: INFO ::  Number of workers : 3
+2026-01-29 16:22:36,007 :: INFO ::  Max memory per worker : 2000 MB
+2026-01-29 16:22:36,194 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0182% s Max ram : %618.889216% MiB Start Ram: %618.84416% MiB, End Ram: %618.893312% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:36,395 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %618.893312% MiB Start Ram: %618.893312% MiB, End Ram: %618.930176% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:36,396 :: INFO ::  Close cluster ...
+2026-01-29 16:22:36,402 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:22:36,403 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:36,473 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:36,493 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:36,493 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-01-29 16:22:36,493 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-01-29 16:22:36,493 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-01-29 16:22:36,494 :: INFO ::  The Resampling(bicubic) application will be used
+2026-01-29 16:22:36,494 :: INFO ::  Sparse Matching method not specified, default  sift is used
+2026-01-29 16:22:36,494 :: INFO ::  The SparseMatching(sift) application will be used
+2026-01-29 16:22:36,494 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:36,563 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:36,584 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:36,584 :: INFO ::  The resolution of the output DSM will be 2.0 meters. 
+2026-01-29 16:22:36,584 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-01-29 16:22:36,584 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-01-29 16:22:36,584 :: INFO ::  Grid correction method not specified, default  default is used
+2026-01-29 16:22:36,584 :: INFO ::  The GridCorrection(default) application will be used
+2026-01-29 16:22:36,585 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-01-29 16:22:36,585 :: INFO ::  The Resampling(bicubic) application will be used
+2026-01-29 16:22:36,585 :: INFO ::  dense_match_filling method not specified, default zero_padding is used
+2026-01-29 16:22:36,585 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
+2026-01-29 16:22:36,585 :: INFO ::  Dense Matching method not specified, default census_sgm_default is used
+2026-01-29 16:22:36,586 :: INFO ::  The AbstractDenseMatching(census_sgm_default) application will be used
+2026-01-29 16:22:36,641 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
+2026-01-29 16:22:36,641 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-01-29 16:22:36,642 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-01-29 16:22:36,642 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
+2026-01-29 16:22:36,642 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
+2026-01-29 16:22:36,642 :: INFO ::  2 point cloud outlier removal apps registered:
  - point_cloud_outlier_removal.1=small_components
  - point_cloud_outlier_removal.2=statistical
-2026-01-27 15:27:25,947 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
-2026-01-27 15:27:25,947 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
-2026-01-27 15:27:26,015 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 15:27:26,216 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0331% s Max ram : %631.0912% MiB Start Ram: %631.0912% MiB, End Ram: %631.128064% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:26,418 :: PROFILING_LOG ::  CarsProfiling# %Compute roi poly%: %0.0006% s Max ram : %631.13216% MiB Start Ram: %631.128064% MiB, End Ram: %631.222272% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:26,619 :: PROFILING_LOG ::  CarsProfiling# %Load geomodels%: %0.0005% s Max ram : %631.222272% MiB Start Ram: %631.222272% MiB, End Ram: %631.222272% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:26,821 :: PROFILING_LOG ::  CarsProfiling# %Generate pairs%: %0.0004% s Max ram : %631.222272% MiB Start Ram: %631.222272% MiB, End Ram: %631.222272% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:26,821 :: INFO ::  Received 1 stereo pairs configurations
-2026-01-27 15:27:27,766 :: INFO ::  Generation of DEM min
-2026-01-27 15:27:27,809 :: INFO ::  Generation of DEM max
-2026-01-27 15:27:27,850 :: INFO ::  Generation of DEM median
-2026-01-27 15:27:28,209 :: INFO ::  Launch Bulldozer on DEM min
-2026-01-27 15:27:28,224 :: WARNING ::  The following input parameters are ignored: memory_mode. 
+2026-01-29 16:22:36,643 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
+2026-01-29 16:22:36,643 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
+2026-01-29 16:22:36,711 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:22:36,912 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0513% s Max ram : %621.142016% MiB Start Ram: %619.044864% MiB, End Ram: %621.17888% MiB,  Max CPU usage: %10.0%
+2026-01-29 16:22:37,115 :: PROFILING_LOG ::  CarsProfiling# %Compute roi poly%: %0.0004% s Max ram : %621.17888% MiB Start Ram: %621.17888% MiB, End Ram: %621.273088% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:37,316 :: PROFILING_LOG ::  CarsProfiling# %Load geomodels%: %0.0003% s Max ram : %621.273088% MiB Start Ram: %621.273088% MiB, End Ram: %621.273088% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:37,517 :: PROFILING_LOG ::  CarsProfiling# %Generate pairs%: %0.0003% s Max ram : %621.273088% MiB Start Ram: %621.273088% MiB, End Ram: %621.273088% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:37,517 :: INFO ::  Received 1 stereo pairs configurations
+2026-01-29 16:22:37,904 :: INFO ::  Generation of DEM min
+2026-01-29 16:22:37,945 :: INFO ::  Generation of DEM max
+2026-01-29 16:22:37,984 :: INFO ::  Generation of DEM median
+2026-01-29 16:22:38,331 :: INFO ::  Launch Bulldozer on DEM min
+2026-01-29 16:22:38,339 :: WARNING ::  The following input parameters are ignored: memory_mode. 
 Please refer to the documentation for the list of valid parameters.
-2026-01-27 15:27:28,227 :: INFO ::  Raw regular mask processing...
-2026-01-27 15:27:28,228 :: INFO ::  Regular mask processing...
-2026-01-27 15:27:28,230 :: INFO ::  detect_regular_areas: Done (Runtime: 0.0s)
-2026-01-27 15:27:28,231 :: INFO ::  Horizontal nodata mask processing...
-2026-01-27 15:27:28,231 :: INFO ::  Vertical nodata mask processing...
-2026-01-27 15:27:28,237 :: INFO ::  Build Inner NoData Mask
-2026-01-27 15:27:28,240 :: INFO ::  detect_border_nodata: Done (Runtime: 0.01s)
-2026-01-27 15:27:28,241 :: INFO ::  Iterative filling DSM level 0
-2026-01-27 15:27:28,242 :: INFO ::  fill_dsm: Done (Runtime: 0.0s)
-2026-01-27 15:27:28,242 :: INFO ::  Main pass of a drape cloth filter: Starting...
-2026-01-27 15:27:28,317 :: INFO ::  drape_cloth: Done (Runtime: 0.08s)
-2026-01-27 15:27:28,317 :: INFO ::  Main pass of a drape cloth filter: Done.
-2026-01-27 15:27:28,317 :: INFO ::  Pits removal: Starting.
-2026-01-27 15:27:28,318 :: INFO ::  Pits removal processing...
-2026-01-27 15:27:28,324 :: INFO ::  run: Done (Runtime: 0.01s)
-2026-01-27 15:27:28,324 :: INFO ::  Pits removal: Done.
-2026-01-27 15:27:28,324 :: INFO ::  Applying border no data: Starting...
-2026-01-27 15:27:28,324 :: INFO ::  Applying border no data: Done...
-2026-01-27 15:27:28,329 :: INFO ::  Generating DHM: Starting...
-2026-01-27 15:27:28,329 :: INFO ::  Applying border no data to DHM: Starting...
-2026-01-27 15:27:28,329 :: INFO ::  Applying border no data to DHM: Done...
-2026-01-27 15:27:28,333 :: INFO ::  Generating DHM: Done.
-2026-01-27 15:27:28,333 :: INFO ::  dsm_to_dtm: Done (Runtime: 0.12s)
-2026-01-27 15:27:28,349 :: INFO ::  Launch Bulldozer on DEM max
-2026-01-27 15:27:28,356 :: WARNING ::  The following input parameters are ignored: memory_mode. 
+2026-01-29 16:22:38,382 :: INFO ::  Raw regular mask processing...
+2026-01-29 16:22:38,386 :: INFO ::  Regular mask processing...
+2026-01-29 16:22:38,388 :: INFO ::  detect_regular_areas: Done (Runtime: 0.01s)
+2026-01-29 16:22:38,388 :: INFO ::  Horizontal nodata mask processing...
+2026-01-29 16:22:38,389 :: INFO ::  Vertical nodata mask processing...
+2026-01-29 16:22:38,396 :: INFO ::  Build Inner NoData Mask
+2026-01-29 16:22:38,400 :: INFO ::  detect_border_nodata: Done (Runtime: 0.01s)
+2026-01-29 16:22:38,400 :: INFO ::  Iterative filling DSM level 0
+2026-01-29 16:22:38,405 :: INFO ::  fill_dsm: Done (Runtime: 0.01s)
+2026-01-29 16:22:38,405 :: INFO ::  Main pass of a drape cloth filter: Starting...
+2026-01-29 16:22:38,539 :: INFO ::  drape_cloth: Done (Runtime: 0.13s)
+2026-01-29 16:22:38,539 :: INFO ::  Main pass of a drape cloth filter: Done.
+2026-01-29 16:22:38,539 :: INFO ::  Pits removal: Starting.
+2026-01-29 16:22:38,540 :: INFO ::  Pits removal processing...
+2026-01-29 16:22:38,552 :: INFO ::  run: Done (Runtime: 0.01s)
+2026-01-29 16:22:38,552 :: INFO ::  Pits removal: Done.
+2026-01-29 16:22:38,552 :: INFO ::  Applying border no data: Starting...
+2026-01-29 16:22:38,552 :: INFO ::  Applying border no data: Done...
+2026-01-29 16:22:38,555 :: INFO ::  Generating DHM: Starting...
+2026-01-29 16:22:38,556 :: INFO ::  Applying border no data to DHM: Starting...
+2026-01-29 16:22:38,557 :: INFO ::  Applying border no data to DHM: Done...
+2026-01-29 16:22:38,561 :: INFO ::  Generating DHM: Done.
+2026-01-29 16:22:38,577 :: INFO ::  dsm_to_dtm: Done (Runtime: 0.24s)
+2026-01-29 16:22:38,599 :: INFO ::  Launch Bulldozer on DEM max
+2026-01-29 16:22:38,607 :: WARNING ::  The following input parameters are ignored: memory_mode. 
 Please refer to the documentation for the list of valid parameters.
-2026-01-27 15:27:28,455 :: INFO ::  Raw regular mask processing...
-2026-01-27 15:27:28,458 :: INFO ::  Regular mask processing...
-2026-01-27 15:27:28,461 :: INFO ::  detect_regular_areas: Done (Runtime: 0.01s)
-2026-01-27 15:27:28,462 :: INFO ::  Horizontal nodata mask processing...
-2026-01-27 15:27:28,466 :: INFO ::  Vertical nodata mask processing...
-2026-01-27 15:27:28,471 :: INFO ::  Build Inner NoData Mask
-2026-01-27 15:27:28,475 :: INFO ::  detect_border_nodata: Done (Runtime: 0.01s)
-2026-01-27 15:27:28,477 :: INFO ::  Iterative filling DSM level 0
-2026-01-27 15:27:28,481 :: INFO ::  Iterative filling DSM level 1
-2026-01-27 15:27:28,485 :: INFO ::  fill_dsm: Done (Runtime: 0.01s)
-2026-01-27 15:27:28,486 :: INFO ::  Main pass of a drape cloth filter: Starting...
-2026-01-27 15:27:28,558 :: INFO ::  drape_cloth: Done (Runtime: 0.07s)
-2026-01-27 15:27:28,558 :: INFO ::  Main pass of a drape cloth filter: Done.
-2026-01-27 15:27:28,559 :: INFO ::  Pits removal: Starting.
-2026-01-27 15:27:28,560 :: INFO ::  Pits removal processing...
-2026-01-27 15:27:28,569 :: INFO ::  run: Done (Runtime: 0.01s)
-2026-01-27 15:27:28,570 :: INFO ::  Pits removal: Done.
-2026-01-27 15:27:28,571 :: INFO ::  Applying border no data: Starting...
-2026-01-27 15:27:28,571 :: INFO ::  Applying border no data: Done...
-2026-01-27 15:27:28,576 :: INFO ::  Generating DHM: Starting...
-2026-01-27 15:27:28,577 :: INFO ::  Applying border no data to DHM: Starting...
-2026-01-27 15:27:28,578 :: INFO ::  Applying border no data to DHM: Done...
-2026-01-27 15:27:28,581 :: INFO ::  Generating DHM: Done.
-2026-01-27 15:27:28,582 :: INFO ::  dsm_to_dtm: Done (Runtime: 0.23s)
-2026-01-27 15:27:28,598 :: INFO ::  Statistics of difference between subsampled DSM and DEM min (in meters)
-2026-01-27 15:27:28,600 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
-2026-01-27 15:27:28,600 :: INFO ::  |  79.71 |  83.95 | 156.55 | 157.53 | 165.06 | 165.06 |
-2026-01-27 15:27:28,600 :: INFO ::  Statistics of difference between DEM max and subsampled DSM (in meters)
-2026-01-27 15:27:28,602 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
-2026-01-27 15:27:28,602 :: INFO ::  | -165.06 |  80.63 |  85.41 |  87.32 |  93.86 | 102.67 |
-2026-01-27 15:27:28,603 :: INFO ::  Statistics of difference between DEM max and DEM min (in meters)
-2026-01-27 15:27:28,604 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
-2026-01-27 15:27:28,604 :: INFO ::  |   0.00 | 163.78 | 173.86 | 182.50 | 211.85 | 242.89 |
-2026-01-27 15:27:28,712 :: PROFILING_LOG ::  CarsProfiling# %DEM Generation%: %1.7894% s Max ram : %653.123584% MiB Start Ram: %631.222272% MiB, End Ram: %653.139968% MiB,  Max CPU usage: %89.9%
-2026-01-27 15:27:28,713 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:28,787 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:28,807 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:28,808 :: INFO ::  Median value of DEM (153.7415008544922) will be used as default_alt
-2026-01-27 15:27:28,966 :: INFO ::  DEM bounds : 1.385316903080225, 43.57882965619802, 1.4488138599570348, 43.5327291258628
-2026-01-27 15:27:28,966 :: INFO ::  ROI bounds : 1.3691229324203587, 43.491131137124604, 1.4829705713771648, 43.60057820347808
-2026-01-27 15:27:29,077 :: INFO ::  Left satellite acquisition angles: Azimuth angle: 150.9 degrees, Elevation angle: 72.1 degrees
-2026-01-27 15:27:29,077 :: INFO ::  Right satellite acquisition angles: Azimuth angle: 111.2 degrees, Elevation angle: 77.7 degrees
-2026-01-27 15:27:29,077 :: INFO ::  Stereo satellite convergence angle from ground: 11.4 degrees
-2026-01-27 15:27:29,077 :: INFO ::  Generating epipolar rectification grid ...
-2026-01-27 15:27:29,127 :: INFO ::  Size of epipolar images: 448x448 pixels
-2026-01-27 15:27:29,127 :: INFO ::  Disparity to altitude factor: 10.209558001690791 m/pixel
-2026-01-27 15:27:29,240 :: PROFILING_LOG ::  CarsProfiling# %Epi Grid Generation%: %0.0901% s Max ram : %655.028224% MiB Start Ram: %654.82752% MiB, End Ram: %655.024128% MiB,  Max CPU usage: %79.9%
-2026-01-27 15:27:29,240 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 15:27:29,463 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0414% s Max ram : %655.036416% MiB Start Ram: %655.024128% MiB, End Ram: %655.036416% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:29,665 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %655.036416% MiB Start Ram: %655.036416% MiB, End Ram: %655.110144% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:29,665 :: INFO ::  Close cluster ...
-2026-01-27 15:27:29,673 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:29,745 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:29,765 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 15:27:29,766 :: INFO ::  Median value of DEM (153.7415008544922) will be used as default_alt
-2026-01-27 15:27:29,927 :: INFO ::  DEM bounds : 1.385316903080225, 43.57882965619802, 1.4488138599570348, 43.5327291258628
-2026-01-27 15:27:29,927 :: INFO ::  ROI bounds : 1.3691229324203587, 43.491131137124604, 1.4829705713771648, 43.60057820347808
-2026-01-27 15:27:29,948 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 15:27:29,948 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 15:27:29,948 :: INFO ::  The SparseMatching(sift) application will be used
-2026-01-27 15:27:30,151 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %655.95392% MiB Start Ram: %655.95392% MiB, End Ram: %656.048128% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:30,353 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0009% s Max ram : %656.048128% MiB Start Ram: %656.048128% MiB, End Ram: %656.052224% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:30,356 :: INFO ::  Compute delayed ...
-2026-01-27 15:27:30,369 :: INFO ::  Wait for futures results ...
-2026-01-27 15:27:30,369 :: PROGRESS ::  Data list to process: [ disp_min_grid , global infos , disp_max_grid ] ...
-2026-01-27 15:27:30,845 :: INFO ::  Close files ...
-2026-01-27 15:27:30,996 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.4952% s Max ram : %658.567168% MiB Start Ram: %656.052224% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %87.0%
-2026-01-27 15:27:31,196 :: PROFILING_LOG ::  CarsProfiling# %Disp Grid Generation%: %1.0474% s Max ram : %658.567168% MiB Start Ram: %655.95392% MiB, End Ram: %658.571264% MiB,  Max CPU usage: %87.0%
-2026-01-27 15:27:31,397 :: PROFILING_LOG ::  CarsProfiling# %Load geomodels%: %0.0004% s Max ram : %658.571264% MiB Start Ram: %658.571264% MiB, End Ram: %658.571264% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:31,598 :: PROFILING_LOG ::  CarsProfiling# %Generate pairs%: %0.0005% s Max ram : %658.571264% MiB Start Ram: %658.571264% MiB, End Ram: %658.571264% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:31,602 :: INFO ::  Global Disparity range for current pair:  [-9.411 pix., 8.904 pix.] (or [-96.082 m., 90.908 m.])
-2026-01-27 15:27:31,602 :: INFO ::  Global disparity range for sparse matching : [-10.0 pix, 9.0 pix]
-2026-01-27 15:27:31,602 :: INFO ::  Size of epipolar image: [0, 0, 448, 448]
-2026-01-27 15:27:31,602 :: INFO ::  Tile size for epipolar regions: 5000x60 pixels
-2026-01-27 15:27:31,602 :: INFO ::  Epipolar image will be processed in 8 splits
-2026-01-27 15:27:31,803 :: PROFILING_LOG ::  CarsProfiling# %Grid margins 2 overlaps%: %0.0088% s Max ram : %658.571264% MiB Start Ram: %658.571264% MiB, End Ram: %658.571264% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:31,804 :: INFO ::  Number of tiles in epipolar resampling: row: 8 col: 1
-2026-01-27 15:27:32,005 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %658.571264% MiB Start Ram: %658.571264% MiB, End Ram: %658.571264% MiB,  Max CPU usage: %10.0%
-2026-01-27 15:27:32,206 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0005% s Max ram : %658.571264% MiB Start Ram: %658.571264% MiB, End Ram: %658.571264% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:32,215 :: INFO ::  Number of left epipolar image tiles outside left sensor image and removed: 0
-2026-01-27 15:27:32,215 :: INFO ::  Number of right epipolar image tiles outside right sensor image and removed: 0
-2026-01-27 15:27:32,219 :: INFO ::  Generate disparity: Number tiles: 8
-2026-01-27 15:27:32,222 :: INFO ::  Compute delayed ...
-2026-01-27 15:27:32,223 :: INFO ::  Wait for futures results ...
-2026-01-27 15:27:32,223 :: PROGRESS ::  Data list to process: [ epi_matches_left ] ...
-2026-01-27 15:27:37,526 :: INFO ::  Close files ...
-2026-01-27 15:27:37,628 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %5.3085% s Max ram : %658.57536% MiB Start Ram: %658.57536% MiB, End Ram: %658.57536% MiB,  Max CPU usage: %104.6%
-2026-01-27 15:27:37,635 :: INFO ::  Raw number of matches found: 401 matches
-2026-01-27 15:27:37,636 :: INFO ::  Writing raw matches file
-2026-01-27 15:27:37,637 :: INFO ::  1 matches discarded because their epipolar error is greater than --epipolar_error_upper_bound = 10.0 pix considering a shift of -0.02069091796875 pix
-2026-01-27 15:27:37,637 :: INFO ::  Writing filtered matches file
-2026-01-27 15:27:37,638 :: INFO ::  Number of matches kept for epipolar error correction: 400 matches
-2026-01-27 15:27:37,652 :: INFO ::  Epipolar error after correction: mean = 0.000 pix., standard deviation = 0.349 pix., max = 3.761 pix.
-2026-01-27 15:27:37,854 :: PROFILING_LOG ::  CarsProfiling# %Correct grid%: %0.0059% s Max ram : %658.579456% MiB Start Ram: %658.579456% MiB, End Ram: %658.579456% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:38,041 :: PROFILING_LOG ::  CarsProfiling# %Epi Grid Generation%: %0.2149% s Max ram : %658.579456% MiB Start Ram: %658.579456% MiB, End Ram: %658.579456% MiB,  Max CPU usage: %10.0%
-2026-01-27 15:27:38,042 :: INFO ::  Global disparity interval without margin : [-2.29 pix, 1.88 pix]
-2026-01-27 15:27:38,042 :: INFO ::  Global disparity interval with margin : [-100.24 pix, 50.86 pix]
-2026-01-27 15:27:38,279 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0007% s Max ram : %658.579456% MiB Start Ram: %658.579456% MiB, End Ram: %658.579456% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:38,481 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %658.579456% MiB Start Ram: %658.579456% MiB, End Ram: %658.579456% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:38,484 :: INFO ::  Compute delayed ...
-2026-01-27 15:27:38,498 :: INFO ::  Wait for futures results ...
-2026-01-27 15:27:38,498 :: PROGRESS ::  Data list to process: [ disp_min_grid , global infos , disp_max_grid ] ...
-2026-01-27 15:27:38,944 :: INFO ::  Close files ...
-2026-01-27 15:27:39,137 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.4660% s Max ram : %658.587648% MiB Start Ram: %658.579456% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %92.6%
-2026-01-27 15:27:39,295 :: PROFILING_LOG ::  CarsProfiling# %Disp Grid Generation%: %1.0797% s Max ram : %658.587648% MiB Start Ram: %658.579456% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %96.6%
-2026-01-27 15:27:39,515 :: PROFILING_LOG ::  CarsProfiling# %Compute epipolar roi%: %0.0006% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:39,716 :: PROFILING_LOG ::  CarsProfiling# %Optimal size estimation%: %0.0040% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:39,720 :: INFO ::  Global Disparity range for current pair:  [-9.411 pix., 8.904 pix.] (or [-96.083 m., 90.908 m.])
-2026-01-27 15:27:39,918 :: PROFILING_LOG ::  CarsProfiling# %Get margin fun%: %0.0037% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %10.0%
-2026-01-27 15:27:39,918 :: INFO ::  Size of epipolar image: [0, 0, 448, 448]
-2026-01-27 15:27:39,918 :: INFO ::  Tile size for epipolar regions: 1000x1000 pixels
-2026-01-27 15:27:39,918 :: INFO ::  Epipolar image will be processed in 1 splits
-2026-01-27 15:27:40,120 :: PROFILING_LOG ::  CarsProfiling# %Grid margins 2 overlaps%: %0.0019% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:40,331 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0007% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:40,533 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0014% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %10.0%
-2026-01-27 15:27:40,735 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:40,936 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:41,138 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:41,339 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:41,339 :: INFO ::  Number of tiles in epipolar resampling: row: 1 col: 1
-2026-01-27 15:27:41,541 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0005% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.587648% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:41,743 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0005% s Max ram : %658.587648% MiB Start Ram: %658.587648% MiB, End Ram: %658.47296% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:41,751 :: INFO ::  Number of left epipolar image tiles outside left sensor image and removed: 0
-2026-01-27 15:27:41,751 :: INFO ::  Number of right epipolar image tiles outside right sensor image and removed: 0
-2026-01-27 15:27:41,769 :: INFO ::  Computing images envelopes and their intersection
-2026-01-27 15:27:41,970 :: PROFILING_LOG ::  CarsProfiling# %Ground intersection envelopes%: %0.0874% s Max ram : %658.563072% MiB Start Ram: %658.542592% MiB, End Ram: %658.563072% MiB,  Max CPU usage: %79.9%
-2026-01-27 15:27:42,172 :: PROFILING_LOG ::  CarsProfiling# %Compute epipolar grid min max%: %0.0671% s Max ram : %658.563072% MiB Start Ram: %658.563072% MiB, End Ram: %658.563072% MiB,  Max CPU usage: %59.9%
-2026-01-27 15:27:42,172 :: INFO ::  Terrain area covered: 1480462.9516116416 square meters (or square degrees)
-2026-01-27 15:27:42,182 :: INFO ::  Terrain bounding box : [571664.0, 572474.0] x [6273798.0, 6274648.0]
-2026-01-27 15:27:42,369 :: PROFILING_LOG ::  CarsProfiling# %Compute terrain bbox%: %0.4154% s Max ram : %658.563072% MiB Start Ram: %658.542592% MiB, End Ram: %658.563072% MiB,  Max CPU usage: %79.9%
-2026-01-27 15:27:42,370 :: INFO ::  Total terrain bounding box : [571664.0, 572474.0] x [6273798.0, 6274648.0]
-2026-01-27 15:27:42,370 :: INFO ::  Optimal terrain tile size: 609x609 pixels
-2026-01-27 15:27:42,571 :: PROFILING_LOG ::  CarsProfiling# %Compute terrain bounds%: %0.0008% s Max ram : %658.563072% MiB Start Ram: %658.563072% MiB, End Ram: %658.563072% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:42,597 :: INFO ::  The conf that has been chosen regarding the world classification map is census_sgm_urban
-2026-01-27 15:27:42,773 :: PROFILING_LOG ::  CarsProfiling# %Find auto conf%: %0.0265% s Max ram : %658.567168% MiB Start Ram: %658.563072% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %10.0%
-2026-01-27 15:27:42,773 :: INFO ::  The AbstractDenseMatching(custom) application will be used
-2026-01-27 15:27:42,833 :: INFO ::  Compute disparity: number tiles: 1
-2026-01-27 15:27:42,835 :: INFO ::  Disparity holes filling was not activated
-2026-01-27 15:27:43,044 :: PROFILING_LOG ::  CarsProfiling# %Transform disp range grid to two layers%: %0.0008% s Max ram : %658.567168% MiB Start Ram: %658.567168% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:43,246 :: PROFILING_LOG ::  CarsProfiling# %Transform four layers to two layers grid%: %0.0006% s Max ram : %658.567168% MiB Start Ram: %658.567168% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:43,447 :: PROFILING_LOG ::  CarsProfiling# %Compute epipolar grid min max%: %0.0762% s Max ram : %658.567168% MiB Start Ram: %658.567168% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %59.9%
-2026-01-27 15:27:43,649 :: PROFILING_LOG ::  CarsProfiling# %Save triangulation output%: %0.0013% s Max ram : %658.567168% MiB Start Ram: %658.567168% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %9.9%
-2026-01-27 15:27:43,851 :: PROFILING_LOG ::  CarsProfiling# %Fill index%: %0.0006% s Max ram : %658.567168% MiB Start Ram: %658.567168% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:44,053 :: PROFILING_LOG ::  CarsProfiling# %Preprocess depth maps%: %0.0005% s Max ram : %658.567168% MiB Start Ram: %658.567168% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:44,054 :: INFO ::  DSM output image size: 2486x2510 pixels
-2026-01-27 15:27:44,256 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0006% s Max ram : %658.567168% MiB Start Ram: %658.567168% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:44,457 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0006% s Max ram : %658.567168% MiB Start Ram: %658.567168% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:44,659 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %658.567168% MiB Start Ram: %658.567168% MiB, End Ram: %658.567168% MiB,  Max CPU usage: %0%
-2026-01-27 15:27:44,659 :: INFO ::  Number of tiles in cloud rasterization: row: 1 col: 1
-2026-01-27 15:27:44,665 :: INFO ::  Compute delayed ...
-2026-01-27 15:27:44,666 :: INFO ::  Wait for futures results ...
-2026-01-27 15:27:44,666 :: PROGRESS ::  Data list to process: [ dsm_weights , epi_img_left_mask , epi_img_right , epi_img_left , epi_img_left_classif , epi_img_right_mask , texture , dsm , epi_img_right_classif ] ...
-2026-01-27 15:28:10,978 :: INFO ::  Close files ...
-2026-01-27 15:28:11,228 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %26.4681% s Max ram : %669.32736% MiB Start Ram: %658.567168% MiB, End Ram: %669.323264% MiB,  Max CPU usage: %97.2%
-2026-01-27 15:28:11,446 :: PROFILING_LOG ::  CarsProfiling# %Final cleanup%: %0.0007% s Max ram : %669.323264% MiB Start Ram: %669.323264% MiB, End Ram: %669.323264% MiB,  Max CPU usage: %0%
-2026-01-27 15:28:11,452 :: INFO ::  Compute delayed ...
-2026-01-27 15:28:11,452 :: INFO ::  No Object to compute
-2026-01-27 15:28:11,649 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0062% s Max ram : %669.323264% MiB Start Ram: %669.323264% MiB, End Ram: %669.323264% MiB,  Max CPU usage: %0%
-2026-01-27 15:28:11,649 :: INFO ::  Close cluster ...
-2026-01-27 15:28:11,649 :: INFO ::  Save profiling plots ...
-2026-01-27 15:28:14,373 :: INFO ::  Clean removing thread pool ...
-2026-01-27 15:28:14,374 :: INFO ::  Clean tmp directory ...
-2026-01-27 15:28:14,375 :: INFO ::  Clean shared directory ...
-2026-01-27 15:28:14,494 :: PROFILING_LOG ::  CarsProfiling# %run_surface_modeling_pipeline%: %48.3904% s Max ram : %669.81888% MiB Start Ram: %631.0912% MiB, End Ram: %669.822976% MiB,  Max CPU usage: %109.0%
-2026-01-27 15:28:14,496 :: PROFILING_LOG ::  
+2026-01-29 16:22:38,687 :: INFO ::  Raw regular mask processing...
+2026-01-29 16:22:38,693 :: INFO ::  Regular mask processing...
+2026-01-29 16:22:38,696 :: INFO ::  detect_regular_areas: Done (Runtime: 0.01s)
+2026-01-29 16:22:38,697 :: INFO ::  Horizontal nodata mask processing...
+2026-01-29 16:22:38,700 :: INFO ::  Vertical nodata mask processing...
+2026-01-29 16:22:38,709 :: INFO ::  Build Inner NoData Mask
+2026-01-29 16:22:38,713 :: INFO ::  detect_border_nodata: Done (Runtime: 0.02s)
+2026-01-29 16:22:38,714 :: INFO ::  Iterative filling DSM level 0
+2026-01-29 16:22:38,726 :: INFO ::  Iterative filling DSM level 1
+2026-01-29 16:22:38,732 :: INFO ::  fill_dsm: Done (Runtime: 0.02s)
+2026-01-29 16:22:38,733 :: INFO ::  Main pass of a drape cloth filter: Starting...
+2026-01-29 16:22:38,867 :: INFO ::  drape_cloth: Done (Runtime: 0.13s)
+2026-01-29 16:22:38,868 :: INFO ::  Main pass of a drape cloth filter: Done.
+2026-01-29 16:22:38,869 :: INFO ::  Pits removal: Starting.
+2026-01-29 16:22:38,870 :: INFO ::  Pits removal processing...
+2026-01-29 16:22:38,886 :: INFO ::  run: Done (Runtime: 0.02s)
+2026-01-29 16:22:38,887 :: INFO ::  Pits removal: Done.
+2026-01-29 16:22:38,888 :: INFO ::  Applying border no data: Starting...
+2026-01-29 16:22:38,889 :: INFO ::  Applying border no data: Done...
+2026-01-29 16:22:38,893 :: INFO ::  Generating DHM: Starting...
+2026-01-29 16:22:38,894 :: INFO ::  Applying border no data to DHM: Starting...
+2026-01-29 16:22:38,895 :: INFO ::  Applying border no data to DHM: Done...
+2026-01-29 16:22:38,900 :: INFO ::  Generating DHM: Done.
+2026-01-29 16:22:38,918 :: INFO ::  dsm_to_dtm: Done (Runtime: 0.31s)
+2026-01-29 16:22:38,935 :: INFO ::  Statistics of difference between subsampled DSM and DEM min (in meters)
+2026-01-29 16:22:38,936 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
+2026-01-29 16:22:38,936 :: INFO ::  |  79.71 |  83.95 | 156.55 | 157.53 | 165.06 | 165.06 |
+2026-01-29 16:22:38,936 :: INFO ::  Statistics of difference between DEM max and subsampled DSM (in meters)
+2026-01-29 16:22:38,939 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
+2026-01-29 16:22:38,939 :: INFO ::  | -165.06 |  80.63 |  85.41 |  87.32 |  93.86 | 102.67 |
+2026-01-29 16:22:38,939 :: INFO ::  Statistics of difference between DEM max and DEM min (in meters)
+2026-01-29 16:22:38,941 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
+2026-01-29 16:22:38,941 :: INFO ::  |   0.00 | 163.78 | 173.86 | 182.50 | 211.85 | 242.89 |
+2026-01-29 16:22:39,049 :: PROFILING_LOG ::  CarsProfiling# %DEM Generation%: %1.4301% s Max ram : %643.15392% MiB Start Ram: %621.273088% MiB, End Ram: %643.15392% MiB,  Max CPU usage: %93.6%
+2026-01-29 16:22:39,049 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:39,121 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:39,139 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:39,140 :: INFO ::  Median value of DEM (153.7415008544922) will be used as default_alt
+2026-01-29 16:22:39,294 :: INFO ::  DEM bounds : 1.385316903080225, 43.57882965619802, 1.4488138599570348, 43.5327291258628
+2026-01-29 16:22:39,294 :: INFO ::  ROI bounds : 1.3691229324203587, 43.491131137124604, 1.4829705713771648, 43.60057820347808
+2026-01-29 16:22:39,361 :: INFO ::  Left satellite acquisition angles: Azimuth angle: 150.9 degrees, Elevation angle: 72.1 degrees
+2026-01-29 16:22:39,377 :: INFO ::  Right satellite acquisition angles: Azimuth angle: 111.2 degrees, Elevation angle: 77.7 degrees
+2026-01-29 16:22:39,377 :: INFO ::  Stereo satellite convergence angle from ground: 11.4 degrees
+2026-01-29 16:22:39,377 :: INFO ::  Generating epipolar rectification grid ...
+2026-01-29 16:22:39,428 :: INFO ::  Size of epipolar images: 448x448 pixels
+2026-01-29 16:22:39,428 :: INFO ::  Disparity to altitude factor: 10.209558001690791 m/pixel
+2026-01-29 16:22:39,529 :: PROFILING_LOG ::  CarsProfiling# %Epi Grid Generation%: %0.1043% s Max ram : %644.767744% MiB Start Ram: %644.620288% MiB, End Ram: %644.767744% MiB,  Max CPU usage: %78.2%
+2026-01-29 16:22:39,529 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:22:39,731 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0061% s Max ram : %644.837376% MiB Start Ram: %644.767744% MiB, End Ram: %644.837376% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:39,932 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %644.837376% MiB Start Ram: %644.837376% MiB, End Ram: %644.837376% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:39,932 :: INFO ::  Close cluster ...
+2026-01-29 16:22:39,939 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:40,010 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:40,029 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:22:40,030 :: INFO ::  Median value of DEM (153.7415008544922) will be used as default_alt
+2026-01-29 16:22:40,183 :: INFO ::  DEM bounds : 1.385316903080225, 43.57882965619802, 1.4488138599570348, 43.5327291258628
+2026-01-29 16:22:40,183 :: INFO ::  ROI bounds : 1.3691229324203587, 43.491131137124604, 1.4829705713771648, 43.60057820347808
+2026-01-29 16:22:40,203 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-01-29 16:22:40,203 :: INFO ::  The Resampling(bicubic) application will be used
+2026-01-29 16:22:40,203 :: INFO ::  The SparseMatching(sift) application will be used
+2026-01-29 16:22:40,406 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %645.373952% MiB Start Ram: %645.373952% MiB, End Ram: %645.373952% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:40,607 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0003% s Max ram : %645.373952% MiB Start Ram: %645.373952% MiB, End Ram: %645.373952% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:40,610 :: INFO ::  Compute delayed ...
+2026-01-29 16:22:40,623 :: INFO ::  Wait for futures results ...
+2026-01-29 16:22:40,623 :: PROGRESS ::  Data list to process: [ disp_min_grid , disp_max_grid , global infos ] ...
+2026-01-29 16:22:40,960 :: INFO ::  Close files ...
+2026-01-29 16:22:41,094 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.3546% s Max ram : %648.065024% MiB Start Ram: %645.373952% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %116.6%
+2026-01-29 16:22:41,294 :: PROFILING_LOG ::  CarsProfiling# %Disp Grid Generation%: %0.8901% s Max ram : %648.065024% MiB Start Ram: %645.373952% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %113.1%
+2026-01-29 16:22:41,496 :: PROFILING_LOG ::  CarsProfiling# %Load geomodels%: %0.0006% s Max ram : %648.065024% MiB Start Ram: %648.065024% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:41,697 :: PROFILING_LOG ::  CarsProfiling# %Generate pairs%: %0.0003% s Max ram : %648.065024% MiB Start Ram: %648.065024% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:41,700 :: INFO ::  Global Disparity range for current pair:  [-9.411 pix., 8.904 pix.] (or [-96.082 m., 90.908 m.])
+2026-01-29 16:22:41,700 :: INFO ::  Global disparity range for sparse matching : [-10.0 pix, 9.0 pix]
+2026-01-29 16:22:41,700 :: INFO ::  Size of epipolar image: [0, 0, 448, 448]
+2026-01-29 16:22:41,700 :: INFO ::  Tile size for epipolar regions: 5000x60 pixels
+2026-01-29 16:22:41,700 :: INFO ::  Epipolar image will be processed in 8 splits
+2026-01-29 16:22:41,910 :: PROFILING_LOG ::  CarsProfiling# %Grid margins 2 overlaps%: %0.0087% s Max ram : %648.065024% MiB Start Ram: %648.065024% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:41,910 :: INFO ::  Number of tiles in epipolar resampling: row: 8 col: 1
+2026-01-29 16:22:42,111 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0003% s Max ram : %648.065024% MiB Start Ram: %648.065024% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:42,313 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %648.065024% MiB Start Ram: %648.065024% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:42,321 :: INFO ::  Number of left epipolar image tiles outside left sensor image and removed: 0
+2026-01-29 16:22:42,321 :: INFO ::  Number of right epipolar image tiles outside right sensor image and removed: 0
+2026-01-29 16:22:42,325 :: INFO ::  Generate disparity: Number tiles: 8
+2026-01-29 16:22:42,327 :: INFO ::  Compute delayed ...
+2026-01-29 16:22:42,328 :: INFO ::  Wait for futures results ...
+2026-01-29 16:22:42,328 :: PROGRESS ::  Data list to process: [ epi_matches_left ] ...
+2026-01-29 16:22:43,642 :: INFO ::  Close files ...
+2026-01-29 16:22:43,775 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %1.3179% s Max ram : %648.065024% MiB Start Ram: %648.065024% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %112.6%
+2026-01-29 16:22:43,781 :: INFO ::  Raw number of matches found: 401 matches
+2026-01-29 16:22:43,781 :: INFO ::  Writing raw matches file
+2026-01-29 16:22:43,783 :: INFO ::  1 matches discarded because their epipolar error is greater than --epipolar_error_upper_bound = 10.0 pix considering a shift of -0.02069091796875 pix
+2026-01-29 16:22:43,783 :: INFO ::  Writing filtered matches file
+2026-01-29 16:22:43,784 :: INFO ::  Number of matches kept for epipolar error correction: 400 matches
+2026-01-29 16:22:43,796 :: INFO ::  Epipolar error after correction: mean = 0.000 pix., standard deviation = 0.349 pix., max = 3.761 pix.
+2026-01-29 16:22:43,997 :: PROFILING_LOG ::  CarsProfiling# %Correct grid%: %0.0046% s Max ram : %648.065024% MiB Start Ram: %648.065024% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:44,186 :: PROFILING_LOG ::  CarsProfiling# %Epi Grid Generation%: %0.2127% s Max ram : %648.065024% MiB Start Ram: %648.065024% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %10.0%
+2026-01-29 16:22:44,186 :: INFO ::  Global disparity interval without margin : [-2.29 pix, 1.88 pix]
+2026-01-29 16:22:44,186 :: INFO ::  Global disparity interval with margin : [-100.24 pix, 50.86 pix]
+2026-01-29 16:22:44,467 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0003% s Max ram : %648.065024% MiB Start Ram: %648.065024% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:44,669 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %648.065024% MiB Start Ram: %648.065024% MiB, End Ram: %648.065024% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:44,672 :: INFO ::  Compute delayed ...
+2026-01-29 16:22:44,684 :: INFO ::  Wait for futures results ...
+2026-01-29 16:22:44,684 :: PROGRESS ::  Data list to process: [ disp_min_grid , disp_max_grid , global infos ] ...
+2026-01-29 16:22:44,985 :: INFO ::  Close files ...
+2026-01-29 16:22:45,171 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.3190% s Max ram : %648.163328% MiB Start Ram: %648.065024% MiB, End Ram: %648.159232% MiB,  Max CPU usage: %96.4%
+2026-01-29 16:22:45,331 :: PROFILING_LOG ::  CarsProfiling# %Disp Grid Generation%: %0.9072% s Max ram : %648.163328% MiB Start Ram: %648.065024% MiB, End Ram: %648.159232% MiB,  Max CPU usage: %107.0%
+2026-01-29 16:22:45,545 :: PROFILING_LOG ::  CarsProfiling# %Compute epipolar roi%: %0.0004% s Max ram : %648.159232% MiB Start Ram: %648.159232% MiB, End Ram: %648.159232% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:45,747 :: PROFILING_LOG ::  CarsProfiling# %Optimal size estimation%: %0.0035% s Max ram : %648.159232% MiB Start Ram: %648.159232% MiB, End Ram: %648.159232% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:45,751 :: INFO ::  Global Disparity range for current pair:  [-9.411 pix., 8.904 pix.] (or [-96.083 m., 90.908 m.])
+2026-01-29 16:22:45,949 :: PROFILING_LOG ::  CarsProfiling# %Get margin fun%: %0.0035% s Max ram : %648.159232% MiB Start Ram: %648.159232% MiB, End Ram: %648.159232% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:45,949 :: INFO ::  Size of epipolar image: [0, 0, 448, 448]
+2026-01-29 16:22:45,949 :: INFO ::  Tile size for epipolar regions: 1000x1000 pixels
+2026-01-29 16:22:45,949 :: INFO ::  Epipolar image will be processed in 1 splits
+2026-01-29 16:22:46,152 :: PROFILING_LOG ::  CarsProfiling# %Grid margins 2 overlaps%: %0.0019% s Max ram : %648.159232% MiB Start Ram: %648.159232% MiB, End Ram: %648.159232% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:46,355 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %648.159232% MiB Start Ram: %648.159232% MiB, End Ram: %648.159232% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:46,556 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0003% s Max ram : %648.175616% MiB Start Ram: %648.159232% MiB, End Ram: %648.175616% MiB,  Max CPU usage: %10.0%
+2026-01-29 16:22:46,757 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %648.175616% MiB Start Ram: %648.175616% MiB, End Ram: %648.175616% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:46,959 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0006% s Max ram : %648.175616% MiB Start Ram: %648.175616% MiB, End Ram: %648.175616% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:47,160 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0003% s Max ram : %648.175616% MiB Start Ram: %648.175616% MiB, End Ram: %648.175616% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:47,362 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %648.175616% MiB Start Ram: %648.175616% MiB, End Ram: %648.175616% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:47,362 :: INFO ::  Number of tiles in epipolar resampling: row: 1 col: 1
+2026-01-29 16:22:47,564 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0003% s Max ram : %648.175616% MiB Start Ram: %648.175616% MiB, End Ram: %648.175616% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:47,765 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0003% s Max ram : %648.175616% MiB Start Ram: %648.175616% MiB, End Ram: %648.175616% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:47,774 :: INFO ::  Number of left epipolar image tiles outside left sensor image and removed: 0
+2026-01-29 16:22:47,774 :: INFO ::  Number of right epipolar image tiles outside right sensor image and removed: 0
+2026-01-29 16:22:47,790 :: INFO ::  Computing images envelopes and their intersection
+2026-01-29 16:22:47,991 :: PROFILING_LOG ::  CarsProfiling# %Ground intersection envelopes%: %0.0781% s Max ram : %648.175616% MiB Start Ram: %648.175616% MiB, End Ram: %648.175616% MiB,  Max CPU usage: %79.9%
+2026-01-29 16:22:48,196 :: PROFILING_LOG ::  CarsProfiling# %Compute epipolar grid min max%: %0.0590% s Max ram : %648.179712% MiB Start Ram: %648.175616% MiB, End Ram: %648.179712% MiB,  Max CPU usage: %59.9%
+2026-01-29 16:22:48,197 :: INFO ::  Terrain area covered: 1480462.9516116416 square meters (or square degrees)
+2026-01-29 16:22:48,205 :: INFO ::  Terrain bounding box : [571664.0, 572474.0] x [6273798.0, 6274648.0]
+2026-01-29 16:22:48,390 :: PROFILING_LOG ::  CarsProfiling# %Compute terrain bbox%: %0.4166% s Max ram : %648.179712% MiB Start Ram: %648.175616% MiB, End Ram: %648.179712% MiB,  Max CPU usage: %79.9%
+2026-01-29 16:22:48,391 :: INFO ::  Total terrain bounding box : [571664.0, 572474.0] x [6273798.0, 6274648.0]
+2026-01-29 16:22:48,391 :: INFO ::  Optimal terrain tile size: 609x609 pixels
+2026-01-29 16:22:48,592 :: PROFILING_LOG ::  CarsProfiling# %Compute terrain bounds%: %0.0008% s Max ram : %648.179712% MiB Start Ram: %648.179712% MiB, End Ram: %648.179712% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:48,600 :: INFO ::  The conf that has been chosen regarding the world classification map is census_sgm_urban
+2026-01-29 16:22:48,793 :: PROFILING_LOG ::  CarsProfiling# %Find auto conf%: %0.0085% s Max ram : %648.183808% MiB Start Ram: %648.179712% MiB, End Ram: %648.183808% MiB,  Max CPU usage: %10.0%
+2026-01-29 16:22:48,794 :: INFO ::  The AbstractDenseMatching(custom) application will be used
+2026-01-29 16:22:48,852 :: INFO ::  Compute disparity: number tiles: 1
+2026-01-29 16:22:48,854 :: INFO ::  Disparity holes filling was not activated
+2026-01-29 16:22:49,069 :: PROFILING_LOG ::  CarsProfiling# %Transform disp range grid to two layers%: %0.0006% s Max ram : %648.183808% MiB Start Ram: %648.183808% MiB, End Ram: %648.183808% MiB,  Max CPU usage: %10.0%
+2026-01-29 16:22:49,270 :: PROFILING_LOG ::  CarsProfiling# %Transform four layers to two layers grid%: %0.0007% s Max ram : %648.183808% MiB Start Ram: %648.183808% MiB, End Ram: %648.183808% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:49,472 :: PROFILING_LOG ::  CarsProfiling# %Compute epipolar grid min max%: %0.0603% s Max ram : %648.183808% MiB Start Ram: %648.183808% MiB, End Ram: %648.183808% MiB,  Max CPU usage: %59.9%
+2026-01-29 16:22:49,673 :: PROFILING_LOG ::  CarsProfiling# %Save triangulation output%: %0.0009% s Max ram : %648.183808% MiB Start Ram: %648.183808% MiB, End Ram: %648.183808% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:49,874 :: PROFILING_LOG ::  CarsProfiling# %Fill index%: %0.0004% s Max ram : %648.183808% MiB Start Ram: %648.183808% MiB, End Ram: %648.183808% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:50,076 :: PROFILING_LOG ::  CarsProfiling# %Preprocess depth maps%: %0.0004% s Max ram : %648.183808% MiB Start Ram: %648.183808% MiB, End Ram: %648.183808% MiB,  Max CPU usage: %10.0%
+2026-01-29 16:22:50,077 :: INFO ::  DSM output image size: 2486x2510 pixels
+2026-01-29 16:22:50,279 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %648.183808% MiB Start Ram: %648.183808% MiB, End Ram: %648.183808% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:50,480 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %648.183808% MiB Start Ram: %648.183808% MiB, End Ram: %648.183808% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:50,682 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %648.183808% MiB Start Ram: %648.183808% MiB, End Ram: %648.183808% MiB,  Max CPU usage: %0%
+2026-01-29 16:22:50,682 :: INFO ::  Number of tiles in cloud rasterization: row: 1 col: 1
+2026-01-29 16:22:50,688 :: INFO ::  Compute delayed ...
+2026-01-29 16:22:50,689 :: INFO ::  Wait for futures results ...
+2026-01-29 16:22:50,689 :: PROGRESS ::  Data list to process: [ epi_img_left_mask , dsm , epi_img_right , epi_img_right_classif , epi_img_left_classif , epi_img_right_mask , dsm_weights , texture , epi_img_left ] ...
+2026-01-29 16:23:03,866 :: INFO ::  Close files ...
+2026-01-29 16:23:04,440 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %13.5566% s Max ram : %661.311488% MiB Start Ram: %648.183808% MiB, End Ram: %661.307392% MiB,  Max CPU usage: %119.4%
+2026-01-29 16:23:04,662 :: PROFILING_LOG ::  CarsProfiling# %Final cleanup%: %0.0005% s Max ram : %661.307392% MiB Start Ram: %661.307392% MiB, End Ram: %661.307392% MiB,  Max CPU usage: %0%
+2026-01-29 16:23:04,667 :: INFO ::  Compute delayed ...
+2026-01-29 16:23:04,667 :: INFO ::  No Object to compute
+2026-01-29 16:23:04,863 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0054% s Max ram : %661.307392% MiB Start Ram: %661.307392% MiB, End Ram: %661.307392% MiB,  Max CPU usage: %0%
+2026-01-29 16:23:04,864 :: INFO ::  Close cluster ...
+2026-01-29 16:23:04,864 :: INFO ::  Save profiling plots ...
+2026-01-29 16:23:06,876 :: INFO ::  Clean removing thread pool ...
+2026-01-29 16:23:06,876 :: INFO ::  Clean tmp directory ...
+2026-01-29 16:23:06,877 :: INFO ::  Clean shared directory ...
+2026-01-29 16:23:06,992 :: PROFILING_LOG ::  CarsProfiling# %run_surface_modeling_pipeline%: %30.1929% s Max ram : %665.239552% MiB Start Ram: %619.044864% MiB, End Ram: %663.289856% MiB,  Max CPU usage: %118.0%
+2026-01-29 16:23:06,993 :: PROFILING_LOG ::  
  
  
  ---------------------------------------- SUMMARY PROFILLING  ---------------------------------------- 
  
  
 
-2026-01-27 15:28:14,497 :: PROFILING_LOG ::  Task generate_disp_range_from_dem_wrapper ran 2 times, with mean time 0.14485 sec, total time: 0.2897 sec, Max cpu: 59.9 % max ram in process during task: 374.626304 MiB, max ram - start ram: 10.575872000000004,   end - start ram : 8.740863999999988
-2026-01-27 15:28:14,498 :: PROFILING_LOG ::  Task generate_epipolar_images_wrapper ran 4 times, with mean time 0.09015000000000001 sec, total time: 0.36060000000000003 sec, Max cpu: 62.2 % max ram in process during task: 378.544128 MiB, max ram - start ram: 10.35468800000001,   end - start ram : 10.35468800000001
-2026-01-27 15:28:14,499 :: PROFILING_LOG ::  Task compute_matches_wrapper ran 3 times, with mean time 1.2984333333333333 sec, total time: 3.8953 sec, Max cpu: 46.7 % max ram in process during task: 381.9984213333333 MiB, max ram - start ram: 19.42732799999999,   end - start ram : 11.583487999999988
-2026-01-27 15:28:14,500 :: PROFILING_LOG ::  Task compute_disparity_wrapper ran 1 times, with mean time 6.1944 sec, total time: 6.1944 sec, Max cpu: 59.9 % max ram in process during task: 489.721856 MiB, max ram - start ram: 95.36716799999999,   end - start ram : 81.21139199999999
-2026-01-27 15:28:14,500 :: PROFILING_LOG ::  Task triangulation_wrapper ran 1 times, with mean time 17.453 sec, total time: 17.453 sec, Max cpu: 59.9 % max ram in process during task: 679.38304 MiB, max ram - start ram: 203.81696000000005,   end - start ram : -29.323263999999995
-2026-01-27 15:28:14,501 :: PROFILING_LOG ::  Task epipolar_small_component_removal_wrapper ran 1 times, with mean time 0.3582 sec, total time: 0.3582 sec, Max cpu: 46.0 % max ram in process during task: 461.959168 MiB, max ram - start ram: 16.74854399999998,   end - start ram : 16.74854399999998
-2026-01-27 15:28:14,502 :: PROFILING_LOG ::  Task epipolar_statistical_removal_wrapper ran 1 times, with mean time 0.5017 sec, total time: 0.5017 sec, Max cpu: 45.7 % max ram in process during task: 465.051648 MiB, max ram - start ram: 3.092480000000023,   end - start ram : 3.092480000000023
-2026-01-27 15:28:14,503 :: PROFILING_LOG ::  Task rasterization_wrapper ran 1 times, with mean time 0.318 sec, total time: 0.318 sec, Max cpu: 69.8 % max ram in process during task: 488.378368 MiB, max ram - start ram: 23.326720000000023,   end - start ram : 23.326720000000023
-2026-01-27 15:28:14,503 :: PROFILING_LOG ::  Task Multiprocessing orchestrator initialization ran 4 times, with mean time 0.02565 sec, total time: 0.1026 sec, Max cpu: 10.0 % max ram in process during task: 634.653696 MiB, max ram - start ram: 0.012288000000012289,   end - start ram : 0.03686400000003687
-2026-01-27 15:28:14,504 :: PROFILING_LOG ::  Task Compute futures ran 8 times, with mean time 4.0931750000000005 sec, total time: 32.745400000000004 sec, Max cpu: 104.6 % max ram in process during task: 652.7380479999999 MiB, max ram - start ram: 10.760191999999961,   end - start ram : 10.756095999999957
-2026-01-27 15:28:14,505 :: PROFILING_LOG ::  Task Compute roi poly ran 1 times, with mean time 0.0006 sec, total time: 0.0006 sec, Max cpu: 0.0 % max ram in process during task: 631.13216 MiB, max ram - start ram: 0.004096000000004096,   end - start ram : 0.09420799999998053
-2026-01-27 15:28:14,506 :: PROFILING_LOG ::  Task Load geomodels ran 2 times, with mean time 0.00045 sec, total time: 0.0009 sec, Max cpu: 0.0 % max ram in process during task: 644.8967680000001 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,506 :: PROFILING_LOG ::  Task Generate pairs ran 2 times, with mean time 0.00045 sec, total time: 0.0009 sec, Max cpu: 0.0 % max ram in process during task: 644.8967680000001 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,507 :: PROFILING_LOG ::  Task DEM Generation ran 1 times, with mean time 1.7894 sec, total time: 1.7894 sec, Max cpu: 89.9 % max ram in process during task: 653.123584 MiB, max ram - start ram: 21.901312000000075,   end - start ram : 21.917695999999978
-2026-01-27 15:28:14,508 :: PROFILING_LOG ::  Task Epi Grid Generation ran 2 times, with mean time 0.1525 sec, total time: 0.305 sec, Max cpu: 79.9 % max ram in process during task: 656.80384 MiB, max ram - start ram: 0.20070399999997335,   end - start ram : 0.19660799999996925
-2026-01-27 15:28:14,509 :: PROFILING_LOG ::  Task Add to save lists ran 13 times, with mean time 0.0006384615384615385 sec, total time: 0.0083 sec, Max cpu: 10.0 % max ram in process during task: 658.1837193846152 MiB, max ram - start ram: 0.0,   end - start ram : 0.09420799999998053
-2026-01-27 15:28:14,510 :: PROFILING_LOG ::  Task Disp Grid Generation ran 2 times, with mean time 1.0635500000000002 sec, total time: 2.1271000000000004 sec, Max cpu: 96.6 % max ram in process during task: 658.577408 MiB, max ram - start ram: 2.6132479999999987,   end - start ram : 2.617344000000003
-2026-01-27 15:28:14,510 :: PROFILING_LOG ::  Task Grid margins 2 overlaps ran 2 times, with mean time 0.005350000000000001 sec, total time: 0.010700000000000001 sec, Max cpu: 0.0 % max ram in process during task: 658.5794559999999 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,511 :: PROFILING_LOG ::  Task Get paths and bands ran 4 times, with mean time 0.000475 sec, total time: 0.0019 sec, Max cpu: 10.0 % max ram in process during task: 658.5794559999999 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,512 :: PROFILING_LOG ::  Task Correct grid ran 1 times, with mean time 0.0059 sec, total time: 0.0059 sec, Max cpu: 0.0 % max ram in process during task: 658.579456 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,512 :: PROFILING_LOG ::  Task Compute epipolar roi ran 1 times, with mean time 0.0006 sec, total time: 0.0006 sec, Max cpu: 0.0 % max ram in process during task: 658.587648 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,513 :: PROFILING_LOG ::  Task Optimal size estimation ran 1 times, with mean time 0.004 sec, total time: 0.004 sec, Max cpu: 0.0 % max ram in process during task: 658.587648 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,514 :: PROFILING_LOG ::  Task Get margin fun ran 1 times, with mean time 0.0037 sec, total time: 0.0037 sec, Max cpu: 10.0 % max ram in process during task: 658.587648 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,515 :: PROFILING_LOG ::  Task Ground intersection envelopes ran 1 times, with mean time 0.0874 sec, total time: 0.0874 sec, Max cpu: 79.9 % max ram in process during task: 658.563072 MiB, max ram - start ram: 0.020480000000020482,   end - start ram : 0.020480000000020482
-2026-01-27 15:28:14,515 :: PROFILING_LOG ::  Task Compute epipolar grid min max ran 2 times, with mean time 0.07165 sec, total time: 0.1433 sec, Max cpu: 59.9 % max ram in process during task: 658.56512 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,516 :: PROFILING_LOG ::  Task Compute terrain bbox ran 1 times, with mean time 0.4154 sec, total time: 0.4154 sec, Max cpu: 79.9 % max ram in process during task: 658.563072 MiB, max ram - start ram: 0.020480000000020482,   end - start ram : 0.020480000000020482
-2026-01-27 15:28:14,517 :: PROFILING_LOG ::  Task Compute terrain bounds ran 1 times, with mean time 0.0008 sec, total time: 0.0008 sec, Max cpu: 0.0 % max ram in process during task: 658.563072 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,518 :: PROFILING_LOG ::  Task Find auto conf ran 1 times, with mean time 0.0265 sec, total time: 0.0265 sec, Max cpu: 10.0 % max ram in process during task: 658.567168 MiB, max ram - start ram: 0.004096000000004096,   end - start ram : 0.004096000000004096
-2026-01-27 15:28:14,518 :: PROFILING_LOG ::  Task Transform disp range grid to two layers ran 1 times, with mean time 0.0008 sec, total time: 0.0008 sec, Max cpu: 0.0 % max ram in process during task: 658.567168 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,519 :: PROFILING_LOG ::  Task Transform four layers to two layers grid ran 1 times, with mean time 0.0006 sec, total time: 0.0006 sec, Max cpu: 0.0 % max ram in process during task: 658.567168 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,520 :: PROFILING_LOG ::  Task Save triangulation output ran 1 times, with mean time 0.0013 sec, total time: 0.0013 sec, Max cpu: 9.9 % max ram in process during task: 658.567168 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,521 :: PROFILING_LOG ::  Task Fill index ran 1 times, with mean time 0.0006 sec, total time: 0.0006 sec, Max cpu: 0.0 % max ram in process during task: 658.567168 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,521 :: PROFILING_LOG ::  Task Preprocess depth maps ran 1 times, with mean time 0.0005 sec, total time: 0.0005 sec, Max cpu: 0.0 % max ram in process during task: 658.567168 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,522 :: PROFILING_LOG ::  Task Final cleanup ran 1 times, with mean time 0.0007 sec, total time: 0.0007 sec, Max cpu: 0.0 % max ram in process during task: 669.323264 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 15:28:14,523 :: PROFILING_LOG ::  Task run_surface_modeling_pipeline ran 1 times, with mean time 48.3904 sec, total time: 48.3904 sec, Max cpu: 109.0 % max ram in process during task: 669.81888 MiB, max ram - start ram: 38.72768000000008,   end - start ram : 38.73177600000008
-2026-01-27 16:03:33,532 :: PROGRESS ::  Starting surface modeling pipeline for resolution 1/4
-2026-01-27 16:03:33,535 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:03:33,736 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0080% s Max ram : %732.864512% MiB Start Ram: %732.864512% MiB, End Ram: %732.864512% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:33,937 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %732.864512% MiB Start Ram: %732.864512% MiB, End Ram: %732.946432% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:33,938 :: INFO ::  Close cluster ...
-2026-01-27 16:03:34,011 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:03:34,041 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
-2026-01-27 16:03:34,041 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:03:34,042 :: INFO ::  auto mode : nb_workers will be set automatically
-2026-01-27 16:03:34,063 :: INFO ::  Available CPUs  in SLURM : 1
-2026-01-27 16:03:34,063 :: INFO ::  Available RAM  in SLURM : 7168
-2026-01-27 16:03:34,063 :: WARNING ::  Only one CPU detected.
-2026-01-27 16:03:34,065 :: INFO ::  Number of workers : 1
-2026-01-27 16:03:34,065 :: INFO ::  Max memory per worker : 2000 MB
-2026-01-27 16:03:34,243 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0287% s Max ram : %732.950528% MiB Start Ram: %732.946432% MiB, End Ram: %732.954624% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:34,444 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %732.954624% MiB Start Ram: %732.954624% MiB, End Ram: %732.991488% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:34,444 :: INFO ::  Close cluster ...
-2026-01-27 16:03:34,466 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:03:34,466 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:34,553 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:34,597 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:34,598 :: INFO ::  Grid generation method not specified, default  epipolar is used
-2026-01-27 16:03:34,598 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 16:03:34,598 :: INFO ::  Resampling method not specified, default bicubic is used
-2026-01-27 16:03:34,598 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 16:03:34,598 :: INFO ::  Sparse Matching method not specified, default  sift is used
-2026-01-27 16:03:34,598 :: INFO ::  The SparseMatching(sift) application will be used
-2026-01-27 16:03:34,599 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:34,670 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:34,690 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:34,690 :: INFO ::  The resolution of the output DSM will be 2.0 meters. 
-2026-01-27 16:03:34,691 :: INFO ::  Grid generation method not specified, default  epipolar is used
-2026-01-27 16:03:34,691 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 16:03:34,740 :: INFO ::  Grid correction method not specified, default  default is used
-2026-01-27 16:03:34,740 :: INFO ::  The GridCorrection(default) application will be used
-2026-01-27 16:03:34,740 :: INFO ::  Resampling method not specified, default bicubic is used
-2026-01-27 16:03:34,740 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 16:03:34,740 :: INFO ::  dense_match_filling method not specified, default zero_padding is used
-2026-01-27 16:03:34,741 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
-2026-01-27 16:03:34,741 :: INFO ::  Dense Matching method not specified, default census_sgm_default is used
-2026-01-27 16:03:34,741 :: INFO ::  The AbstractDenseMatching(census_sgm_default) application will be used
-2026-01-27 16:03:34,798 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
-2026-01-27 16:03:34,798 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
-2026-01-27 16:03:34,798 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
-2026-01-27 16:03:34,798 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
-2026-01-27 16:03:34,798 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
-2026-01-27 16:03:34,799 :: INFO ::  2 point cloud outlier removal apps registered:
- - point_cloud_outlier_removal.1=small_components
- - point_cloud_outlier_removal.2=statistical
-2026-01-27 16:03:34,799 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
-2026-01-27 16:03:34,800 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
-2026-01-27 16:03:34,931 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:03:35,133 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0255% s Max ram : %734.429184% MiB Start Ram: %734.429184% MiB, End Ram: %734.466048% MiB,  Max CPU usage: %10.0%
-2026-01-27 16:03:35,335 :: PROFILING_LOG ::  CarsProfiling# %Compute roi poly%: %0.0005% s Max ram : %734.466048% MiB Start Ram: %734.466048% MiB, End Ram: %734.55616% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:35,536 :: PROFILING_LOG ::  CarsProfiling# %Load geomodels%: %0.0005% s Max ram : %734.55616% MiB Start Ram: %734.55616% MiB, End Ram: %734.55616% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:35,737 :: PROFILING_LOG ::  CarsProfiling# %Generate pairs%: %0.0004% s Max ram : %734.55616% MiB Start Ram: %734.55616% MiB, End Ram: %734.55616% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:35,737 :: INFO ::  Received 1 stereo pairs configurations
-2026-01-27 16:03:36,204 :: INFO ::  Generation of DEM min
-2026-01-27 16:03:36,247 :: INFO ::  Generation of DEM max
-2026-01-27 16:03:36,292 :: INFO ::  Generation of DEM median
-2026-01-27 16:03:36,888 :: INFO ::  Launch Bulldozer on DEM min
-2026-01-27 16:03:36,912 :: WARNING ::  The following input parameters are ignored: memory_mode. 
-Please refer to the documentation for the list of valid parameters.
-2026-01-27 16:03:36,915 :: INFO ::  Raw regular mask processing...
-2026-01-27 16:03:36,916 :: INFO ::  Regular mask processing...
-2026-01-27 16:03:36,918 :: INFO ::  detect_regular_areas: Done (Runtime: 0.0s)
-2026-01-27 16:03:36,918 :: INFO ::  Horizontal nodata mask processing...
-2026-01-27 16:03:36,918 :: INFO ::  Vertical nodata mask processing...
-2026-01-27 16:03:36,936 :: INFO ::  Build Inner NoData Mask
-2026-01-27 16:03:36,951 :: INFO ::  detect_border_nodata: Done (Runtime: 0.03s)
-2026-01-27 16:03:36,951 :: INFO ::  Iterative filling DSM level 0
-2026-01-27 16:03:36,952 :: INFO ::  fill_dsm: Done (Runtime: 0.0s)
-2026-01-27 16:03:36,952 :: INFO ::  Main pass of a drape cloth filter: Starting...
-2026-01-27 16:03:37,020 :: INFO ::  drape_cloth: Done (Runtime: 0.07s)
-2026-01-27 16:03:37,020 :: INFO ::  Main pass of a drape cloth filter: Done.
-2026-01-27 16:03:37,021 :: INFO ::  Pits removal: Starting.
-2026-01-27 16:03:37,021 :: INFO ::  Pits removal processing...
-2026-01-27 16:03:37,053 :: INFO ::  run: Done (Runtime: 0.03s)
-2026-01-27 16:03:37,054 :: INFO ::  Pits removal: Done.
-2026-01-27 16:03:37,054 :: INFO ::  Applying border no data: Starting...
-2026-01-27 16:03:37,054 :: INFO ::  Applying border no data: Done...
-2026-01-27 16:03:37,060 :: INFO ::  Generating DHM: Starting...
-2026-01-27 16:03:37,060 :: INFO ::  Applying border no data to DHM: Starting...
-2026-01-27 16:03:37,060 :: INFO ::  Applying border no data to DHM: Done...
-2026-01-27 16:03:37,084 :: INFO ::  Generating DHM: Done.
-2026-01-27 16:03:37,084 :: INFO ::  dsm_to_dtm: Done (Runtime: 0.18s)
-2026-01-27 16:03:37,095 :: INFO ::  Launch Bulldozer on DEM max
-2026-01-27 16:03:37,105 :: WARNING ::  The following input parameters are ignored: memory_mode. 
-Please refer to the documentation for the list of valid parameters.
-2026-01-27 16:03:37,116 :: INFO ::  Raw regular mask processing...
-2026-01-27 16:03:37,118 :: INFO ::  Regular mask processing...
-2026-01-27 16:03:37,120 :: INFO ::  detect_regular_areas: Done (Runtime: 0.0s)
-2026-01-27 16:03:37,122 :: INFO ::  Horizontal nodata mask processing...
-2026-01-27 16:03:37,123 :: INFO ::  Vertical nodata mask processing...
-2026-01-27 16:03:37,243 :: INFO ::  Build Inner NoData Mask
-2026-01-27 16:03:37,319 :: INFO ::  detect_border_nodata: Done (Runtime: 0.2s)
-2026-01-27 16:03:37,320 :: INFO ::  Iterative filling DSM level 0
-2026-01-27 16:03:37,322 :: INFO ::  Iterative filling DSM level 1
-2026-01-27 16:03:37,326 :: INFO ::  fill_dsm: Done (Runtime: 0.01s)
-2026-01-27 16:03:37,327 :: INFO ::  Main pass of a drape cloth filter: Starting...
-2026-01-27 16:03:37,393 :: INFO ::  drape_cloth: Done (Runtime: 0.06s)
-2026-01-27 16:03:37,393 :: INFO ::  Main pass of a drape cloth filter: Done.
-2026-01-27 16:03:37,394 :: INFO ::  Pits removal: Starting.
-2026-01-27 16:03:37,395 :: INFO ::  Pits removal processing...
-2026-01-27 16:03:37,418 :: INFO ::  run: Done (Runtime: 0.02s)
-2026-01-27 16:03:37,419 :: INFO ::  Pits removal: Done.
-2026-01-27 16:03:37,420 :: INFO ::  Applying border no data: Starting...
-2026-01-27 16:03:37,420 :: INFO ::  Applying border no data: Done...
-2026-01-27 16:03:37,460 :: INFO ::  Generating DHM: Starting...
-2026-01-27 16:03:37,461 :: INFO ::  Applying border no data to DHM: Starting...
-2026-01-27 16:03:37,462 :: INFO ::  Applying border no data to DHM: Done...
-2026-01-27 16:03:37,545 :: INFO ::  Generating DHM: Done.
-2026-01-27 16:03:37,546 :: INFO ::  dsm_to_dtm: Done (Runtime: 0.44s)
-2026-01-27 16:03:37,564 :: INFO ::  Statistics of difference between subsampled DSM and DEM min (in meters)
-2026-01-27 16:03:37,565 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
-2026-01-27 16:03:37,565 :: INFO ::  |  79.71 |  83.95 | 156.55 | 157.53 | 165.06 | 165.06 |
-2026-01-27 16:03:37,565 :: INFO ::  Statistics of difference between DEM max and subsampled DSM (in meters)
-2026-01-27 16:03:37,567 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
-2026-01-27 16:03:37,567 :: INFO ::  | -165.06 |  80.63 |  85.41 |  87.32 |  93.86 | 102.67 |
-2026-01-27 16:03:37,568 :: INFO ::  Statistics of difference between DEM max and DEM min (in meters)
-2026-01-27 16:03:37,570 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
-2026-01-27 16:03:37,570 :: INFO ::  |   0.00 | 163.78 | 173.86 | 182.50 | 211.85 | 242.89 |
-2026-01-27 16:03:37,726 :: PROFILING_LOG ::  CarsProfiling# %DEM Generation%: %1.8400% s Max ram : %740.757504% MiB Start Ram: %734.55616% MiB, End Ram: %740.7616% MiB,  Max CPU usage: %79.9%
-2026-01-27 16:03:37,727 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:37,987 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:38,007 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:38,008 :: INFO ::  Median value of DEM (153.7415008544922) will be used as default_alt
-2026-01-27 16:03:38,649 :: INFO ::  DEM bounds : 1.385316903080225, 43.57882965619802, 1.4488138599570348, 43.5327291258628
-2026-01-27 16:03:38,649 :: INFO ::  ROI bounds : 1.3691229324203587, 43.491131137124604, 1.4829705713771648, 43.60057820347808
-2026-01-27 16:03:38,735 :: INFO ::  Left satellite acquisition angles: Azimuth angle: 150.9 degrees, Elevation angle: 72.1 degrees
-2026-01-27 16:03:38,735 :: INFO ::  Right satellite acquisition angles: Azimuth angle: 111.2 degrees, Elevation angle: 77.7 degrees
-2026-01-27 16:03:38,735 :: INFO ::  Stereo satellite convergence angle from ground: 11.4 degrees
-2026-01-27 16:03:38,735 :: INFO ::  Generating epipolar rectification grid ...
-2026-01-27 16:03:38,790 :: INFO ::  Size of epipolar images: 448x448 pixels
-2026-01-27 16:03:38,790 :: INFO ::  Disparity to altitude factor: 10.209558001690791 m/pixel
-2026-01-27 16:03:38,899 :: PROFILING_LOG ::  CarsProfiling# %Epi Grid Generation%: %0.0931% s Max ram : %742.268928% MiB Start Ram: %742.25664% MiB, End Ram: %742.264832% MiB,  Max CPU usage: %89.9%
-2026-01-27 16:03:38,899 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:03:39,100 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0056% s Max ram : %742.264832% MiB Start Ram: %742.264832% MiB, End Ram: %742.264832% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:39,302 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %742.293504% MiB Start Ram: %742.264832% MiB, End Ram: %742.367232% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:39,302 :: INFO ::  Close cluster ...
-2026-01-27 16:03:39,309 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:39,382 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:39,402 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:03:39,403 :: INFO ::  Median value of DEM (153.7415008544922) will be used as default_alt
-2026-01-27 16:03:39,562 :: INFO ::  DEM bounds : 1.385316903080225, 43.57882965619802, 1.4488138599570348, 43.5327291258628
-2026-01-27 16:03:39,562 :: INFO ::  ROI bounds : 1.3691229324203587, 43.491131137124604, 1.4829705713771648, 43.60057820347808
-2026-01-27 16:03:39,583 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 16:03:39,583 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 16:03:39,583 :: INFO ::  The SparseMatching(sift) application will be used
-2026-01-27 16:03:39,786 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %742.367232% MiB Start Ram: %742.367232% MiB, End Ram: %742.457344% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:39,988 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0006% s Max ram : %742.457344% MiB Start Ram: %742.457344% MiB, End Ram: %742.457344% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:40,035 :: INFO ::  Compute delayed ...
-2026-01-27 16:03:40,050 :: INFO ::  Wait for futures results ...
-2026-01-27 16:03:40,050 :: PROGRESS ::  Data list to process: [ disp_max_grid , disp_min_grid , global infos ] ...
-2026-01-27 16:03:40,573 :: INFO ::  Close files ...
-2026-01-27 16:03:40,676 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.5877% s Max ram : %744.751104% MiB Start Ram: %742.457344% MiB, End Ram: %744.751104% MiB,  Max CPU usage: %89.9%
-2026-01-27 16:03:40,820 :: PROFILING_LOG ::  CarsProfiling# %Disp Grid Generation%: %1.0929% s Max ram : %744.751104% MiB Start Ram: %742.367232% MiB, End Ram: %744.7552% MiB,  Max CPU usage: %94.8%
-2026-01-27 16:03:41,022 :: PROFILING_LOG ::  CarsProfiling# %Load geomodels%: %0.0004% s Max ram : %744.7552% MiB Start Ram: %744.7552% MiB, End Ram: %744.7552% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:41,223 :: PROFILING_LOG ::  CarsProfiling# %Generate pairs%: %0.0005% s Max ram : %744.7552% MiB Start Ram: %744.7552% MiB, End Ram: %744.7552% MiB,  Max CPU usage: %10.0%
-2026-01-27 16:03:41,226 :: INFO ::  Global Disparity range for current pair:  [-9.411 pix., 8.904 pix.] (or [-96.082 m., 90.908 m.])
-2026-01-27 16:03:41,226 :: INFO ::  Global disparity range for sparse matching : [-10.0 pix, 9.0 pix]
-2026-01-27 16:03:41,226 :: INFO ::  Size of epipolar image: [0, 0, 448, 448]
-2026-01-27 16:03:41,226 :: INFO ::  Tile size for epipolar regions: 5000x60 pixels
-2026-01-27 16:03:41,226 :: INFO ::  Epipolar image will be processed in 8 splits
-2026-01-27 16:03:41,427 :: PROFILING_LOG ::  CarsProfiling# %Grid margins 2 overlaps%: %0.0088% s Max ram : %744.759296% MiB Start Ram: %744.7552% MiB, End Ram: %744.759296% MiB,  Max CPU usage: %10.0%
-2026-01-27 16:03:41,428 :: INFO ::  Number of tiles in epipolar resampling: row: 8 col: 1
-2026-01-27 16:03:41,629 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0005% s Max ram : %744.759296% MiB Start Ram: %744.759296% MiB, End Ram: %744.759296% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:41,830 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %744.759296% MiB Start Ram: %744.759296% MiB, End Ram: %744.759296% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:41,839 :: INFO ::  Number of left epipolar image tiles outside left sensor image and removed: 0
-2026-01-27 16:03:41,839 :: INFO ::  Number of right epipolar image tiles outside right sensor image and removed: 0
-2026-01-27 16:03:41,842 :: INFO ::  Generate disparity: Number tiles: 8
-2026-01-27 16:03:41,844 :: INFO ::  Compute delayed ...
-2026-01-27 16:03:41,845 :: INFO ::  Wait for futures results ...
-2026-01-27 16:03:41,845 :: PROGRESS ::  Data list to process: [ epi_matches_left ] ...
-2026-01-27 16:03:46,795 :: INFO ::  Close files ...
-2026-01-27 16:03:46,897 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %4.9550% s Max ram : %744.763392% MiB Start Ram: %744.763392% MiB, End Ram: %744.763392% MiB,  Max CPU usage: %98.4%
-2026-01-27 16:03:46,903 :: INFO ::  Raw number of matches found: 401 matches
-2026-01-27 16:03:46,904 :: INFO ::  Writing raw matches file
-2026-01-27 16:03:46,905 :: INFO ::  1 matches discarded because their epipolar error is greater than --epipolar_error_upper_bound = 10.0 pix considering a shift of -0.02069091796875 pix
-2026-01-27 16:03:46,905 :: INFO ::  Writing filtered matches file
-2026-01-27 16:03:46,906 :: INFO ::  Number of matches kept for epipolar error correction: 400 matches
-2026-01-27 16:03:46,919 :: INFO ::  Epipolar error after correction: mean = 0.000 pix., standard deviation = 0.349 pix., max = 3.761 pix.
-2026-01-27 16:03:47,120 :: PROFILING_LOG ::  CarsProfiling# %Correct grid%: %0.0185% s Max ram : %744.771584% MiB Start Ram: %744.771584% MiB, End Ram: %744.77568% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:47,308 :: PROFILING_LOG ::  CarsProfiling# %Epi Grid Generation%: %0.2132% s Max ram : %744.77568% MiB Start Ram: %744.771584% MiB, End Ram: %744.77568% MiB,  Max CPU usage: %10.0%
-2026-01-27 16:03:47,309 :: INFO ::  Global disparity interval without margin : [-2.29 pix, 1.88 pix]
-2026-01-27 16:03:47,309 :: INFO ::  Global disparity interval with margin : [-100.24 pix, 50.86 pix]
-2026-01-27 16:03:47,554 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %744.77568% MiB Start Ram: %744.77568% MiB, End Ram: %744.77568% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:47,755 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0007% s Max ram : %744.77568% MiB Start Ram: %744.77568% MiB, End Ram: %744.77568% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:47,758 :: INFO ::  Compute delayed ...
-2026-01-27 16:03:47,770 :: INFO ::  Wait for futures results ...
-2026-01-27 16:03:47,770 :: PROGRESS ::  Data list to process: [ disp_max_grid , disp_min_grid , global infos ] ...
-2026-01-27 16:03:48,234 :: INFO ::  Close files ...
-2026-01-27 16:03:48,427 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.4811% s Max ram : %744.77568% MiB Start Ram: %744.77568% MiB, End Ram: %744.77568% MiB,  Max CPU usage: %91.9%
-2026-01-27 16:03:48,528 :: PROFILING_LOG ::  CarsProfiling# %Disp Grid Generation%: %1.0755% s Max ram : %744.77568% MiB Start Ram: %744.77568% MiB, End Ram: %744.77568% MiB,  Max CPU usage: %91.9%
-2026-01-27 16:03:48,743 :: PROFILING_LOG ::  CarsProfiling# %Compute epipolar roi%: %0.0004% s Max ram : %744.77568% MiB Start Ram: %744.77568% MiB, End Ram: %744.77568% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:48,944 :: PROFILING_LOG ::  CarsProfiling# %Optimal size estimation%: %0.0036% s Max ram : %744.77568% MiB Start Ram: %744.77568% MiB, End Ram: %744.77568% MiB,  Max CPU usage: %20.0%
-2026-01-27 16:03:48,947 :: INFO ::  Global Disparity range for current pair:  [-9.411 pix., 8.904 pix.] (or [-96.083 m., 90.908 m.])
-2026-01-27 16:03:49,146 :: PROFILING_LOG ::  CarsProfiling# %Get margin fun%: %0.0029% s Max ram : %744.77568% MiB Start Ram: %744.77568% MiB, End Ram: %744.77568% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:49,146 :: INFO ::  Size of epipolar image: [0, 0, 448, 448]
-2026-01-27 16:03:49,146 :: INFO ::  Tile size for epipolar regions: 1000x1000 pixels
-2026-01-27 16:03:49,146 :: INFO ::  Epipolar image will be processed in 1 splits
-2026-01-27 16:03:49,347 :: PROFILING_LOG ::  CarsProfiling# %Grid margins 2 overlaps%: %0.0019% s Max ram : %744.804352% MiB Start Ram: %744.77568% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:49,549 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:49,750 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %10.0%
-2026-01-27 16:03:49,951 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:50,152 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:50,353 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:50,555 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:50,555 :: INFO ::  Number of tiles in epipolar resampling: row: 1 col: 1
-2026-01-27 16:03:50,756 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:50,957 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:50,965 :: INFO ::  Number of left epipolar image tiles outside left sensor image and removed: 0
-2026-01-27 16:03:50,965 :: INFO ::  Number of right epipolar image tiles outside right sensor image and removed: 0
-2026-01-27 16:03:50,994 :: INFO ::  Computing images envelopes and their intersection
-2026-01-27 16:03:51,195 :: PROFILING_LOG ::  CarsProfiling# %Ground intersection envelopes%: %0.0812% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %79.9%
-2026-01-27 16:03:51,397 :: PROFILING_LOG ::  CarsProfiling# %Compute epipolar grid min max%: %0.0617% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %59.9%
-2026-01-27 16:03:51,397 :: INFO ::  Terrain area covered: 1480462.9516116416 square meters (or square degrees)
-2026-01-27 16:03:51,406 :: INFO ::  Terrain bounding box : [571664.0, 572474.0] x [6273798.0, 6274648.0]
-2026-01-27 16:03:51,595 :: PROFILING_LOG ::  CarsProfiling# %Compute terrain bbox%: %0.4148% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %79.9%
-2026-01-27 16:03:51,595 :: INFO ::  Total terrain bounding box : [571664.0, 572474.0] x [6273798.0, 6274648.0]
-2026-01-27 16:03:51,595 :: INFO ::  Optimal terrain tile size: 609x609 pixels
-2026-01-27 16:03:51,796 :: PROFILING_LOG ::  CarsProfiling# %Compute terrain bounds%: %0.0007% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:51,813 :: INFO ::  The conf that has been chosen regarding the world classification map is census_sgm_urban
-2026-01-27 16:03:51,997 :: PROFILING_LOG ::  CarsProfiling# %Find auto conf%: %0.0171% s Max ram : %744.804352% MiB Start Ram: %744.804352% MiB, End Ram: %744.804352% MiB,  Max CPU usage: %10.0%
-2026-01-27 16:03:51,997 :: INFO ::  The AbstractDenseMatching(custom) application will be used
-2026-01-27 16:03:52,052 :: INFO ::  Compute disparity: number tiles: 1
-2026-01-27 16:03:52,054 :: INFO ::  Disparity holes filling was not activated
-2026-01-27 16:03:52,278 :: PROFILING_LOG ::  CarsProfiling# %Transform disp range grid to two layers%: %0.0007% s Max ram : %744.81664% MiB Start Ram: %744.81664% MiB, End Ram: %744.81664% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:52,479 :: PROFILING_LOG ::  CarsProfiling# %Transform four layers to two layers grid%: %0.0004% s Max ram : %744.81664% MiB Start Ram: %744.81664% MiB, End Ram: %744.81664% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:52,680 :: PROFILING_LOG ::  CarsProfiling# %Compute epipolar grid min max%: %0.0640% s Max ram : %744.81664% MiB Start Ram: %744.81664% MiB, End Ram: %744.81664% MiB,  Max CPU usage: %69.9%
-2026-01-27 16:03:52,881 :: PROFILING_LOG ::  CarsProfiling# %Save triangulation output%: %0.0010% s Max ram : %744.81664% MiB Start Ram: %744.81664% MiB, End Ram: %744.81664% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:53,082 :: PROFILING_LOG ::  CarsProfiling# %Fill index%: %0.0004% s Max ram : %744.81664% MiB Start Ram: %744.81664% MiB, End Ram: %744.81664% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:53,284 :: PROFILING_LOG ::  CarsProfiling# %Preprocess depth maps%: %0.0005% s Max ram : %744.81664% MiB Start Ram: %744.81664% MiB, End Ram: %744.81664% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:53,284 :: INFO ::  DSM output image size: 2486x2510 pixels
-2026-01-27 16:03:53,485 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %744.81664% MiB Start Ram: %744.81664% MiB, End Ram: %744.81664% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:53,686 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %744.81664% MiB Start Ram: %744.81664% MiB, End Ram: %744.81664% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:53,887 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %744.81664% MiB Start Ram: %744.81664% MiB, End Ram: %744.81664% MiB,  Max CPU usage: %0%
-2026-01-27 16:03:53,888 :: INFO ::  Number of tiles in cloud rasterization: row: 1 col: 1
-2026-01-27 16:03:53,894 :: INFO ::  Compute delayed ...
-2026-01-27 16:03:53,895 :: INFO ::  Wait for futures results ...
-2026-01-27 16:03:53,895 :: PROGRESS ::  Data list to process: [ texture , epi_img_left , epi_img_right_mask , dsm , dsm_weights , epi_img_left_classif , epi_img_right , epi_img_right_classif , epi_img_left_mask ] ...
-2026-01-27 16:04:20,083 :: INFO ::  Close files ...
-2026-01-27 16:04:20,288 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %26.2992% s Max ram : %744.951808% MiB Start Ram: %744.81664% MiB, End Ram: %744.947712% MiB,  Max CPU usage: %94.9%
-2026-01-27 16:04:20,502 :: PROFILING_LOG ::  CarsProfiling# %Final cleanup%: %0.0006% s Max ram : %744.947712% MiB Start Ram: %744.947712% MiB, End Ram: %744.947712% MiB,  Max CPU usage: %0%
-2026-01-27 16:04:20,508 :: INFO ::  Compute delayed ...
-2026-01-27 16:04:20,508 :: INFO ::  No Object to compute
-2026-01-27 16:04:20,704 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0058% s Max ram : %744.947712% MiB Start Ram: %744.947712% MiB, End Ram: %744.947712% MiB,  Max CPU usage: %0%
-2026-01-27 16:04:20,704 :: INFO ::  Close cluster ...
-2026-01-27 16:04:20,704 :: INFO ::  Save profiling plots ...
-2026-01-27 16:04:23,330 :: INFO ::  Clean removing thread pool ...
-2026-01-27 16:04:23,330 :: INFO ::  Clean tmp directory ...
-2026-01-27 16:04:23,645 :: INFO ::  Clean shared directory ...
-2026-01-27 16:04:23,760 :: PROFILING_LOG ::  CarsProfiling# %run_surface_modeling_pipeline%: %48.8056% s Max ram : %745.5744% MiB Start Ram: %734.429184% MiB, End Ram: %745.5744% MiB,  Max CPU usage: %99.4%
-2026-01-27 16:04:23,763 :: PROFILING_LOG ::  
- 
- 
- ---------------------------------------- SUMMARY PROFILLING  ---------------------------------------- 
- 
- 
-
-2026-01-27 16:04:23,764 :: PROFILING_LOG ::  Task generate_disp_range_from_dem_wrapper ran 4 times, with mean time 0.14882499999999999 sec, total time: 0.5952999999999999 sec, Max cpu: 59.9 % max ram in process during task: 379.53433600000005 MiB, max ram - start ram: 10.575872000000004,   end - start ram : 8.740863999999988
-2026-01-27 16:04:23,765 :: PROFILING_LOG ::  Task generate_epipolar_images_wrapper ran 8 times, with mean time 0.08788750000000001 sec, total time: 0.7031000000000001 sec, Max cpu: 62.2 % max ram in process during task: 383.771648 MiB, max ram - start ram: 10.75200000000001,   end - start ram : 10.75200000000001
-2026-01-27 16:04:23,766 :: PROFILING_LOG ::  Task compute_matches_wrapper ran 6 times, with mean time 1.2374833333333333 sec, total time: 7.4249 sec, Max cpu: 54.3 % max ram in process during task: 387.05834666666664 MiB, max ram - start ram: 19.42732799999999,   end - start ram : 11.583487999999988
-2026-01-27 16:04:23,766 :: PROFILING_LOG ::  Task compute_disparity_wrapper ran 2 times, with mean time 6.0337499999999995 sec, total time: 12.067499999999999 sec, Max cpu: 92.6 % max ram in process during task: 493.807616 MiB, max ram - start ram: 95.36716799999999,   end - start ram : 81.21139199999999
-2026-01-27 16:04:23,767 :: PROFILING_LOG ::  Task triangulation_wrapper ran 2 times, with mean time 17.4865 sec, total time: 34.973 sec, Max cpu: 59.9 % max ram in process during task: 686.6145280000001 MiB, max ram - start ram: 210.12889599999994,   end - start ram : 33.964031999999975
-2026-01-27 16:04:23,768 :: PROFILING_LOG ::  Task epipolar_small_component_removal_wrapper ran 2 times, with mean time 0.36185 sec, total time: 0.7237 sec, Max cpu: 46.6 % max ram in process during task: 491.4176 MiB, max ram - start ram: 16.74854399999998,   end - start ram : 16.74854399999998
-2026-01-27 16:04:23,769 :: PROFILING_LOG ::  Task epipolar_statistical_removal_wrapper ran 2 times, with mean time 0.488 sec, total time: 0.976 sec, Max cpu: 51.9 % max ram in process during task: 492.965888 MiB, max ram - start ram: 3.092480000000023,   end - start ram : 3.092480000000023
-2026-01-27 16:04:23,769 :: PROFILING_LOG ::  Task rasterization_wrapper ran 2 times, with mean time 0.3677 sec, total time: 0.7354 sec, Max cpu: 69.8 % max ram in process during task: 504.81561600000003 MiB, max ram - start ram: 23.326720000000023,   end - start ram : 23.326720000000023
-2026-01-27 16:04:23,770 :: PROFILING_LOG ::  Task Multiprocessing orchestrator initialization ran 8 times, with mean time 0.0213 sec, total time: 0.1704 sec, Max cpu: 10.0 % max ram in process during task: 685.14048 MiB, max ram - start ram: 0.012288000000012289,   end - start ram : 0.03686400000003687
-2026-01-27 16:04:23,771 :: PROFILING_LOG ::  Task Compute futures ran 16 times, with mean time 4.0672125 sec, total time: 65.0754 sec, Max cpu: 104.6 % max ram in process during task: 697.13792 MiB, max ram - start ram: 10.760191999999961,   end - start ram : 10.756095999999957
-2026-01-27 16:04:23,772 :: PROFILING_LOG ::  Task Compute roi poly ran 2 times, with mean time 0.0005499999999999999 sec, total time: 0.0010999999999999998 sec, Max cpu: 0.0 % max ram in process during task: 682.7991039999999 MiB, max ram - start ram: 0.004096000000004096,   end - start ram : 0.09420799999998053
-2026-01-27 16:04:23,772 :: PROFILING_LOG ::  Task Load geomodels ran 4 times, with mean time 0.00045 sec, total time: 0.0018 sec, Max cpu: 0.0 % max ram in process during task: 692.2762240000001 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,773 :: PROFILING_LOG ::  Task Generate pairs ran 4 times, with mean time 0.00045 sec, total time: 0.0018 sec, Max cpu: 10.0 % max ram in process during task: 692.2762240000001 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,774 :: PROFILING_LOG ::  Task DEM Generation ran 2 times, with mean time 1.8147000000000002 sec, total time: 3.6294000000000004 sec, Max cpu: 89.9 % max ram in process during task: 696.940544 MiB, max ram - start ram: 21.901312000000075,   end - start ram : 21.917695999999978
-2026-01-27 16:04:23,775 :: PROFILING_LOG ::  Task Epi Grid Generation ran 4 times, with mean time 0.152825 sec, total time: 0.6113 sec, Max cpu: 89.9 % max ram in process during task: 700.163072 MiB, max ram - start ram: 0.20070399999997335,   end - start ram : 0.19660799999996925
-2026-01-27 16:04:23,776 :: PROFILING_LOG ::  Task Add to save lists ran 26 times, with mean time 0.0005461538461538461 sec, total time: 0.014199999999999997 sec, Max cpu: 10.0 % max ram in process during task: 701.3092430769232 MiB, max ram - start ram: 0.0,   end - start ram : 0.09420799999998053
-2026-01-27 16:04:23,776 :: PROFILING_LOG ::  Task Disp Grid Generation ran 4 times, with mean time 1.0738750000000001 sec, total time: 4.2955000000000005 sec, Max cpu: 96.6 % max ram in process during task: 701.6704 MiB, max ram - start ram: 2.6132479999999987,   end - start ram : 2.617344000000003
-2026-01-27 16:04:23,777 :: PROFILING_LOG ::  Task Grid margins 2 overlaps ran 4 times, with mean time 0.005350000000000001 sec, total time: 0.021400000000000002 sec, Max cpu: 10.0 % max ram in process during task: 701.68064 MiB, max ram - start ram: 0.028672000000028675,   end - start ram : 0.028672000000028675
-2026-01-27 16:04:23,778 :: PROFILING_LOG ::  Task Get paths and bands ran 8 times, with mean time 0.00045 sec, total time: 0.0036 sec, Max cpu: 10.0 % max ram in process during task: 701.6806399999999 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,779 :: PROFILING_LOG ::  Task Correct grid ran 2 times, with mean time 0.012199999999999999 sec, total time: 0.024399999999999998 sec, Max cpu: 0.0 % max ram in process during task: 701.67552 MiB, max ram - start ram: 0.0,   end - start ram : 0.004096000000004096
-2026-01-27 16:04:23,779 :: PROFILING_LOG ::  Task Compute epipolar roi ran 2 times, with mean time 0.0005 sec, total time: 0.001 sec, Max cpu: 0.0 % max ram in process during task: 701.681664 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,780 :: PROFILING_LOG ::  Task Optimal size estimation ran 2 times, with mean time 0.0038 sec, total time: 0.0076 sec, Max cpu: 20.0 % max ram in process during task: 701.681664 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,781 :: PROFILING_LOG ::  Task Get margin fun ran 2 times, with mean time 0.0033 sec, total time: 0.0066 sec, Max cpu: 10.0 % max ram in process during task: 701.681664 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,782 :: PROFILING_LOG ::  Task Ground intersection envelopes ran 2 times, with mean time 0.0843 sec, total time: 0.1686 sec, Max cpu: 79.9 % max ram in process during task: 701.683712 MiB, max ram - start ram: 0.020480000000020482,   end - start ram : 0.020480000000020482
-2026-01-27 16:04:23,783 :: PROFILING_LOG ::  Task Compute epipolar grid min max ran 4 times, with mean time 0.06725 sec, total time: 0.269 sec, Max cpu: 69.9 % max ram in process during task: 701.687808 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,783 :: PROFILING_LOG ::  Task Compute terrain bbox ran 2 times, with mean time 0.4151 sec, total time: 0.8302 sec, Max cpu: 79.9 % max ram in process during task: 701.683712 MiB, max ram - start ram: 0.020480000000020482,   end - start ram : 0.020480000000020482
-2026-01-27 16:04:23,784 :: PROFILING_LOG ::  Task Compute terrain bounds ran 2 times, with mean time 0.00075 sec, total time: 0.0015 sec, Max cpu: 0.0 % max ram in process during task: 701.683712 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,785 :: PROFILING_LOG ::  Task Find auto conf ran 2 times, with mean time 0.0218 sec, total time: 0.0436 sec, Max cpu: 10.0 % max ram in process during task: 701.6857600000001 MiB, max ram - start ram: 0.004096000000004096,   end - start ram : 0.004096000000004096
-2026-01-27 16:04:23,785 :: PROFILING_LOG ::  Task Transform disp range grid to two layers ran 2 times, with mean time 0.00075 sec, total time: 0.0015 sec, Max cpu: 0.0 % max ram in process during task: 701.691904 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,786 :: PROFILING_LOG ::  Task Transform four layers to two layers grid ran 2 times, with mean time 0.0005 sec, total time: 0.001 sec, Max cpu: 0.0 % max ram in process during task: 701.691904 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,787 :: PROFILING_LOG ::  Task Save triangulation output ran 2 times, with mean time 0.00115 sec, total time: 0.0023 sec, Max cpu: 9.9 % max ram in process during task: 701.691904 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,788 :: PROFILING_LOG ::  Task Fill index ran 2 times, with mean time 0.0005 sec, total time: 0.001 sec, Max cpu: 0.0 % max ram in process during task: 701.691904 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,788 :: PROFILING_LOG ::  Task Preprocess depth maps ran 2 times, with mean time 0.0005 sec, total time: 0.001 sec, Max cpu: 0.0 % max ram in process during task: 701.691904 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,789 :: PROFILING_LOG ::  Task Final cleanup ran 2 times, with mean time 0.00065 sec, total time: 0.0013 sec, Max cpu: 0.0 % max ram in process during task: 707.135488 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
-2026-01-27 16:04:23,790 :: PROFILING_LOG ::  Task run_surface_modeling_pipeline ran 2 times, with mean time 48.598 sec, total time: 97.196 sec, Max cpu: 109.0 % max ram in process during task: 707.69664 MiB, max ram - start ram: 38.72768000000008,   end - start ram : 38.73177600000008
+2026-01-29 16:23:06,994 :: PROFILING_LOG ::  Task generate_disp_range_from_dem_wrapper ran 2 times, with mean time 0.06825 sec, total time: 0.1365 sec, Max cpu: 79.9 % max ram in process during task: 377.16582400000004 MiB, max ram - start ram: 7.577600000000018,   end - start ram : 5.808128000000011
+2026-01-29 16:23:06,995 :: PROFILING_LOG ::  Task generate_epipolar_images_wrapper ran 4 times, with mean time 0.050324999999999995 sec, total time: 0.20129999999999998 sec, Max cpu: 69.9 % max ram in process during task: 379.91936 MiB, max ram - start ram: 21.97094400000003,   end - start ram : 21.97094400000003
+2026-01-29 16:23:06,996 :: PROFILING_LOG ::  Task compute_matches_wrapper ran 3 times, with mean time 0.5541999999999999 sec, total time: 1.6625999999999999 sec, Max cpu: 104.7 % max ram in process during task: 379.33056000000005 MiB, max ram - start ram: 9.125888000000032,   end - start ram : 9.125888000000032
+2026-01-29 16:23:06,997 :: PROFILING_LOG ::  Task compute_disparity_wrapper ran 1 times, with mean time 2.9842 sec, total time: 2.9842 sec, Max cpu: 99.9 % max ram in process during task: 495.3088 MiB, max ram - start ram: 108.17945600000002,   end - start ram : 94.14246400000002
+2026-01-29 16:23:06,997 :: PROFILING_LOG ::  Task triangulation_wrapper ran 1 times, with mean time 8.3806 sec, total time: 8.3806 sec, Max cpu: 137.4 % max ram in process during task: 722.694144 MiB, max ram - start ram: 241.41824000000003,   end - start ram : 10.379263999999978
+2026-01-29 16:23:06,998 :: PROFILING_LOG ::  Task epipolar_small_component_removal_wrapper ran 1 times, with mean time 0.1907 sec, total time: 0.1907 sec, Max cpu: 103.4 % max ram in process during task: 508.157952 MiB, max ram - start ram: 17.551360000000045,   end - start ram : 17.551360000000045
+2026-01-29 16:23:06,999 :: PROFILING_LOG ::  Task epipolar_statistical_removal_wrapper ran 1 times, with mean time 0.2295 sec, total time: 0.2295 sec, Max cpu: 100.0 % max ram in process during task: 510.676992 MiB, max ram - start ram: 2.5190399999999613,   end - start ram : 2.5190399999999613
+2026-01-29 16:23:07,000 :: PROFILING_LOG ::  Task rasterization_wrapper ran 1 times, with mean time 0.1556 sec, total time: 0.1556 sec, Max cpu: 99.7 % max ram in process during task: 534.106112 MiB, max ram - start ram: 23.42092800000006,   end - start ram : 23.42092800000006
+2026-01-29 16:23:07,000 :: PROFILING_LOG ::  Task Multiprocessing orchestrator initialization ran 4 times, with mean time 0.02045 sec, total time: 0.0818 sec, Max cpu: 10.0 % max ram in process during task: 625.8565120000001 MiB, max ram - start ram: 2.097152000000051,   end - start ram : 2.134016000000088
+2026-01-29 16:23:07,001 :: PROFILING_LOG ::  Task Compute futures ran 8 times, with mean time 1.9443375 sec, total time: 15.5547 sec, Max cpu: 119.4 % max ram in process during task: 643.650048 MiB, max ram - start ram: 13.127680000000055,   end - start ram : 13.12358400000005
+2026-01-29 16:23:07,002 :: PROFILING_LOG ::  Task Compute roi poly ran 1 times, with mean time 0.0004 sec, total time: 0.0004 sec, Max cpu: 0.0 % max ram in process during task: 621.17888 MiB, max ram - start ram: 0.0,   end - start ram : 0.09420799999998053
+2026-01-29 16:23:07,003 :: PROFILING_LOG ::  Task Load geomodels ran 2 times, with mean time 0.00045 sec, total time: 0.0009 sec, Max cpu: 0.0 % max ram in process during task: 634.669056 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,003 :: PROFILING_LOG ::  Task Generate pairs ran 2 times, with mean time 0.0003 sec, total time: 0.0006 sec, Max cpu: 0.0 % max ram in process during task: 634.669056 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,004 :: PROFILING_LOG ::  Task DEM Generation ran 1 times, with mean time 1.4301 sec, total time: 1.4301 sec, Max cpu: 93.6 % max ram in process during task: 643.15392 MiB, max ram - start ram: 21.88083199999994,   end - start ram : 21.88083199999994
+2026-01-29 16:23:07,005 :: PROFILING_LOG ::  Task Epi Grid Generation ran 2 times, with mean time 0.1585 sec, total time: 0.317 sec, Max cpu: 78.2 % max ram in process during task: 646.416384 MiB, max ram - start ram: 0.14745600000003378,   end - start ram : 0.14745600000003378
+2026-01-29 16:23:07,006 :: PROFILING_LOG ::  Task Add to save lists ran 13 times, with mean time 0.00040769230769230775 sec, total time: 0.005300000000000001 sec, Max cpu: 10.0 % max ram in process during task: 647.7282067692308 MiB, max ram - start ram: 0.016384000000016385,   end - start ram : 0.016384000000016385
+2026-01-29 16:23:07,006 :: PROFILING_LOG ::  Task Disp Grid Generation ran 2 times, with mean time 0.89865 sec, total time: 1.7973 sec, Max cpu: 113.1 % max ram in process during task: 648.114176 MiB, max ram - start ram: 2.691071999999963,   end - start ram : 2.691071999999963
+2026-01-29 16:23:07,007 :: PROFILING_LOG ::  Task Grid margins 2 overlaps ran 2 times, with mean time 0.0053 sec, total time: 0.0106 sec, Max cpu: 0.0 % max ram in process during task: 648.112128 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,008 :: PROFILING_LOG ::  Task Get paths and bands ran 4 times, with mean time 0.000325 sec, total time: 0.0013 sec, Max cpu: 0.0 % max ram in process during task: 648.12032 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,008 :: PROFILING_LOG ::  Task Correct grid ran 1 times, with mean time 0.0046 sec, total time: 0.0046 sec, Max cpu: 0.0 % max ram in process during task: 648.065024 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,009 :: PROFILING_LOG ::  Task Compute epipolar roi ran 1 times, with mean time 0.0004 sec, total time: 0.0004 sec, Max cpu: 0.0 % max ram in process during task: 648.159232 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,010 :: PROFILING_LOG ::  Task Optimal size estimation ran 1 times, with mean time 0.0035 sec, total time: 0.0035 sec, Max cpu: 0.0 % max ram in process during task: 648.159232 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,011 :: PROFILING_LOG ::  Task Get margin fun ran 1 times, with mean time 0.0035 sec, total time: 0.0035 sec, Max cpu: 0.0 % max ram in process during task: 648.159232 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,011 :: PROFILING_LOG ::  Task Ground intersection envelopes ran 1 times, with mean time 0.0781 sec, total time: 0.0781 sec, Max cpu: 79.9 % max ram in process during task: 648.175616 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,012 :: PROFILING_LOG ::  Task Compute epipolar grid min max ran 2 times, with mean time 0.059649999999999995 sec, total time: 0.11929999999999999 sec, Max cpu: 59.9 % max ram in process during task: 648.1817599999999 MiB, max ram - start ram: 0.004096000000004096,   end - start ram : 0.004096000000004096
+2026-01-29 16:23:07,013 :: PROFILING_LOG ::  Task Compute terrain bbox ran 1 times, with mean time 0.4166 sec, total time: 0.4166 sec, Max cpu: 79.9 % max ram in process during task: 648.179712 MiB, max ram - start ram: 0.004096000000004096,   end - start ram : 0.004096000000004096
+2026-01-29 16:23:07,014 :: PROFILING_LOG ::  Task Compute terrain bounds ran 1 times, with mean time 0.0008 sec, total time: 0.0008 sec, Max cpu: 0.0 % max ram in process during task: 648.179712 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,014 :: PROFILING_LOG ::  Task Find auto conf ran 1 times, with mean time 0.0085 sec, total time: 0.0085 sec, Max cpu: 10.0 % max ram in process during task: 648.183808 MiB, max ram - start ram: 0.004096000000004096,   end - start ram : 0.004096000000004096
+2026-01-29 16:23:07,015 :: PROFILING_LOG ::  Task Transform disp range grid to two layers ran 1 times, with mean time 0.0006 sec, total time: 0.0006 sec, Max cpu: 10.0 % max ram in process during task: 648.183808 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,016 :: PROFILING_LOG ::  Task Transform four layers to two layers grid ran 1 times, with mean time 0.0007 sec, total time: 0.0007 sec, Max cpu: 0.0 % max ram in process during task: 648.183808 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,017 :: PROFILING_LOG ::  Task Save triangulation output ran 1 times, with mean time 0.0009 sec, total time: 0.0009 sec, Max cpu: 0.0 % max ram in process during task: 648.183808 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,017 :: PROFILING_LOG ::  Task Fill index ran 1 times, with mean time 0.0004 sec, total time: 0.0004 sec, Max cpu: 0.0 % max ram in process during task: 648.183808 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,018 :: PROFILING_LOG ::  Task Preprocess depth maps ran 1 times, with mean time 0.0004 sec, total time: 0.0004 sec, Max cpu: 10.0 % max ram in process during task: 648.183808 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,019 :: PROFILING_LOG ::  Task Final cleanup ran 1 times, with mean time 0.0005 sec, total time: 0.0005 sec, Max cpu: 0.0 % max ram in process during task: 661.307392 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-01-29 16:23:07,019 :: PROFILING_LOG ::  Task run_surface_modeling_pipeline ran 1 times, with mean time 30.1929 sec, total time: 30.1929 sec, Max cpu: 118.0 % max ram in process during task: 665.239552 MiB, max ram - start ram: 46.19468800000004,   end - start ram : 44.244992000000025

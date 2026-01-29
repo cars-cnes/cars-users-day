@@ -4,20 +4,20 @@ input:
       image:
         bands:
           b0:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/stack.tif
             band: 0
           b1:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/stack.tif
             band: 1
           b2:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/stack.tif
             band: 2
           b3:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/stack.tif
             band: 3
         no_data: 0
       geomodel:
-        path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img1/RPC_PAN.XML
+        path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/RPC_PAN.XML
         model_type: RPC
       mask: null
       classification: null
@@ -25,20 +25,20 @@ input:
       image:
         bands:
           b0:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/stack.tif
             band: 0
           b1:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/stack.tif
             band: 1
           b2:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/stack.tif
             band: 2
           b3:
-            path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/stack.tif
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/stack.tif
             band: 3
         no_data: 0
       geomodel:
-        path: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/img2/RPC_PAN.XML
+        path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/RPC_PAN.XML
         model_type: RPC
       mask: null
       classification: null
@@ -49,7 +49,7 @@ input:
   dsm_to_fill: null
   initial_elevation:
     dem: null
-    geoid: /softs/projets/3d/jupyter/cars-1.0.0-rc3/lib/python3.12/site-packages/cars/pipelines/parameters/../../conf/geoid/egm96.grd
+    geoid: /softs/projets/3d/jupyter/envs/cars-1.0.0/lib/python3.12/site-packages/cars/pipelines/parameters/../../conf/geoid/egm96.grd
   low_res_dsm: ROI_INDUS/DSM/intermediate_data/surface_modeling/res4/dsm/dsm.tif
   loaders:
     image: pivot
@@ -74,7 +74,7 @@ advanced:
   resolutions:
   - 1
 output:
-  directory: /work/CAMPUS/users/belletva/cars-users-day/ROI_INDUS/DSM/intermediate_data/surface_modeling/res1
+  directory: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/surface_modeling/res1
   auxiliary:
     image:
     - b1
