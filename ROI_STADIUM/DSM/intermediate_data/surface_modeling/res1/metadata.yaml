@@ -1,4 +1,4 @@
-version: 1.0.0rc3
+version: 1.0.0
 applications:
   grid_generation:
     img1_img2:
@@ -8,7 +8,7 @@ applications:
       epipolar_origin_y: -150.0
       epipolar_spacing_x: 30.0
       epipolar_spacing_y: 30.0
-      disp_to_alt_ratio: 2.5507966732961376
+      disp_to_alt_ratio: 2.5507966676522407
       left_azimuth_angle: 151.0741447916664
       left_elevation_angle: 72.1077897289053
       right_azimuth_angle: 111.37651213536165
@@ -19,20 +19,20 @@ applications:
       method: bicubic
   sparse_matching:
     img1_img2:
-      disp_lower_bound: -33.0
+      disp_lower_bound: -32.0
       disp_upper_bound: 25.0
   match_filtering:
     img1_img2:
-      number_matches: 1810
-      raw_number_matches: 1849
-      before_correction_epi_error_mean: 0.5977763792427864
-      before_correction_epi_error_std: 1.0065333726881578
-      before_correction_epi_error_max: 9.473876953125
+      number_matches: 1790
+      raw_number_matches: 1825
+      before_correction_epi_error_mean: 0.5994122084292619
+      before_correction_epi_error_std: 0.9846081523362327
+      before_correction_epi_error_max: 9.14129638671875
   grid_correction:
     img1_img2: {}
   dense_matching:
     img1_img2:
-      global_disp_min: -33.0
+      global_disp_min: -32.0
       global_disp_max: 25.0
   fill_disparity_with_zeros:
     img1_img2: {}
@@ -62,16 +62,16 @@ pair_preprocessing:
         geometry:
           type: Polygon
           coordinates:
-          - - - 1.428751407758154
-              - 43.58678913234786
-            - - 1.438575337615906
-              - 43.58645332379939
-            - - 1.438547028737992
-              - 43.57919711948661
-            - - 1.428727451177762
-              - 43.579528706399635
-            - - 1.428751407758154
-              - 43.58678913234786
+          - - - 1.428751215447148
+              - 43.58678938412752
+            - - 1.438575450182551
+              - 43.586453175221145
+            - - 1.438547058936836
+              - 43.5791970795695
+            - - 1.428727733783882
+              - 43.5795283358765
+            - - 1.428751215447148
+              - 43.58678938412752
     right_envelope:
       type: FeatureCollection
       name: right_envelope
@@ -86,16 +86,16 @@ pair_preprocessing:
         geometry:
           type: Polygon
           coordinates:
-          - - - 1.428778919344825
-              - 43.58687531738244
-            - - 1.438606284759382
-              - 43.586745996059825
-            - - 1.438575060709984
-              - 43.57928666384452
-            - - 1.428752287793283
-              - 43.57941360185714
-            - - 1.428778919344825
-              - 43.58687531738244
+          - - - 1.428779184475638
+              - 43.58687524221039
+            - - 1.43860638546401
+              - 43.58674596732799
+            - - 1.438575092689
+              - 43.57928665471173
+            - - 1.428752641285728
+              - 43.57941350153532
+            - - 1.428779184475638
+              - 43.58687524221039
     envelopes_intersection:
       type: FeatureCollection
       name: envelopes_intersection
@@ -110,20 +110,20 @@ pair_preprocessing:
         geometry:
           type: Polygon
           coordinates:
-          - - - 1.438575337615906
-              - 43.58645332379939
-            - - 1.438547379476041
-              - 43.57928702156437
-            - - 1.434233949943136
-              - 43.579342763275704
-            - - 1.428752695569544
-              - 43.57952785394851
-            - - 1.428778608423965
-              - 43.58678820255538
-            - - 1.438575337615906
-              - 43.58645332379939
+          - - - 1.438575450182551
+              - 43.586453175221145
+            - - 1.438547410820187
+              - 43.5792870121945
+            - - 1.434227553282205
+              - 43.57934279869672
+            - - 1.428753046741193
+              - 43.579527481940346
+            - - 1.428778875690693
+              - 43.58678843752756
+            - - 1.438575450182551
+              - 43.586453175221145
     envelopes_intersection_bounding_box:
-    - 1.4287526955695444
-    - 43.57928702156437
-    - 1.438575337615906
-    - 43.58678820255538
+    - 1.4287530467411933
+    - 43.5792870121945
+    - 1.438575450182551
+    - 43.58678843752756

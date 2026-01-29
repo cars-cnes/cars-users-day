@@ -1,1 +1,1 @@
-2026-01-27 16:22:23,044 :: PROFILING_LOG :: 23432382755840 :: 2152085 :: CarsProfiling# %filling_from_sensor_wrapper%: %5.0279% s Max ram : %704.237568% MiB Start Ram: %430.985216% MiB, End Ram: %608.64512% MiB,  Max CPU usage: %69.9%
+2026-01-29 16:37:44,408 :: PROFILING_LOG :: 23149510902784 :: 3178933 :: CarsProfiling# %filling_from_sensor_wrapper%: %2.2780% s Max ram : %701.919232% MiB Start Ram: %428.314624% MiB, End Ram: %606.302208% MiB,  Max CPU usage: %109.9%

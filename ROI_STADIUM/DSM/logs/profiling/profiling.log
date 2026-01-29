@@ -1,244 +1,239 @@
-2026-01-27 16:13:11,149 :: PROGRESS ::  Check configuration...
-2026-01-27 16:13:11,149 :: INFO ::  CARS will use its own internal file as geoid reference
-2026-01-27 16:13:11,270 :: WARNING ::  Input classif has classes over 10Classification file will be read to determine exact values
-2026-01-27 16:13:11,285 :: INFO ::  Classes are [0, 1, 2, 3, 4, 6, 9, 255]
-2026-01-27 16:13:11,368 :: INFO ::  Max value of classif is {}
-2026-01-27 16:13:11,368 :: INFO ::  Classes are [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-2026-01-27 16:13:11,401 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:13:11,404 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
-2026-01-27 16:13:11,404 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:11,405 :: INFO ::  auto mode : nb_workers will be set automatically
-2026-01-27 16:13:11,422 :: INFO ::  Available CPUs  in SLURM : 1
-2026-01-27 16:13:11,422 :: INFO ::  Available RAM  in SLURM : 7168
-2026-01-27 16:13:11,422 :: WARNING ::  Only one CPU detected.
-2026-01-27 16:13:11,422 :: INFO ::  Number of workers : 1
-2026-01-27 16:13:11,422 :: INFO ::  Max memory per worker : 2000 MB
-2026-01-27 16:13:11,605 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0227% s Max ram : %372.355072% MiB Start Ram: %372.252672% MiB, End Ram: %372.482048% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:11,807 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %372.482048% MiB Start Ram: %372.482048% MiB, End Ram: %372.535296% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:11,807 :: INFO ::  Close cluster ...
-2026-01-27 16:13:11,817 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:13:11,819 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:12,020 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0059% s Max ram : %372.547584% MiB Start Ram: %372.535296% MiB, End Ram: %372.547584% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:12,221 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %372.547584% MiB Start Ram: %372.547584% MiB, End Ram: %372.604928% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:12,221 :: INFO ::  Close cluster ...
-2026-01-27 16:13:12,222 :: INFO ::  subsampling method not specified, default  rasterio is used
-2026-01-27 16:13:12,222 :: INFO ::  The subsampling(rasterio) application will be used
-2026-01-27 16:13:12,223 :: INFO ::  subsampling method not specified, default  rasterio is used
-2026-01-27 16:13:12,223 :: INFO ::  The subsampling(rasterio) application will be used
-2026-01-27 16:13:12,232 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:13:12,232 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:12,316 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:12,334 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:12,335 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
-2026-01-27 16:13:12,335 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:12,335 :: INFO ::  auto mode : nb_workers will be set automatically
-2026-01-27 16:13:12,348 :: INFO ::  Available CPUs  in SLURM : 1
-2026-01-27 16:13:12,348 :: INFO ::  Available RAM  in SLURM : 7168
-2026-01-27 16:13:12,348 :: WARNING ::  Only one CPU detected.
-2026-01-27 16:13:12,348 :: INFO ::  Number of workers : 1
-2026-01-27 16:13:12,348 :: INFO ::  Max memory per worker : 2000 MB
-2026-01-27 16:13:12,536 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0183% s Max ram : %375.025664% MiB Start Ram: %374.775808% MiB, End Ram: %375.025664% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:12,737 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %375.025664% MiB Start Ram: %375.025664% MiB, End Ram: %375.078912% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:12,738 :: INFO ::  Close cluster ...
-2026-01-27 16:13:12,739 :: INFO ::  The DsmFilling exogenous_filling application will be used
-2026-01-27 16:13:12,739 :: INFO ::  The DsmFilling bulldozer application will be used
-2026-01-27 16:13:12,739 :: INFO ::  The DsmFilling border_interpolation application will be used
-2026-01-27 16:13:12,739 :: INFO ::  3 dsm filling apps registered:
+2026-01-29 16:34:43,796 :: PROGRESS ::  Check configuration...
+2026-01-29 16:34:43,796 :: INFO ::  CARS will use its own internal file as geoid reference
+2026-01-29 16:34:43,812 :: INFO ::  Max value of classif is {}
+2026-01-29 16:34:43,812 :: INFO ::  Classes are [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+2026-01-29 16:34:43,819 :: INFO ::  Max value of classif is {}
+2026-01-29 16:34:43,819 :: INFO ::  Classes are [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+2026-01-29 16:34:43,823 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:34:43,825 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-01-29 16:34:43,825 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:43,827 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-01-29 16:34:43,839 :: INFO ::  Available CPUs  in SLURM : 4
+2026-01-29 16:34:43,839 :: INFO ::  Available RAM  in SLURM : 28672
+2026-01-29 16:34:43,839 :: INFO ::  Number of workers : 3
+2026-01-29 16:34:43,839 :: INFO ::  Max memory per worker : 2000 MB
+2026-01-29 16:34:44,027 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0179% s Max ram : %367.054848% MiB Start Ram: %367.0016% MiB, End Ram: %367.14496% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:44,229 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0005% s Max ram : %367.14496% MiB Start Ram: %367.14496% MiB, End Ram: %367.202304% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:44,229 :: INFO ::  Close cluster ...
+2026-01-29 16:34:44,239 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:34:44,240 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:44,442 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0049% s Max ram : %367.312896% MiB Start Ram: %367.280128% MiB, End Ram: %367.312896% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:44,643 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0005% s Max ram : %367.312896% MiB Start Ram: %367.312896% MiB, End Ram: %367.366144% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:44,644 :: INFO ::  Close cluster ...
+2026-01-29 16:34:44,644 :: INFO ::  subsampling method not specified, default  rasterio is used
+2026-01-29 16:34:44,644 :: INFO ::  The subsampling(rasterio) application will be used
+2026-01-29 16:34:44,649 :: INFO ::  subsampling method not specified, default  rasterio is used
+2026-01-29 16:34:44,649 :: INFO ::  The subsampling(rasterio) application will be used
+2026-01-29 16:34:44,658 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:34:44,658 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:44,731 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:44,749 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:44,750 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-01-29 16:34:44,750 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:44,751 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-01-29 16:34:44,762 :: INFO ::  Available CPUs  in SLURM : 4
+2026-01-29 16:34:44,763 :: INFO ::  Available RAM  in SLURM : 28672
+2026-01-29 16:34:44,763 :: INFO ::  Number of workers : 3
+2026-01-29 16:34:44,763 :: INFO ::  Max memory per worker : 2000 MB
+2026-01-29 16:34:44,951 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0167% s Max ram : %374.39488% MiB Start Ram: %374.263808% MiB, End Ram: %374.39488% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:45,153 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0006% s Max ram : %374.39488% MiB Start Ram: %374.39488% MiB, End Ram: %374.452224% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:45,153 :: INFO ::  Close cluster ...
+2026-01-29 16:34:45,155 :: INFO ::  The DsmFilling exogenous_filling application will be used
+2026-01-29 16:34:45,155 :: INFO ::  The DsmFilling bulldozer application will be used
+2026-01-29 16:34:45,155 :: INFO ::  The DsmFilling border_interpolation application will be used
+2026-01-29 16:34:45,155 :: INFO ::  3 dsm filling apps registered:
  - dsm_filling.1=exogenous_filling
  - dsm_filling.2=bulldozer
  - dsm_filling.3=border_interpolation
-2026-01-27 16:13:12,739 :: INFO ::  Auxiliary filling method not specified, default auxiliary_filling_from_sensors is used
-2026-01-27 16:13:12,739 :: INFO ::  The AuxiliaryFilling(auxiliary_filling_from_sensors) application will be used
-2026-01-27 16:13:12,739 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
-2026-01-27 16:13:12,739 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
-2026-01-27 16:13:12,740 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:12,811 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:12,829 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:12,830 :: INFO ::  0 dsm filling apps registered:
+2026-01-29 16:34:45,155 :: INFO ::  Auxiliary filling method not specified, default auxiliary_filling_from_sensors is used
+2026-01-29 16:34:45,155 :: INFO ::  The AuxiliaryFilling(auxiliary_filling_from_sensors) application will be used
+2026-01-29 16:34:45,155 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-01-29 16:34:45,155 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-01-29 16:34:45,156 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:45,223 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:45,242 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:45,243 :: INFO ::  0 dsm filling apps registered:
 
-2026-01-27 16:13:12,830 :: INFO ::  Auxiliary filling method not specified, default auxiliary_filling_from_sensors is used
-2026-01-27 16:13:12,830 :: INFO ::  The AuxiliaryFilling(auxiliary_filling_from_sensors) application will be used
-2026-01-27 16:13:12,830 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
-2026-01-27 16:13:12,830 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
-2026-01-27 16:13:12,832 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:13,033 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0064% s Max ram : %375.320576% MiB Start Ram: %375.078912% MiB, End Ram: %375.320576% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:13,235 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %375.320576% MiB Start Ram: %375.320576% MiB, End Ram: %375.37792% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:13,235 :: INFO ::  Close cluster ...
-2026-01-27 16:13:13,263 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:13:13,263 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
-2026-01-27 16:13:13,263 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:13,264 :: INFO ::  auto mode : nb_workers will be set automatically
-2026-01-27 16:13:13,283 :: INFO ::  Available CPUs  in SLURM : 1
-2026-01-27 16:13:13,283 :: INFO ::  Available RAM  in SLURM : 7168
-2026-01-27 16:13:13,284 :: WARNING ::  Only one CPU detected.
-2026-01-27 16:13:13,284 :: INFO ::  Number of workers : 1
-2026-01-27 16:13:13,284 :: INFO ::  Max memory per worker : 2000 MB
-2026-01-27 16:13:13,465 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0254% s Max ram : %375.386112% MiB Start Ram: %375.37792% MiB, End Ram: %375.386112% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:13,667 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %375.386112% MiB Start Ram: %375.386112% MiB, End Ram: %375.43936% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:13,667 :: INFO ::  Close cluster ...
-2026-01-27 16:13:13,677 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:13:13,678 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:13,748 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:13,766 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:13,766 :: INFO ::  Grid generation method not specified, default  epipolar is used
-2026-01-27 16:13:13,766 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 16:13:13,766 :: INFO ::  Resampling method not specified, default bicubic is used
-2026-01-27 16:13:13,766 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 16:13:13,766 :: INFO ::  Sparse Matching method not specified, default  sift is used
-2026-01-27 16:13:13,766 :: INFO ::  The SparseMatching(sift) application will be used
-2026-01-27 16:13:13,768 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:13,840 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:13,858 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:13,858 :: INFO ::  The resolution of the output DSM will be 0.5 meters. 
-2026-01-27 16:13:13,859 :: INFO ::  Grid generation method not specified, default  epipolar is used
-2026-01-27 16:13:13,859 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 16:13:13,859 :: INFO ::  Grid correction method not specified, default  default is used
-2026-01-27 16:13:13,859 :: INFO ::  The GridCorrection(default) application will be used
-2026-01-27 16:13:13,859 :: INFO ::  Resampling method not specified, default bicubic is used
-2026-01-27 16:13:13,859 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 16:13:13,859 :: INFO ::  dense_match_filling method not specified, default zero_padding is used
-2026-01-27 16:13:13,859 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
-2026-01-27 16:13:13,859 :: INFO ::  Dense Matching method not specified, default census_sgm_default is used
-2026-01-27 16:13:13,859 :: INFO ::  The AbstractDenseMatching(census_sgm_default) application will be used
-2026-01-27 16:13:13,920 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
-2026-01-27 16:13:13,920 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
-2026-01-27 16:13:13,920 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
-2026-01-27 16:13:13,921 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
-2026-01-27 16:13:13,921 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
-2026-01-27 16:13:13,921 :: INFO ::  2 point cloud outlier removal apps registered:
+2026-01-29 16:34:45,243 :: INFO ::  Auxiliary filling method not specified, default auxiliary_filling_from_sensors is used
+2026-01-29 16:34:45,243 :: INFO ::  The AuxiliaryFilling(auxiliary_filling_from_sensors) application will be used
+2026-01-29 16:34:45,243 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-01-29 16:34:45,243 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-01-29 16:34:45,246 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:45,447 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0052% s Max ram : %374.726656% MiB Start Ram: %374.521856% MiB, End Ram: %374.726656% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:45,648 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %374.726656% MiB Start Ram: %374.726656% MiB, End Ram: %374.779904% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:45,649 :: INFO ::  Close cluster ...
+2026-01-29 16:34:45,658 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:34:45,659 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-01-29 16:34:45,659 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:45,659 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-01-29 16:34:45,671 :: INFO ::  Available CPUs  in SLURM : 4
+2026-01-29 16:34:45,671 :: INFO ::  Available RAM  in SLURM : 28672
+2026-01-29 16:34:45,671 :: INFO ::  Number of workers : 3
+2026-01-29 16:34:45,671 :: INFO ::  Max memory per worker : 2000 MB
+2026-01-29 16:34:45,860 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0163% s Max ram : %374.788096% MiB Start Ram: %374.779904% MiB, End Ram: %374.788096% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:46,061 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0005% s Max ram : %374.788096% MiB Start Ram: %374.788096% MiB, End Ram: %374.841344% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:46,062 :: INFO ::  Close cluster ...
+2026-01-29 16:34:46,071 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:34:46,073 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:46,140 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:46,159 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:46,159 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-01-29 16:34:46,160 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-01-29 16:34:46,160 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-01-29 16:34:46,160 :: INFO ::  The Resampling(bicubic) application will be used
+2026-01-29 16:34:46,160 :: INFO ::  Sparse Matching method not specified, default  sift is used
+2026-01-29 16:34:46,160 :: INFO ::  The SparseMatching(sift) application will be used
+2026-01-29 16:34:46,161 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:46,228 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:46,245 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:46,245 :: INFO ::  The resolution of the output DSM will be 0.5 meters. 
+2026-01-29 16:34:46,246 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-01-29 16:34:46,246 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-01-29 16:34:46,246 :: INFO ::  Grid correction method not specified, default  default is used
+2026-01-29 16:34:46,246 :: INFO ::  The GridCorrection(default) application will be used
+2026-01-29 16:34:46,246 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-01-29 16:34:46,246 :: INFO ::  The Resampling(bicubic) application will be used
+2026-01-29 16:34:46,246 :: INFO ::  dense_match_filling method not specified, default zero_padding is used
+2026-01-29 16:34:46,246 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
+2026-01-29 16:34:46,246 :: INFO ::  Dense Matching method not specified, default census_sgm_default is used
+2026-01-29 16:34:46,246 :: INFO ::  The AbstractDenseMatching(census_sgm_default) application will be used
+2026-01-29 16:34:46,312 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
+2026-01-29 16:34:46,312 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-01-29 16:34:46,312 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-01-29 16:34:46,312 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
+2026-01-29 16:34:46,312 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
+2026-01-29 16:34:46,313 :: INFO ::  2 point cloud outlier removal apps registered:
  - point_cloud_outlier_removal.1=small_components
  - point_cloud_outlier_removal.2=statistical
-2026-01-27 16:13:13,921 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
-2026-01-27 16:13:13,921 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
-2026-01-27 16:13:13,978 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:14,179 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0064% s Max ram : %376.29952% MiB Start Ram: %376.147968% MiB, End Ram: %376.303616% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:14,380 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %376.303616% MiB Start Ram: %376.303616% MiB, End Ram: %376.356864% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:14,380 :: INFO ::  Close cluster ...
-2026-01-27 16:13:14,390 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:13:14,390 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
-2026-01-27 16:13:14,390 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:14,392 :: INFO ::  auto mode : nb_workers will be set automatically
-2026-01-27 16:13:14,404 :: INFO ::  Available CPUs  in SLURM : 1
-2026-01-27 16:13:14,404 :: INFO ::  Available RAM  in SLURM : 7168
-2026-01-27 16:13:14,404 :: WARNING ::  Only one CPU detected.
-2026-01-27 16:13:14,404 :: INFO ::  Number of workers : 1
-2026-01-27 16:13:14,404 :: INFO ::  Max memory per worker : 2000 MB
-2026-01-27 16:13:14,595 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0200% s Max ram : %376.365056% MiB Start Ram: %376.356864% MiB, End Ram: %376.365056% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:14,802 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0005% s Max ram : %378.462208% MiB Start Ram: %376.365056% MiB, End Ram: %376.438784% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:14,802 :: INFO ::  Close cluster ...
-2026-01-27 16:13:14,811 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:13:14,814 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:14,884 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:14,902 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:14,902 :: INFO ::  Grid generation method not specified, default  epipolar is used
-2026-01-27 16:13:14,902 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 16:13:14,902 :: INFO ::  Resampling method not specified, default bicubic is used
-2026-01-27 16:13:14,902 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 16:13:14,902 :: INFO ::  Sparse Matching method not specified, default  sift is used
-2026-01-27 16:13:14,902 :: INFO ::  The SparseMatching(sift) application will be used
-2026-01-27 16:13:14,904 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:14,973 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:14,991 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:14,992 :: INFO ::  The resolution of the output DSM will be 0.5 meters. 
-2026-01-27 16:13:14,992 :: INFO ::  Grid generation method not specified, default  epipolar is used
-2026-01-27 16:13:14,992 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 16:13:14,992 :: INFO ::  Grid correction method not specified, default  default is used
-2026-01-27 16:13:14,992 :: INFO ::  The GridCorrection(default) application will be used
-2026-01-27 16:13:14,992 :: INFO ::  Resampling method not specified, default bicubic is used
-2026-01-27 16:13:14,992 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 16:13:14,992 :: INFO ::  dense_match_filling method not specified, default zero_padding is used
-2026-01-27 16:13:14,992 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
-2026-01-27 16:13:14,992 :: INFO ::  Dense Matching method not specified, default census_sgm_default is used
-2026-01-27 16:13:14,992 :: INFO ::  The AbstractDenseMatching(census_sgm_default) application will be used
-2026-01-27 16:13:15,046 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
-2026-01-27 16:13:15,046 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
-2026-01-27 16:13:15,046 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
-2026-01-27 16:13:15,047 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
-2026-01-27 16:13:15,047 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
-2026-01-27 16:13:15,047 :: INFO ::  2 point cloud outlier removal apps registered:
+2026-01-29 16:34:46,313 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
+2026-01-29 16:34:46,313 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
+2026-01-29 16:34:46,369 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:46,570 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0056% s Max ram : %375.578624% MiB Start Ram: %375.578624% MiB, End Ram: %375.58272% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:46,772 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0006% s Max ram : %377.679872% MiB Start Ram: %375.58272% MiB, End Ram: %375.656448% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:46,772 :: INFO ::  Close cluster ...
+2026-01-29 16:34:46,782 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:34:46,782 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-01-29 16:34:46,782 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:46,783 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-01-29 16:34:46,795 :: INFO ::  Available CPUs  in SLURM : 4
+2026-01-29 16:34:46,795 :: INFO ::  Available RAM  in SLURM : 28672
+2026-01-29 16:34:46,795 :: INFO ::  Number of workers : 3
+2026-01-29 16:34:46,795 :: INFO ::  Max memory per worker : 2000 MB
+2026-01-29 16:34:46,983 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0166% s Max ram : %375.660544% MiB Start Ram: %375.656448% MiB, End Ram: %375.660544% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:47,185 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0006% s Max ram : %375.660544% MiB Start Ram: %375.660544% MiB, End Ram: %375.717888% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:47,185 :: INFO ::  Close cluster ...
+2026-01-29 16:34:47,231 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:34:47,233 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:47,300 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:47,319 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:47,319 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-01-29 16:34:47,319 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-01-29 16:34:47,319 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-01-29 16:34:47,319 :: INFO ::  The Resampling(bicubic) application will be used
+2026-01-29 16:34:47,319 :: INFO ::  Sparse Matching method not specified, default  sift is used
+2026-01-29 16:34:47,319 :: INFO ::  The SparseMatching(sift) application will be used
+2026-01-29 16:34:47,320 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:47,387 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:47,406 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:47,406 :: INFO ::  The resolution of the output DSM will be 0.5 meters. 
+2026-01-29 16:34:47,406 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-01-29 16:34:47,406 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-01-29 16:34:47,407 :: INFO ::  Grid correction method not specified, default  default is used
+2026-01-29 16:34:47,407 :: INFO ::  The GridCorrection(default) application will be used
+2026-01-29 16:34:47,407 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-01-29 16:34:47,407 :: INFO ::  The Resampling(bicubic) application will be used
+2026-01-29 16:34:47,407 :: INFO ::  dense_match_filling method not specified, default zero_padding is used
+2026-01-29 16:34:47,407 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
+2026-01-29 16:34:47,407 :: INFO ::  Dense Matching method not specified, default census_sgm_default is used
+2026-01-29 16:34:47,407 :: INFO ::  The AbstractDenseMatching(census_sgm_default) application will be used
+2026-01-29 16:34:47,461 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
+2026-01-29 16:34:47,461 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-01-29 16:34:47,461 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-01-29 16:34:47,461 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
+2026-01-29 16:34:47,462 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
+2026-01-29 16:34:47,462 :: INFO ::  2 point cloud outlier removal apps registered:
  - point_cloud_outlier_removal.1=small_components
  - point_cloud_outlier_removal.2=statistical
-2026-01-27 16:13:15,047 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
-2026-01-27 16:13:15,047 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
-2026-01-27 16:13:15,102 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:15,303 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0114% s Max ram : %377.229312% MiB Start Ram: %377.229312% MiB, End Ram: %377.229312% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:15,505 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %377.229312% MiB Start Ram: %377.229312% MiB, End Ram: %377.28256% MiB,  Max CPU usage: %10.0%
-2026-01-27 16:13:15,505 :: INFO ::  Close cluster ...
-2026-01-27 16:13:15,515 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:13:15,515 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
-2026-01-27 16:13:15,515 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:15,516 :: INFO ::  auto mode : nb_workers will be set automatically
-2026-01-27 16:13:15,528 :: INFO ::  Available CPUs  in SLURM : 1
-2026-01-27 16:13:15,529 :: INFO ::  Available RAM  in SLURM : 7168
-2026-01-27 16:13:15,529 :: WARNING ::  Only one CPU detected.
-2026-01-27 16:13:15,529 :: INFO ::  Number of workers : 1
-2026-01-27 16:13:15,529 :: INFO ::  Max memory per worker : 2000 MB
-2026-01-27 16:13:15,717 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0183% s Max ram : %377.290752% MiB Start Ram: %377.28256% MiB, End Ram: %377.290752% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:15,918 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %377.290752% MiB Start Ram: %377.290752% MiB, End Ram: %377.344% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:15,918 :: INFO ::  Close cluster ...
-2026-01-27 16:13:15,931 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:13:15,933 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:16,004 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:16,023 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:16,023 :: INFO ::  Grid generation method not specified, default  epipolar is used
-2026-01-27 16:13:16,023 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 16:13:16,024 :: INFO ::  Resampling method not specified, default bicubic is used
-2026-01-27 16:13:16,024 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 16:13:16,024 :: INFO ::  Sparse Matching method not specified, default  sift is used
-2026-01-27 16:13:16,024 :: INFO ::  The SparseMatching(sift) application will be used
-2026-01-27 16:13:16,026 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:16,096 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:16,114 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
-2026-01-27 16:13:16,114 :: INFO ::  Grid generation method not specified, default  epipolar is used
-2026-01-27 16:13:16,115 :: INFO ::  The GridGeneration(epipolar) application will be used
-2026-01-27 16:13:16,115 :: INFO ::  Grid correction method not specified, default  default is used
-2026-01-27 16:13:16,115 :: INFO ::  The GridCorrection(default) application will be used
-2026-01-27 16:13:16,115 :: INFO ::  Resampling method not specified, default bicubic is used
-2026-01-27 16:13:16,115 :: INFO ::  The Resampling(bicubic) application will be used
-2026-01-27 16:13:16,115 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
-2026-01-27 16:13:16,115 :: INFO ::  Dense Matching method not specified, default census_sgm_default is used
-2026-01-27 16:13:16,115 :: INFO ::  The AbstractDenseMatching(census_sgm_default) application will be used
-2026-01-27 16:13:16,175 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
-2026-01-27 16:13:16,176 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
-2026-01-27 16:13:16,176 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
-2026-01-27 16:13:16,176 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
-2026-01-27 16:13:16,176 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
-2026-01-27 16:13:16,176 :: INFO ::  2 point cloud outlier removal apps registered:
+2026-01-29 16:34:47,462 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
+2026-01-29 16:34:47,462 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
+2026-01-29 16:34:47,519 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:47,720 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0057% s Max ram : %376.639488% MiB Start Ram: %376.520704% MiB, End Ram: %376.639488% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:47,922 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %376.639488% MiB Start Ram: %376.639488% MiB, End Ram: %376.692736% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:47,922 :: INFO ::  Close cluster ...
+2026-01-29 16:34:47,960 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:34:47,960 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-01-29 16:34:47,960 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:47,960 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-01-29 16:34:47,972 :: INFO ::  Available CPUs  in SLURM : 4
+2026-01-29 16:34:47,972 :: INFO ::  Available RAM  in SLURM : 28672
+2026-01-29 16:34:47,972 :: INFO ::  Number of workers : 3
+2026-01-29 16:34:47,972 :: INFO ::  Max memory per worker : 2000 MB
+2026-01-29 16:34:48,161 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0165% s Max ram : %376.700928% MiB Start Ram: %376.692736% MiB, End Ram: %376.705024% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:48,362 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %376.705024% MiB Start Ram: %376.705024% MiB, End Ram: %376.758272% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:48,362 :: INFO ::  Close cluster ...
+2026-01-29 16:34:48,372 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:34:48,374 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:48,441 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:48,460 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:48,461 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-01-29 16:34:48,461 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-01-29 16:34:48,461 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-01-29 16:34:48,461 :: INFO ::  The Resampling(bicubic) application will be used
+2026-01-29 16:34:48,461 :: INFO ::  Sparse Matching method not specified, default  sift is used
+2026-01-29 16:34:48,461 :: INFO ::  The SparseMatching(sift) application will be used
+2026-01-29 16:34:48,462 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:48,528 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:48,549 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-01-29 16:34:48,549 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-01-29 16:34:48,549 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-01-29 16:34:48,549 :: INFO ::  Grid correction method not specified, default  default is used
+2026-01-29 16:34:48,549 :: INFO ::  The GridCorrection(default) application will be used
+2026-01-29 16:34:48,549 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-01-29 16:34:48,550 :: INFO ::  The Resampling(bicubic) application will be used
+2026-01-29 16:34:48,550 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
+2026-01-29 16:34:48,550 :: INFO ::  Dense Matching method not specified, default census_sgm_default is used
+2026-01-29 16:34:48,550 :: INFO ::  The AbstractDenseMatching(census_sgm_default) application will be used
+2026-01-29 16:34:48,604 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
+2026-01-29 16:34:48,604 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-01-29 16:34:48,604 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-01-29 16:34:48,604 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
+2026-01-29 16:34:48,604 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
+2026-01-29 16:34:48,605 :: INFO ::  2 point cloud outlier removal apps registered:
  - point_cloud_outlier_removal.1=small_components
  - point_cloud_outlier_removal.2=statistical
-2026-01-27 16:13:16,176 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
-2026-01-27 16:13:16,178 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
-2026-01-27 16:13:16,256 :: PROGRESS ::  CARS pipeline is started.
-2026-01-27 16:13:16,267 :: INFO ::  The default altitude will be used as reference altitude.
-2026-01-27 16:13:16,268 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:16,469 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0159% s Max ram : %377.872384% MiB Start Ram: %377.864192% MiB, End Ram: %377.925632% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:16,671 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %377.925632% MiB Start Ram: %377.925632% MiB, End Ram: %377.97888% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:16,671 :: INFO ::  Close cluster ...
-2026-01-27 16:13:16,672 :: INFO ::  subsampling method not specified, default  rasterio is used
-2026-01-27 16:13:16,672 :: INFO ::  The subsampling(rasterio) application will be used
-2026-01-27 16:13:16,672 :: PROGRESS ::  Starting subsampling pipeline
-2026-01-27 16:13:16,673 :: INFO ::  The AbstractCluster multiprocessing will be used
-2026-01-27 16:13:20,204 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %3.3997% s Max ram : %378.138624% MiB Start Ram: %377.987072% MiB, End Ram: %378.195968% MiB,  Max CPU usage: %9.8%
-2026-01-27 16:13:20,499 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0006% s Max ram : %378.261504% MiB Start Ram: %378.261504% MiB, End Ram: %378.314752% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:20,719 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %378.351616% MiB Start Ram: %378.351616% MiB, End Ram: %378.351616% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:20,920 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %378.351616% MiB Start Ram: %378.351616% MiB, End Ram: %378.351616% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:21,137 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0005% s Max ram : %378.351616% MiB Start Ram: %378.351616% MiB, End Ram: %378.355712% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:21,377 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %378.355712% MiB Start Ram: %378.355712% MiB, End Ram: %378.355712% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:21,578 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0006% s Max ram : %378.355712% MiB Start Ram: %378.355712% MiB, End Ram: %378.355712% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:21,821 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %378.355712% MiB Start Ram: %378.355712% MiB, End Ram: %378.355712% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:22,034 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %378.355712% MiB Start Ram: %378.355712% MiB, End Ram: %378.355712% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:22,235 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %378.355712% MiB Start Ram: %378.355712% MiB, End Ram: %378.355712% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:22,492 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %378.49088% MiB Start Ram: %378.49088% MiB, End Ram: %378.49088% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:22,726 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %378.49088% MiB Start Ram: %378.49088% MiB, End Ram: %378.49088% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:22,927 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %378.49088% MiB Start Ram: %378.49088% MiB, End Ram: %378.49088% MiB,  Max CPU usage: %0%
-2026-01-27 16:13:22,932 :: INFO ::  Compute delayed ...
-2026-01-27 16:13:22,933 :: INFO ::  Wait for futures results ...
-2026-01-27 16:13:22,933 :: PROGRESS ::  Data list to process: [ subsampling_im_res_16 , subsampling_im_res_4 , subsampling_classif_res_4 , subsampling_classif_res_16 ] ...
-2026-01-27 16:13:24,464 :: INFO ::  Close files ...
-2026-01-27 16:13:24,570 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %1.5387% s Max ram : %386.650112% MiB Start Ram: %378.49088% MiB, End Ram: %376.983552% MiB,  Max CPU usage: %100.0%
-2026-01-27 16:13:24,571 :: INFO ::  Close cluster ...
-2026-01-27 16:13:24,571 :: INFO ::  Save profiling plots ...
-2026-01-27 16:13:28,127 :: INFO ::  Clean removing thread pool ...
-2026-01-27 16:13:28,128 :: INFO ::  Clean tmp directory ...
-2026-01-27 16:13:28,129 :: INFO ::  Clean shared directory ...
-2026-01-27 16:13:28,230 :: PROFILING_LOG ::  CarsProfiling# %Run_subsampling_pipeline%: %11.4577% s Max ram : %391.360512% MiB Start Ram: %377.987072% MiB, End Ram: %391.364608% MiB,  Max CPU usage: %84.1%
+2026-01-29 16:34:48,605 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
+2026-01-29 16:34:48,605 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
+2026-01-29 16:34:48,682 :: PROGRESS ::  CARS pipeline is started.
+2026-01-29 16:34:48,692 :: INFO ::  The default altitude will be used as reference altitude.
+2026-01-29 16:34:48,693 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:48,894 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0055% s Max ram : %377.409536% MiB Start Ram: %377.294848% MiB, End Ram: %377.462784% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:49,096 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %377.462784% MiB Start Ram: %377.462784% MiB, End Ram: %377.516032% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:49,096 :: INFO ::  Close cluster ...
+2026-01-29 16:34:49,096 :: INFO ::  subsampling method not specified, default  rasterio is used
+2026-01-29 16:34:49,096 :: INFO ::  The subsampling(rasterio) application will be used
+2026-01-29 16:34:49,097 :: PROGRESS ::  Starting subsampling pipeline
+2026-01-29 16:34:49,097 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-01-29 16:34:52,338 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %3.1400% s Max ram : %377.6512% MiB Start Ram: %377.516032% MiB, End Ram: %377.708544% MiB,  Max CPU usage: %10.0%
+2026-01-29 16:34:52,542 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %377.757696% MiB Start Ram: %377.757696% MiB, End Ram: %377.810944% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:52,745 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0003% s Max ram : %377.860096% MiB Start Ram: %377.810944% MiB, End Ram: %377.860096% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:52,947 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0007% s Max ram : %377.860096% MiB Start Ram: %377.860096% MiB, End Ram: %377.860096% MiB,  Max CPU usage: %10.0%
+2026-01-29 16:34:53,179 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %377.860096% MiB Start Ram: %377.860096% MiB, End Ram: %377.864192% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:53,383 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %377.864192% MiB Start Ram: %377.864192% MiB, End Ram: %377.864192% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:53,584 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %377.864192% MiB Start Ram: %377.864192% MiB, End Ram: %377.864192% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:53,790 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %377.864192% MiB Start Ram: %377.864192% MiB, End Ram: %377.864192% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:53,993 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %377.864192% MiB Start Ram: %377.864192% MiB, End Ram: %377.864192% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:54,194 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %377.864192% MiB Start Ram: %377.864192% MiB, End Ram: %377.864192% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:54,427 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %377.864192% MiB Start Ram: %377.864192% MiB, End Ram: %377.864192% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:54,630 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0003% s Max ram : %377.99936% MiB Start Ram: %377.864192% MiB, End Ram: %377.99936% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:54,831 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %377.99936% MiB Start Ram: %377.99936% MiB, End Ram: %377.99936% MiB,  Max CPU usage: %0%
+2026-01-29 16:34:54,835 :: INFO ::  Compute delayed ...
+2026-01-29 16:34:54,836 :: INFO ::  Wait for futures results ...
+2026-01-29 16:34:54,836 :: PROGRESS ::  Data list to process: [ subsampling_classif_res_16 , subsampling_im_res_4 , subsampling_im_res_16 , subsampling_classif_res_4 ] ...
+2026-01-29 16:34:55,321 :: INFO ::  Close files ...
+2026-01-29 16:34:55,520 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.4889% s Max ram : %380.243968% MiB Start Ram: %377.99936% MiB, End Ram: %380.260352% MiB,  Max CPU usage: %98.0%
+2026-01-29 16:34:55,520 :: INFO ::  Close cluster ...
+2026-01-29 16:34:55,520 :: INFO ::  Save profiling plots ...
+2026-01-29 16:34:58,284 :: INFO ::  Clean removing thread pool ...
+2026-01-29 16:34:58,285 :: INFO ::  Clean tmp directory ...
+2026-01-29 16:34:58,286 :: INFO ::  Clean shared directory ...
+2026-01-29 16:34:58,387 :: PROFILING_LOG ::  CarsProfiling# %Run_subsampling_pipeline%: %9.1900% s Max ram : %396.86144% MiB Start Ram: %377.516032% MiB, End Ram: %396.865536% MiB,  Max CPU usage: %107.9%
