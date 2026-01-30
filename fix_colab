@@ -1,0 +1,30 @@
+#add that before loading files.
+
+import os
+
+# Liste des URLs des fichiers LiDAR HD
+urls = [
+    "https://data.geopf.fr/telechargement/download/LiDARHD-NUALID/NUALHD_1-0__LAZ_LAMB93_IQ_2024-12-20/LHD_FXX_0571_6275_PTS_LAMB93_IGN69.copc.laz",
+    "https://data.geopf.fr/telechargement/download/LiDARHD-NUALID/NUALHD_1-0__LAZ_LAMB93_IQ_2024-12-20/LHD_FXX_0572_6275_PTS_LAMB93_IGN69.copc.laz",
+    "https://data.geopf.fr/telechargement/download/LiDARHD-NUALID/NUALHD_1-0__LAZ_LAMB93_IQ_2024-12-20/LHD_FXX_0571_6274_PTS_LAMB93_IGN69.copc.laz",
+    "https://data.geopf.fr/telechargement/download/LiDARHD-NUALID/NUALHD_1-0__LAZ_LAMB93_IQ_2024-12-20/LHD_FXX_0572_6274_PTS_LAMB93_IGN69.copc.laz"
+]
+
+# Dossier de destination (DATA_DIR doit être défini, sinon on utilise le dossier courant)
+download_path = "DATA/ROI_INDUS/LIDAR_HD/"
+os.makedirs(download_path, exist_ok=True)
+
+print(f"Début du téléchargement dans : {download_path}")
+
+for url in urls:
+    filename = url.split('/')[-1]
+    destination = os.path.join(download_path, filename)
+    
+    if not os.path.exists(destination):
+        print(f"Téléchargement de {filename}...")
+        # L'utilisation de !wget permet d'appeler la commande système directement depuis le notebook
+        !wget -O {destination} {url}
+    else:
+        print(f"Le fichier {filename} existe déjà, skipping.")
+
+print("Terminé !")
