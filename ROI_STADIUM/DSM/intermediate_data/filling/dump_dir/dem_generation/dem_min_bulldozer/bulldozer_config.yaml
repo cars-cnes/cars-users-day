@@ -6,9 +6,8 @@ generate_dhm: true
 ground_mask_path: null
 max_ground_slope: 20.0
 max_object_size: 8
-memory_mode: false
 mp_context: forkserver
-nb_max_workers: 3
+nb_max_workers: 1
 num_inner_iter: 5
 num_outer_iter: 25
 output_dir: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_STADIUM/DSM/intermediate_data/filling/dump_dir/dem_generation/dem_min_bulldozer

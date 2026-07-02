@@ -1,0 +1,176 @@
+2026-07-02 12:06:07,624 :: PROGRESS ::  Starting surface modeling pipeline for resolution 1/4
+2026-07-02 12:06:07,625 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 12:06:08,028 :: INFO ::  Close cluster ...
+2026-07-02 12:06:08,044 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 12:06:08,052 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-07-02 12:06:08,052 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 12:06:08,054 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-07-02 12:06:08,071 :: INFO ::  Available CPUs  in SLURM : 1
+2026-07-02 12:06:08,071 :: INFO ::  Available RAM  in SLURM : 7168
+2026-07-02 12:06:08,071 :: WARNING ::  Only one CPU detected.
+2026-07-02 12:06:08,072 :: INFO ::  Number of workers : 1
+2026-07-02 12:06:08,072 :: INFO ::  Max memory per worker : 2000 MB
+2026-07-02 12:06:08,456 :: INFO ::  Close cluster ...
+2026-07-02 12:06:08,472 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 12:06:08,472 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:08,551 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:08,570 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:08,571 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-07-02 12:06:08,571 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-07-02 12:06:08,571 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-07-02 12:06:08,571 :: INFO ::  The Resampling(bicubic) application will be used
+2026-07-02 12:06:08,571 :: INFO ::  Sparse Matching application not specified, default  basic is used
+2026-07-02 12:06:08,571 :: INFO ::  The SparseMatching(basic) application will be used
+2026-07-02 12:06:08,571 :: INFO ::  The AbstractSparseMatchingMethod(sift) method will be used
+2026-07-02 12:06:08,572 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:08,650 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:08,670 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:08,670 :: INFO ::  The resolution of the output DSM will be 2.0 meters. 
+2026-07-02 12:06:08,670 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-07-02 12:06:08,671 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-07-02 12:06:08,671 :: INFO ::  Grid correction method not specified, default  default is used
+2026-07-02 12:06:08,671 :: INFO ::  The GridCorrection(default) application will be used
+2026-07-02 12:06:08,671 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-07-02 12:06:08,671 :: INFO ::  The Resampling(bicubic) application will be used
+2026-07-02 12:06:08,671 :: INFO ::  dense_match_filling method not specified, default zero_padding is used
+2026-07-02 12:06:08,671 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
+2026-07-02 12:06:08,672 :: INFO ::  Dense Matching application not specified, default basic is used
+2026-07-02 12:06:08,672 :: INFO ::  The AbstractDenseMatching(basic) application will be used
+2026-07-02 12:06:08,672 :: INFO ::  The AbstractDenseMatchingMethod(pandora_auto) method will be used
+2026-07-02 12:06:08,814 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
+2026-07-02 12:06:08,814 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-07-02 12:06:08,814 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-07-02 12:06:08,815 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
+2026-07-02 12:06:08,815 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
+2026-07-02 12:06:08,816 :: INFO ::  2 point cloud outlier removal apps registered:
+ - point_cloud_outlier_removal.1=small_components
+ - point_cloud_outlier_removal.2=statistical
+2026-07-02 12:06:08,816 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
+2026-07-02 12:06:08,816 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
+2026-07-02 12:06:08,974 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 12:06:09,176 :: INFO ::  Registered task generate_disparity_grids under pipeline surface_modeling_res4 with weight 2.0 and expected runs 2
+2026-07-02 12:06:09,176 :: INFO ::  Registered task tie_points under pipeline Tie Points with weight 20.0 and expected runs 1
+2026-07-02 12:06:09,177 :: INFO ::  Registered task disparity_to_depth_maps under pipeline surface_modeling_res4 with weight 20.0 and expected runs 1
+2026-07-02 12:06:09,177 :: INFO ::  Registered task rasterize_point_cloud under pipeline surface_modeling_res4 with weight 58.0 and expected runs 1
+2026-07-02 12:06:09,781 :: INFO ::  Received 1 stereo pairs configurations
+2026-07-02 12:06:10,941 :: INFO ::  Generation of DEM min
+2026-07-02 12:06:10,989 :: INFO ::  Generation of DEM max
+2026-07-02 12:06:11,030 :: INFO ::  Generation of DEM median
+2026-07-02 12:06:11,619 :: INFO ::  Launch Bulldozer on DEM min
+2026-07-02 12:06:11,744 :: INFO ::  Launch Bulldozer on DEM max
+2026-07-02 12:06:11,874 :: INFO ::  Statistics of difference between subsampled DSM and DEM min (in meters)
+2026-07-02 12:06:11,876 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
+2026-07-02 12:06:11,876 :: INFO ::  |  79.70 |  85.07 | 157.55 | 157.56 | 168.50 | 168.50 |
+2026-07-02 12:06:11,876 :: INFO ::  Statistics of difference between DEM max and subsampled DSM (in meters)
+2026-07-02 12:06:11,878 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
+2026-07-02 12:06:11,878 :: INFO ::  | -168.50 |  80.54 |  85.00 |  87.66 |  94.36 | 102.77 |
+2026-07-02 12:06:11,878 :: INFO ::  Statistics of difference between DEM max and DEM min (in meters)
+2026-07-02 12:06:11,880 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
+2026-07-02 12:06:11,881 :: INFO ::  |   0.00 | 164.61 | 176.09 | 183.15 | 212.70 | 245.82 |
+2026-07-02 12:06:12,025 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:12,394 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:12,415 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:12,582 :: INFO ::  Median value of DEM (155.01669311523438) will be used as default_alt
+2026-07-02 12:06:12,585 :: INFO ::  DEM bounds : 1.3691229324203584, 43.60057820347807, 1.4830695262677844, 43.490980716266044
+2026-07-02 12:06:12,585 :: INFO ::  ROI bounds : 1.3691229324203587, 43.491131137124604, 1.4829705713771648, 43.60057820347808
+2026-07-02 12:06:12,651 :: INFO ::  Left satellite acquisition angles: Azimuth angle: 150.9 degrees, Elevation angle: 72.1 degrees
+2026-07-02 12:06:12,651 :: INFO ::  Right satellite acquisition angles: Azimuth angle: 111.2 degrees, Elevation angle: 77.7 degrees
+2026-07-02 12:06:12,651 :: INFO ::  Stereo satellite convergence angle from ground: 11.4 degrees
+2026-07-02 12:06:12,651 :: INFO ::  Generating epipolar rectification grid ...
+2026-07-02 12:06:12,705 :: INFO ::  Size of epipolar images: 448x448 pixels
+2026-07-02 12:06:12,706 :: INFO ::  Disparity to altitude factor for pixel at 1/4 sampling : 10.21 m/pixel
+2026-07-02 12:06:12,813 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 12:06:13,219 :: INFO ::  Close cluster ...
+2026-07-02 12:06:13,234 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:13,309 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:13,335 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 12:06:13,499 :: INFO ::  Median value of DEM (155.01669311523438) will be used as default_alt
+2026-07-02 12:06:13,501 :: INFO ::  DEM bounds : 1.3691229324203584, 43.60057820347807, 1.4830695262677844, 43.490980716266044
+2026-07-02 12:06:13,501 :: INFO ::  ROI bounds : 1.3691229324203587, 43.491131137124604, 1.4829705713771648, 43.60057820347808
+2026-07-02 12:06:13,521 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-07-02 12:06:13,522 :: INFO ::  The Resampling(bicubic) application will be used
+2026-07-02 12:06:13,522 :: INFO ::  The SparseMatching(basic) application will be used
+2026-07-02 12:06:13,522 :: INFO ::  The AbstractSparseMatchingMethod(sift) method will be used
+2026-07-02 12:06:13,930 :: INFO ::  Compute delayed ...
+2026-07-02 12:06:13,943 :: INFO ::  Wait for futures results ...
+2026-07-02 12:06:13,943 :: PROGRESS ::  Data list to process: [ disp_min_grid , global infos , disp_max_grid ] ...
+2026-07-02 12:06:13,944 :: PROGRESS ::  Started task generate_disparity_grids in pipeline surface_modeling_res4, total: 2
+2026-07-02 12:06:13,944 :: INFO ::  Processing 2 tiles: [ disp_min_grid , global infos , disp_max_grid ] ...
+2026-07-02 12:06:14,571 :: PROGRESS ::  Data list to process: 50% complete (1/2 tiles) [run 1/2]
+2026-07-02 12:06:14,574 :: PROGRESS ::  Data list to process: 100% complete (2/2 tiles) [run 1/2]
+2026-07-02 12:06:14,575 :: INFO ::  Close files ...
+2026-07-02 12:06:15,614 :: INFO ::  Global Disparity range for current pair:  [-9.501 pix., 8.951 pix.] (or [-97.005 m., 91.391 m.])
+2026-07-02 12:06:15,614 :: INFO ::  Global disparity range for sparse matching : [-10.0 pix, 9.0 pix]
+2026-07-02 12:06:15,614 :: INFO ::  Size of epipolar image: [0, 0, 448, 448]
+2026-07-02 12:06:15,615 :: INFO ::  Tile size for epipolar regions: 5000x60 pixels
+2026-07-02 12:06:15,615 :: INFO ::  Epipolar image will be processed in 8 splits
+2026-07-02 12:06:15,816 :: INFO ::  Number of tiles in epipolar resampling: row: 8 col: 1
+2026-07-02 12:06:16,237 :: INFO ::  Number of left epipolar image tiles outside left sensor image and removed: 0
+2026-07-02 12:06:16,237 :: INFO ::  Number of right epipolar image tiles outside right sensor image and removed: 0
+2026-07-02 12:06:16,246 :: INFO ::  Generate disparity: Number tiles: 8
+2026-07-02 12:06:16,249 :: INFO ::  Compute delayed ...
+2026-07-02 12:06:16,250 :: INFO ::  Wait for futures results ...
+2026-07-02 12:06:16,250 :: PROGRESS ::  Data list to process: [ epi_matches_left ] ...
+2026-07-02 12:06:16,251 :: PROGRESS ::  Started task tie_points in pipeline Tie Points, total: 3
+2026-07-02 12:06:16,251 :: INFO ::  Processing 3 tiles: [ epi_matches_left ] ...
+2026-07-02 12:06:17,561 :: PROGRESS ::  Data list to process: 30% complete (1/3 tiles) [run 1/1]
+2026-07-02 12:06:19,070 :: PROGRESS ::  Data list to process: 60% complete (2/3 tiles) [run 1/1]
+2026-07-02 12:06:20,046 :: PROGRESS ::  Data list to process: 100% complete (3/3 tiles) [run 1/1]
+2026-07-02 12:06:20,050 :: INFO ::  Close files ...
+2026-07-02 12:06:20,157 :: INFO ::  Raw number of matches found: 690 matches
+2026-07-02 12:06:20,158 :: INFO ::  Writing raw matches file
+2026-07-02 12:06:20,160 :: INFO ::  5 matches discarded because their epipolar error is greater than --epipolar_error_upper_bound = 3.8007713905060547 pix considering a shift of 0.02185821533203125 pix
+2026-07-02 12:06:20,160 :: INFO ::  Writing filtered matches file
+2026-07-02 12:06:20,161 :: INFO ::  Number of matches kept for epipolar error correction: 685 matches
+2026-07-02 12:06:20,174 :: INFO ::  Epipolar error after correction: mean = 0.000 pix., standard deviation = 0.405 pix., max = 3.669 pix.
+2026-07-02 12:06:20,564 :: INFO ::  Global disparity interval without margin : [-2.22 pix, 2.42 pix]
+2026-07-02 12:06:20,564 :: INFO ::  Global disparity interval with margin : [-100.17 pix, 51.39 pix]
+2026-07-02 12:06:20,997 :: INFO ::  Compute delayed ...
+2026-07-02 12:06:21,010 :: INFO ::  Wait for futures results ...
+2026-07-02 12:06:21,010 :: PROGRESS ::  Data list to process: [ disp_min_grid , global infos , disp_max_grid ] ...
+2026-07-02 12:06:21,011 :: PROGRESS ::  Started task generate_disparity_grids in pipeline surface_modeling_res4, total: 2
+2026-07-02 12:06:21,011 :: INFO ::  Processing 2 tiles: [ disp_min_grid , global infos , disp_max_grid ] ...
+2026-07-02 12:06:21,380 :: PROGRESS ::  Data list to process: 50% complete (1/2 tiles) [run 2/2]
+2026-07-02 12:06:21,385 :: PROGRESS ::  Data list to process: 100% complete (2/2 tiles) [run 2/2]
+2026-07-02 12:06:21,386 :: INFO ::  Close files ...
+2026-07-02 12:06:22,035 :: INFO ::  Global Disparity range for current pair:  [-9.501 pix., 8.952 pix.] (or [-97.003 m., 91.391 m.])
+2026-07-02 12:06:22,241 :: INFO ::  Size of epipolar image: [0, 0, 448, 448]
+2026-07-02 12:06:22,241 :: INFO ::  Tile size for epipolar regions: 1000x1000 pixels
+2026-07-02 12:06:22,241 :: INFO ::  Epipolar image will be processed in 1 splits
+2026-07-02 12:06:25,375 :: INFO ::  Number of tiles in epipolar resampling: row: 1 col: 1
+2026-07-02 12:06:25,800 :: INFO ::  Number of left epipolar image tiles outside left sensor image and removed: 0
+2026-07-02 12:06:25,800 :: INFO ::  Number of right epipolar image tiles outside right sensor image and removed: 0
+2026-07-02 12:06:25,823 :: INFO ::  Computing images envelopes and their intersection
+2026-07-02 12:06:26,229 :: INFO ::  Terrain area covered: 1480498.252223441 square meters (or square degrees)
+2026-07-02 12:06:26,237 :: INFO ::  Terrain bounding box : [571664.0, 572474.0] x [6273798.0, 6274648.0]
+2026-07-02 12:06:26,437 :: INFO ::  Total terrain bounding box : [571664.0, 572474.0] x [6273798.0, 6274648.0]
+2026-07-02 12:06:26,438 :: INFO ::  Optimal terrain tile size: 609x609 pixels
+2026-07-02 12:06:26,658 :: INFO ::  The conf that has been chosen regarding the world classification map is census_sgm_urban
+2026-07-02 12:06:26,855 :: INFO ::  The AbstractDenseMatching(basic) application will be used
+2026-07-02 12:06:26,856 :: INFO ::  The AbstractDenseMatchingMethod(pandora_custom) method will be used
+2026-07-02 12:06:27,037 :: INFO ::  Compute disparity: number tiles: 1
+2026-07-02 12:06:27,042 :: INFO ::  Disparity holes filling was not activated
+2026-07-02 12:06:28,118 :: INFO ::  Compute delayed ...
+2026-07-02 12:06:28,118 :: INFO ::  Wait for futures results ...
+2026-07-02 12:06:28,119 :: PROGRESS ::  Data list to process: [ epi_img_right_edges_depth_map , epi_img_left_edges_mask , epi_img_left_classif , epi_img_right_edges_normals , epi_img_right_edges_tile_id , epi_img_left_edges_tile_id , epi_img_right_classif , epi_img_left_edges_normals , epi_img_right_edges_mask , epi_img_left , epi_img_left_edges_depth_map , epi_img_right_mask , epi_img_left_mask , epi_img_right ] ...
+2026-07-02 12:06:28,119 :: PROGRESS ::  Started task disparity_to_depth_maps in pipeline surface_modeling_res4, total: 2
+2026-07-02 12:06:28,119 :: INFO ::  Processing 2 tiles: [ epi_img_right_edges_depth_map , epi_img_left_edges_mask , epi_img_left_classif , epi_img_right_edges_normals , epi_img_right_edges_tile_id , epi_img_left_edges_tile_id , epi_img_right_classif , epi_img_left_edges_normals , epi_img_right_edges_mask , epi_img_left , epi_img_left_edges_depth_map , epi_img_right_mask , epi_img_left_mask , epi_img_right ] ...
+2026-07-02 12:06:28,733 :: PROGRESS ::  Data list to process: 50% complete (1/2 tiles) [run 1/1]
+2026-07-02 12:06:28,754 :: PROGRESS ::  Data list to process: 100% complete (2/2 tiles) [run 1/1]
+2026-07-02 12:06:28,755 :: INFO ::  Close files ...
+2026-07-02 12:06:29,089 :: INFO ::  DSM output image size: 2486x2510 pixels
+2026-07-02 12:06:30,195 :: INFO ::  Number of tiles in cloud rasterization: row: 1 col: 1
+2026-07-02 12:06:30,201 :: INFO ::  Compute delayed ...
+2026-07-02 12:06:30,202 :: INFO ::  Wait for futures results ...
+2026-07-02 12:06:30,202 :: PROGRESS ::  Data list to process: [ dsm_weights , texture , invalidity_mask , dsm , cropped_disp_range ] ...
+2026-07-02 12:06:30,205 :: PROGRESS ::  Started task rasterize_point_cloud in pipeline surface_modeling_res4, total: 1
+2026-07-02 12:06:30,206 :: INFO ::  Processing 1 tiles: [ dsm_weights , texture , invalidity_mask , dsm , cropped_disp_range ] ...
+2026-07-02 12:06:43,696 :: PROGRESS ::  Data list to process: 100% complete (1/1 tiles) [run 1/1]
+2026-07-02 12:06:43,697 :: INFO ::  Close files ...
+2026-07-02 12:06:44,430 :: INFO ::  Compute delayed ...
+2026-07-02 12:06:44,430 :: INFO ::  No Object to compute
+2026-07-02 12:06:44,624 :: INFO ::  Close cluster ...
+2026-07-02 12:06:44,624 :: INFO ::  Save profiling plots ...
+2026-07-02 12:06:47,212 :: INFO ::  Clean removing thread pool ...
+2026-07-02 12:06:47,212 :: INFO ::  Clean tmp directory ...
+2026-07-02 12:06:47,214 :: INFO ::  Clean shared directory ...

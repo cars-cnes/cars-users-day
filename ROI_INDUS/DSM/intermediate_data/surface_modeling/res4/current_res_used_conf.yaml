@@ -2,79 +2,102 @@ orchestrator:
   mode: multiprocessing
   mp_mode: forkserver
   max_ram_per_worker: 2000
-  nb_workers: 3
+  nb_workers: 1
   task_timeout: 600
   max_tasks_per_worker: 10
   dump_to_disk: true
   per_job_timeout: 600
   factorize_tasks: true
 input:
-  sensors:
-    img1:
-      image:
-        bands:
-          b0:
-            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img1/stack.tif
-            band: 0
-          b1:
-            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img1/stack.tif
-            band: 1
-          b2:
-            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img1/stack.tif
-            band: 2
-          b3:
-            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img1/stack.tif
-            band: 3
-        no_data: 0
-      geomodel:
-        path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/RPC_PAN.XML
-        model_type: RPC
-      mask: null
-      classification: null
-    img2:
-      image:
-        bands:
-          b0:
-            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img2/stack.tif
-            band: 0
-          b1:
-            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img2/stack.tif
-            band: 1
-          b2:
-            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img2/stack.tif
-            band: 2
-          b3:
-            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/subsampling/res_4/img2/stack.tif
-            band: 3
-        no_data: 0
-      geomodel:
-        path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/RPC_PAN.XML
-        model_type: RPC
-      mask: null
-      classification: null
-  pairing:
-  - - img1
-    - img2
-  roi: null
-  dsm_to_fill: null
-  initial_elevation:
-    dem: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/surface_modeling/res4/dump_dir/dem_generation/dem_median.tif
-    geoid: /softs/projets/3d/jupyter/envs/cars-1.0.0/lib/python3.12/site-packages/cars/pipelines/parameters/../../conf/geoid/egm96.grd
-  low_res_dsm: ROI_INDUS/DSM/intermediate_data/surface_modeling/res16/dsm/dsm.tif
   loaders:
     image: pivot
     classification: pivot
+  pairing:
+  - - img1
+    - img2
+  sensors:
+    img1:
+      geomodel:
+        path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img1/RPC_PAN.XML
+        model_type: RPC
+      image:
+        bands:
+          b0:
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/subsampling/res_4/img1/PAN.tif
+            band: 0
+          b1:
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/subsampling/res_4/img1/PXS.tif
+            band: 0
+          b2:
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/subsampling/res_4/img1/PXS.tif
+            band: 1
+          b3:
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/subsampling/res_4/img1/PXS.tif
+            band: 2
+          b4:
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/subsampling/res_4/img1/PXS.tif
+            band: 3
+        sensor_type: PHR
+        no_data: 0
+      mask: null
+      edges:
+        edges_mask: null
+        normals: null
+        depth_map: null
+        tile_id: null
+      classification: null
+    img2:
+      geomodel:
+        path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/img2/RPC_PAN.XML
+        model_type: RPC
+      image:
+        bands:
+          b0:
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/subsampling/res_4/img2/PAN.tif
+            band: 0
+          b1:
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/subsampling/res_4/img2/PXS.tif
+            band: 0
+          b2:
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/subsampling/res_4/img2/PXS.tif
+            band: 1
+          b3:
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/subsampling/res_4/img2/PXS.tif
+            band: 2
+          b4:
+            path: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/subsampling/res_4/img2/PXS.tif
+            band: 3
+        sensor_type: PHR
+        no_data: 0
+      mask: null
+      edges:
+        edges_mask: null
+        normals: null
+        depth_map: null
+        tile_id: null
+      classification: null
+  roi: null
+  ignore_roi_during_a_priori: false
+  dsm_to_fill: null
+  initial_elevation:
+    dem: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/surface_modeling/res4/dump_dir/dem_generation/dem_median.tif
+    geoid: /home/ad/belletva/.local/lib/python3.12/site-packages/cars/pipelines/parameters/../../conf/geoid/egm96.grd
+  low_res_dsm: ROI_INDUS/DSM_1-2-2/intermediate_data/surface_modeling/res16/dsm/dsm.tif
   filling:
     fill_with_geoid: null
     interpolate_from_borders: null
     fill_with_endogenous_dem: null
     fill_with_exogenous_dem: null
+    interpolation: null
+  input_dtm: null
+  scaling_coeff: null
 tie_points:
   applications:
     grid_generation:
       save_intermediate_data: false
       method: epipolar
       epi_step: 30
+      find_optimal_altitude: true
     resampling:
       save_intermediate_data: false
       method: bicubic
@@ -82,17 +105,29 @@ tie_points:
       interpolator_image: bicubic
       interpolator_classif: nearest
       interpolator_mask: nearest
+      interpolators_edges:
+        edges_mask: nearest
+        depth_map: nearest
+        normals: nearest
+        tile_id: nearest
       step: 500
     sparse_matching:
-      save_intermediate_data: false
-      method: sift
-      elevation_delta_lower_bound: -1000
+      application: basic
       decimation_factor: 30
+      elevation_delta_lower_bound: -1000
       elevation_delta_upper_bound: 9000
       tile_margin: 10
-      epipolar_error_upper_bound: 10.0
-      epipolar_error_maximum_bias: 50.0
+      epipolar_error_upper_bound: auto
+      epipolar_error_maximum_bias: auto
+      epipolar_error_estimation: auto
       minimum_nb_matches: 90
+      save_intermediate_data: false
+      disparity_bounds_estimation:
+        activated: true
+        percentile: 1
+        lower_margin: 500
+        upper_margin: 1000
+      method: sift
       sift_matching_threshold: 0.7
       sift_n_octave: 8
       sift_n_scale_per_octave: 3
@@ -101,24 +136,17 @@ tie_points:
       sift_magnification: 7.0
       sift_window_size: 2
       sift_back_matching: true
-      match_filter_knn: 25
-      match_filter_constant: 0.0
-      match_filter_mean_factor: 1.3
-      match_filter_dev_factor: 3.0
       used_band: b0
-      disparity_bounds_estimation:
-        activated: true
-        percentile: 1
-        lower_margin: 500
-        upper_margin: 1000
+      tile_width: 5000
+      tile_height: 60
   advanced:
-    resampling_tile_width: 5000
-    resampling_tile_height: 60
+    epipolar_roi_margin_factor: 0.2
     save_intermediate_data: false
     geometry_plugin: SharelocGeometry
 surface_modeling:
   advanced:
     save_intermediate_data: false
+    use_sensor_disp: false
     land_cover_map: global_land_cover_map.tif
     keep_low_res_dir: false
     debug_with_roi: false
@@ -134,6 +162,7 @@ surface_modeling:
       save_intermediate_data: false
       method: epipolar
       epi_step: 30
+      find_optimal_altitude: true
     grid_correction:
       save_intermediate_data: false
       method: default
@@ -145,55 +174,48 @@ surface_modeling:
       interpolator_image: bicubic
       interpolator_classif: nearest
       interpolator_mask: nearest
+      interpolators_edges:
+        edges_mask: nearest
+        depth_map: nearest
+        normals: nearest
+        tile_id: nearest
       step: 500
     ground_truth_reprojection:
       save_intermediate_data: false
     dense_match_filling:
       save_intermediate_data: false
       method: zero_padding
-      classification: null
+      fill_classification: null
       fill_valid_pixels: true
-    sparse_matching:
-      save_intermediate_data: false
     dense_matching:
-      performance_map_method:
-      - risk
-      - intervals
+      application: basic
       save_intermediate_data: false
-      method: custom
       min_epi_tile_size: 300
       max_epi_tile_size: 1500
       epipolar_tile_margin_in_percent: 60
-      classification_fusion_margin: -1
       min_elevation_offset: null
       max_elevation_offset: null
-      denoise_disparity_map: false
-      confidence_filtering:
-        activated: true
-        bounds_ratio_threshold: 0.2
-        risk_ratio_threshold: 0.75
-        bounds_range_threshold: 3
-        risk_range_threshold: 9
-        nan_threshold: 0.2
-        win_nanratio: 20
       disp_min_threshold: null
       disp_max_threshold: null
-      perf_eta_max_ambiguity: 0.99
-      perf_eta_max_risk: 0.25
-      perf_eta_step: 0.04
-      perf_ambiguity_threshold: 0.6
-      use_cross_validation: fast
       use_global_disp_range: false
       local_disp_grid_step: 10
       disp_range_propagation_filter_size: 50
       epi_disp_grid_tile_size: 800
       required_bands:
       - b0
-      used_band: b0
-      threshold_disp_range_to_borders: false
-      filter_incomplete_disparity_range: true
+      performance_map_method:
+      - risk
+      - intervals
+      method: pandora_custom
       generate_ambiguity: false
-      loader: pandora
+      perf_eta_max_ambiguity: 0.99
+      perf_eta_max_risk: 0.25
+      perf_eta_step: 0.04
+      perf_ambiguity_threshold: 0.6
+      classification_fusion_margin: 5
+      use_cross_validation: fast
+      denoise_disparity_map: false
+      used_band: b0
       loader_conf:
         input: {}
         pipeline:
@@ -229,10 +251,24 @@ surface_modeling:
             filter_size: 3
           validation:
             validation_method: cross_checking_fast
+      loader: pandora
+      confidence_filtering:
+        activated: true
+        bounds_ratio_threshold: 0.2
+        risk_ratio_threshold: 0.75
+        bounds_range_threshold: 3
+        risk_range_threshold: 9
+        nan_threshold: 0.2
+        win_nanratio: 20
+      threshold_disp_range_to_borders: false
+      filter_incomplete_disparity_range: true
+      edges_3sgm: true
+      classification_3sgm: null
     triangulation:
       save_intermediate_data: false
       method: line_of_sight_intersection
       snap_to_img1: false
+      z_inf_sup_bh_approximation: true
     dem_generation:
       save_intermediate_data: false
       method: bulldozer_on_raster
@@ -271,8 +307,6 @@ surface_modeling:
       mean_factor: 1.3
       std_dev_factor: 3.0
       half_epipolar_size: 5
-    pc_denoising:
-      save_intermediate_data: false
     point_cloud_rasterization:
       save_intermediate_data: false
       method: simple_gaussian
@@ -283,24 +317,27 @@ surface_modeling:
       texture_no_data: null
       texture_dtype: null
       msk_no_data: 255
-    auxiliary_filling:
-      save_intermediate_data: false
+      fill_nodata: true
 output:
-  directory: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM/intermediate_data/surface_modeling/res4
   auxiliary:
+    ambiguity: false
     image:
     - b1
     - b2
     - b3
     performance_map: false
-    ambiguity: false
+    filling: false
     weights: false
     classification: false
     contributing_pair: false
-    filling: false
+    edges: false
+  directory: /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_INDUS/DSM_1-2-2/intermediate_data/surface_modeling/res4
   epsg: 2154
   geoid: true
   resolution: 2.0
   product_level:
   - dsm
+  product_format:
+    point_cloud:
+    - laz
   save_by_pair: false

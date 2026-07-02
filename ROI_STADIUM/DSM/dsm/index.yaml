@@ -4,5 +4,6 @@ mask: null
 classification: classification.tif
 performance_map: performance_map.tif
 contributing_pair: contributing_pair.tif
-filling: filling.tif
 weights: null
+invalidity_mask: null
+filling: filling.tif

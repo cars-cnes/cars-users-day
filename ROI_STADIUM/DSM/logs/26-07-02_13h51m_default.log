@@ -1,0 +1,200 @@
+2026-07-02 13:51:14,272 :: PROGRESS ::  Check configuration...
+2026-07-02 13:51:14,272 :: INFO ::  CARS will use its own internal file as geoid reference
+2026-07-02 13:51:14,369 :: WARNING ::  Input classif has classes over 10Classification file will be read to determine exact values
+2026-07-02 13:51:14,376 :: INFO ::  Classes are [0, 1, 2, 3, 4, 6, 9, 255]
+2026-07-02 13:51:14,493 :: INFO ::  Max value of classif is {}
+2026-07-02 13:51:14,493 :: INFO ::  Classes are [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+2026-07-02 13:51:14,497 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:51:14,500 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-07-02 13:51:14,500 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:14,501 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-07-02 13:51:14,514 :: INFO ::  Available CPUs  in SLURM : 1
+2026-07-02 13:51:14,514 :: INFO ::  Available RAM  in SLURM : 7168
+2026-07-02 13:51:14,514 :: WARNING ::  Only one CPU detected.
+2026-07-02 13:51:14,514 :: INFO ::  Number of workers : 1
+2026-07-02 13:51:14,514 :: INFO ::  Max memory per worker : 2000 MB
+2026-07-02 13:51:14,903 :: INFO ::  Close cluster ...
+2026-07-02 13:51:14,926 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:51:14,928 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:15,330 :: INFO ::  Close cluster ...
+2026-07-02 13:51:15,331 :: INFO ::  subsampling method not specified, default  rasterio is used
+2026-07-02 13:51:15,331 :: INFO ::  The subsampling(rasterio) application will be used
+2026-07-02 13:51:15,332 :: INFO ::  subsampling method not specified, default  rasterio is used
+2026-07-02 13:51:15,332 :: INFO ::  The subsampling(rasterio) application will be used
+2026-07-02 13:51:15,352 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:51:15,352 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:15,430 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:15,450 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:15,451 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-07-02 13:51:15,451 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:15,452 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-07-02 13:51:15,463 :: INFO ::  Available CPUs  in SLURM : 1
+2026-07-02 13:51:15,463 :: INFO ::  Available RAM  in SLURM : 7168
+2026-07-02 13:51:15,463 :: WARNING ::  Only one CPU detected.
+2026-07-02 13:51:15,463 :: INFO ::  Number of workers : 1
+2026-07-02 13:51:15,463 :: INFO ::  Max memory per worker : 2000 MB
+2026-07-02 13:51:15,855 :: INFO ::  Close cluster ...
+2026-07-02 13:51:15,856 :: INFO ::  The DsmFilling exogenous_filling application will be used
+2026-07-02 13:51:15,856 :: INFO ::  The DsmFilling bulldozer application will be used
+2026-07-02 13:51:15,856 :: INFO ::  The DsmFilling border_interpolation application will be used
+2026-07-02 13:51:15,856 :: INFO ::  3 dsm filling apps registered:
+ - dsm_filling.1=exogenous_filling
+ - dsm_filling.2=bulldozer
+ - dsm_filling.3=border_interpolation
+2026-07-02 13:51:15,856 :: INFO ::  Auxiliary filling method not specified, default auxiliary_filling_from_sensors is used
+2026-07-02 13:51:15,856 :: INFO ::  The AuxiliaryFilling(auxiliary_filling_from_sensors) application will be used
+2026-07-02 13:51:15,856 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-07-02 13:51:15,856 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-07-02 13:51:15,857 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:15,929 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:15,950 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:15,950 :: INFO ::  0 dsm filling apps registered:
+
+2026-07-02 13:51:15,951 :: INFO ::  Auxiliary filling method not specified, default auxiliary_filling_from_sensors is used
+2026-07-02 13:51:15,951 :: INFO ::  The AuxiliaryFilling(auxiliary_filling_from_sensors) application will be used
+2026-07-02 13:51:15,951 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-07-02 13:51:15,956 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-07-02 13:51:15,960 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:16,363 :: INFO ::  Close cluster ...
+2026-07-02 13:51:16,383 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:51:16,384 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-07-02 13:51:16,384 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:16,384 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-07-02 13:51:16,395 :: INFO ::  Available CPUs  in SLURM : 1
+2026-07-02 13:51:16,395 :: INFO ::  Available RAM  in SLURM : 7168
+2026-07-02 13:51:16,395 :: WARNING ::  Only one CPU detected.
+2026-07-02 13:51:16,395 :: INFO ::  Number of workers : 1
+2026-07-02 13:51:16,395 :: INFO ::  Max memory per worker : 2000 MB
+2026-07-02 13:51:16,786 :: INFO ::  Close cluster ...
+2026-07-02 13:51:16,806 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:51:16,822 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:16,894 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:16,915 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:16,916 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-07-02 13:51:16,916 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-07-02 13:51:16,916 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-07-02 13:51:16,916 :: INFO ::  The Resampling(bicubic) application will be used
+2026-07-02 13:51:16,916 :: INFO ::  Sparse Matching application not specified, default  basic is used
+2026-07-02 13:51:16,916 :: INFO ::  The SparseMatching(basic) application will be used
+2026-07-02 13:51:16,916 :: INFO ::  The AbstractSparseMatchingMethod(sift) method will be used
+2026-07-02 13:51:17,038 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:17,111 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:17,133 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:17,133 :: INFO ::  The resolution of the output DSM will be 0.5 meters. 
+2026-07-02 13:51:17,133 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-07-02 13:51:17,134 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-07-02 13:51:17,134 :: INFO ::  Grid correction method not specified, default  default is used
+2026-07-02 13:51:17,134 :: INFO ::  The GridCorrection(default) application will be used
+2026-07-02 13:51:17,134 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-07-02 13:51:17,134 :: INFO ::  The Resampling(bicubic) application will be used
+2026-07-02 13:51:17,134 :: INFO ::  dense_match_filling method not specified, default zero_padding is used
+2026-07-02 13:51:17,134 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
+2026-07-02 13:51:17,134 :: INFO ::  Dense Matching application not specified, default basic is used
+2026-07-02 13:51:17,134 :: INFO ::  The AbstractDenseMatching(basic) application will be used
+2026-07-02 13:51:17,134 :: INFO ::  The AbstractDenseMatchingMethod(pandora_auto) method will be used
+2026-07-02 13:51:17,355 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
+2026-07-02 13:51:17,355 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-07-02 13:51:17,355 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-07-02 13:51:17,355 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
+2026-07-02 13:51:17,356 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
+2026-07-02 13:51:17,356 :: INFO ::  2 point cloud outlier removal apps registered:
+ - point_cloud_outlier_removal.1=small_components
+ - point_cloud_outlier_removal.2=statistical
+2026-07-02 13:51:17,356 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
+2026-07-02 13:51:17,356 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
+2026-07-02 13:51:17,488 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:17,890 :: INFO ::  Close cluster ...
+2026-07-02 13:51:17,911 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:51:17,911 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-07-02 13:51:17,911 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:17,912 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-07-02 13:51:17,922 :: INFO ::  Available CPUs  in SLURM : 1
+2026-07-02 13:51:17,922 :: INFO ::  Available RAM  in SLURM : 7168
+2026-07-02 13:51:17,922 :: WARNING ::  Only one CPU detected.
+2026-07-02 13:51:17,923 :: INFO ::  Number of workers : 1
+2026-07-02 13:51:17,923 :: INFO ::  Max memory per worker : 2000 MB
+2026-07-02 13:51:18,314 :: INFO ::  Close cluster ...
+2026-07-02 13:51:18,334 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:51:18,462 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:18,540 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:18,561 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:18,562 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-07-02 13:51:18,562 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-07-02 13:51:18,562 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-07-02 13:51:18,562 :: INFO ::  The Resampling(bicubic) application will be used
+2026-07-02 13:51:18,562 :: INFO ::  Sparse Matching application not specified, default  basic is used
+2026-07-02 13:51:18,562 :: INFO ::  The SparseMatching(basic) application will be used
+2026-07-02 13:51:18,562 :: INFO ::  The AbstractSparseMatchingMethod(sift) method will be used
+2026-07-02 13:51:18,564 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:18,636 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:18,656 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:18,656 :: INFO ::  The resolution of the output DSM will be 0.5 meters. 
+2026-07-02 13:51:18,657 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-07-02 13:51:18,657 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-07-02 13:51:18,657 :: INFO ::  Grid correction method not specified, default  default is used
+2026-07-02 13:51:18,657 :: INFO ::  The GridCorrection(default) application will be used
+2026-07-02 13:51:18,657 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-07-02 13:51:18,657 :: INFO ::  The Resampling(bicubic) application will be used
+2026-07-02 13:51:18,657 :: INFO ::  dense_match_filling method not specified, default zero_padding is used
+2026-07-02 13:51:18,657 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
+2026-07-02 13:51:18,657 :: INFO ::  Dense Matching application not specified, default basic is used
+2026-07-02 13:51:18,657 :: INFO ::  The AbstractDenseMatching(basic) application will be used
+2026-07-02 13:51:18,658 :: INFO ::  The AbstractDenseMatchingMethod(pandora_auto) method will be used
+2026-07-02 13:51:18,925 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
+2026-07-02 13:51:18,925 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-07-02 13:51:18,925 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-07-02 13:51:18,926 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
+2026-07-02 13:51:18,926 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
+2026-07-02 13:51:18,926 :: INFO ::  2 point cloud outlier removal apps registered:
+ - point_cloud_outlier_removal.1=small_components
+ - point_cloud_outlier_removal.2=statistical
+2026-07-02 13:51:18,926 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
+2026-07-02 13:51:18,926 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
+2026-07-02 13:51:19,137 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:19,540 :: INFO ::  Close cluster ...
+2026-07-02 13:51:19,561 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:51:19,561 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-07-02 13:51:19,561 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:19,561 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-07-02 13:51:19,572 :: INFO ::  Available CPUs  in SLURM : 1
+2026-07-02 13:51:19,572 :: INFO ::  Available RAM  in SLURM : 7168
+2026-07-02 13:51:19,572 :: WARNING ::  Only one CPU detected.
+2026-07-02 13:51:19,573 :: INFO ::  Number of workers : 1
+2026-07-02 13:51:19,573 :: INFO ::  Max memory per worker : 2000 MB
+2026-07-02 13:51:19,964 :: INFO ::  Close cluster ...
+2026-07-02 13:51:19,985 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:51:19,987 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:20,059 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:20,080 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:20,081 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-07-02 13:51:20,081 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-07-02 13:51:20,081 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-07-02 13:51:20,081 :: INFO ::  The Resampling(bicubic) application will be used
+2026-07-02 13:51:20,081 :: INFO ::  Sparse Matching application not specified, default  basic is used
+2026-07-02 13:51:20,081 :: INFO ::  The SparseMatching(basic) application will be used
+2026-07-02 13:51:20,081 :: INFO ::  The AbstractSparseMatchingMethod(sift) method will be used
+2026-07-02 13:51:20,083 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:20,155 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:20,176 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:51:20,177 :: INFO ::  Grid generation method not specified, default  epipolar is used
+2026-07-02 13:51:20,177 :: INFO ::  The GridGeneration(epipolar) application will be used
+2026-07-02 13:51:20,177 :: INFO ::  Grid correction method not specified, default  default is used
+2026-07-02 13:51:20,177 :: INFO ::  The GridCorrection(default) application will be used
+2026-07-02 13:51:20,177 :: INFO ::  Resampling method not specified, default bicubic is used
+2026-07-02 13:51:20,177 :: INFO ::  The Resampling(bicubic) application will be used
+2026-07-02 13:51:20,177 :: INFO ::  The DenseMatchFilling(zero_padding) application will be used
+2026-07-02 13:51:20,177 :: INFO ::  Dense Matching application not specified, default basic is used
+2026-07-02 13:51:20,177 :: INFO ::  The AbstractDenseMatching(basic) application will be used
+2026-07-02 13:51:20,178 :: INFO ::  The AbstractDenseMatchingMethod(pandora_auto) method will be used
+2026-07-02 13:51:20,378 :: INFO ::  The Triangulation(line_of_sight_intersection) application will be used
+2026-07-02 13:51:20,378 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-07-02 13:51:20,378 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-07-02 13:51:20,378 :: INFO ::  The PointCloudOutlierRemoval(small_components) application will be used
+2026-07-02 13:51:20,378 :: INFO ::  The PointCloudOutlierRemoval(statistical) application will be used
+2026-07-02 13:51:20,378 :: INFO ::  2 point cloud outlier removal apps registered:
+ - point_cloud_outlier_removal.1=small_components
+ - point_cloud_outlier_removal.2=statistical
+2026-07-02 13:51:20,378 :: INFO ::  Rasterisation method not specified, default simple_gaussian is used
+2026-07-02 13:51:20,378 :: INFO ::  The PointCloudRasterization(simple_gaussian) application will be used
+2026-07-02 13:51:20,547 :: PROGRESS ::  CARS pipeline is started.
+2026-07-02 13:51:20,548 :: INFO ::  Registered task Formatting under pipeline Formatting with weight 100.0 and expected runs 1

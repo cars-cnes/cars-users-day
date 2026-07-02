@@ -1,4 +1,4 @@
-version: 1.0.0
+version: 1.2.0rc2
 applications:
   grid_generation:
     img1_img2:
@@ -8,7 +8,7 @@ applications:
       epipolar_origin_y: -150.0
       epipolar_spacing_x: 30.0
       epipolar_spacing_y: 30.0
-      disp_to_alt_ratio: 10.209558001690791
+      disp_to_alt_ratio: 10.209559119781051
       left_azimuth_angle: 150.86912277353238
       left_elevation_angle: 72.09612350928455
       right_azimuth_angle: 111.2358425426673
@@ -23,11 +23,11 @@ applications:
       disp_upper_bound: 9.0
   match_filtering:
     img1_img2:
-      number_matches: 400
-      raw_number_matches: 401
-      before_correction_epi_error_mean: 0.0054612565040588375
-      before_correction_epi_error_std: 0.3500176979302689
-      before_correction_epi_error_max: 3.7181968688964844
+      number_matches: 685
+      raw_number_matches: 690
+      before_correction_epi_error_mean: 0.011509589035145557
+      before_correction_epi_error_std: 0.4068884441874265
+      before_correction_epi_error_max: 3.7221946716308594
   grid_correction:
     img1_img2: {}
   dense_matching:
@@ -43,7 +43,7 @@ applications:
   rasterization:
     epsg: 2154
     dsm_no_data: -32768.0
-    texture_no_data: 3.4028234663852886e+38
+    texture_no_data: 65535.0
 pair_preprocessing:
   img1_img2:
     left_envelope:
@@ -60,16 +60,16 @@ pair_preprocessing:
         geometry:
           type: Polygon
           coordinates:
-          - - - 1.412295376599726
-              - 43.559278375631976
-            - - 1.42211346938428
-              - 43.558953574757396
-            - - 1.422102902123473
-              - 43.55168907221483
-            - - 1.412278611932433
-              - 43.552023490818584
-            - - 1.412295376599726
-              - 43.559278375631976
+          - - - 1.412296490059366
+              - 43.55927692943483
+            - - 1.422114592842264
+              - 43.55895210375089
+            - - 1.422104368794245
+              - 43.551687149068854
+            - - 1.412279961916035
+              - 43.5520217349295
+            - - 1.412296490059366
+              - 43.55927692943483
     right_envelope:
       type: FeatureCollection
       name: right_envelope
@@ -84,16 +84,16 @@ pair_preprocessing:
         geometry:
           type: Polygon
           coordinates:
-          - - - 1.412327296807659
-              - 43.559383036078295
-            - - 1.422142810699354
-              - 43.55926275113069
-            - - 1.422133308974478
-              - 43.55179078973726
-            - - 1.412308987732271
-              - 43.55191249835359
-            - - 1.412327296807659
-              - 43.559383036078295
+          - - - 1.41232863126461
+              - 43.55938266029289
+            - - 1.422143768468606
+              - 43.559262479733114
+            - - 1.422135103535273
+              - 43.55179028072593
+            - - 1.412310731100222
+              - 43.55191200694427
+            - - 1.41232863126461
+              - 43.55938266029289
     envelopes_intersection:
       type: FeatureCollection
       name: envelopes_intersection
@@ -108,20 +108,20 @@ pair_preprocessing:
         geometry:
           type: Polygon
           coordinates:
-          - - - 1.42211346938428
-              - 43.558953574757396
-            - - 1.422103050631479
-              - 43.551791164592785
-            - - 1.417387555090663
-              - 43.551849582515345
-            - - 1.412309257200161
-              - 43.5520224476544
-            - - 1.412327037734862
-              - 43.5592773282224
-            - - 1.42211346938428
-              - 43.558953574757396
+          - - - 1.422114592842264
+              - 43.55895210375089
+            - - 1.422104514465902
+              - 43.55179065973149
+            - - 1.417326804452185
+              - 43.55184985664978
+            - - 1.412310991483442
+              - 43.55202067816804
+            - - 1.412328375399073
+              - 43.55927587452865
+            - - 1.422114592842264
+              - 43.55895210375089
     envelopes_intersection_bounding_box:
-    - 1.412309257200161
-    - 43.551791164592785
-    - 1.42211346938428
-    - 43.5592773282224
+    - 1.4123109914834415
+    - 43.55179065973149
+    - 1.422114592842264
+    - 43.55927587452865

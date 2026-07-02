@@ -1,0 +1,3 @@
+2026-07-02 13:58:01,392 :: PROGRESS ::  Starting formatting pipeline
+2026-07-02 13:58:10,416 :: INFO ::  PDF profiling summary generated: ROI_STADIUM/DSM/logs/profiling_summary.pdf
+2026-07-02 13:58:10,518 :: PROGRESS ::  CARS has successfully completed the pipeline.

@@ -4,5 +4,5 @@ mask: null
 classification: null
 performance_map: null
 contributing_pair: null
-filling: null
 weights: null
+invalidity_mask: null

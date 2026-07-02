@@ -1,0 +1,8 @@
+2026-07-02 13:57:43,177 :: INFO :: 22909204648512 :: 1269708 :: Filling of 7 with geoid
+2026-07-02 13:57:43,182 :: INFO :: 22909204648512 :: 1269708 :: Filling of 5 with DEM and geoid
+2026-07-02 13:57:45,503 :: INFO :: 22909204648512 :: 1269708 :: Filling of 9 with Bulldozer DTM
+2026-07-02 13:57:45,505 :: INFO :: 22909204648512 :: 1269708 :: Filling of 8 with Bulldozer DTM
+2026-07-02 13:57:45,505 :: INFO :: 22909204648512 :: 1269708 :: Filling of 5 with Bulldozer DTM
+2026-07-02 13:57:46,657 :: INFO :: 22909204648512 :: 1269708 :: Use DTM file /work/CAMPUS/users/belletva/cars-users-day/cars-users-day/ROI_STADIUM/DSM/intermediate_data/filling/dump_dir/dsm_filling_2/bulldozer/dtm.tif for border interpolation
+2026-07-02 13:57:46,695 :: INFO :: 22909204648512 :: 1269708 :: Filling of 8 with Bulldozer DTM using border interpolation
+2026-07-02 13:57:47,155 :: INFO :: 22909204648512 :: 1269708 :: Filling of 0 features

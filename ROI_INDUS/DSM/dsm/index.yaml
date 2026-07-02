@@ -4,6 +4,7 @@ mask: null
 classification: null
 performance_map: performance_map.tif
 contributing_pair: null
-filling: null
 weights: null
+invalidity_mask: null
 ambiguity: ambiguity.tif
+filling: filling.tif

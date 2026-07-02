@@ -1,0 +1,57 @@
+2026-07-02 13:51:20,572 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:51:20,573 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:20,775 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0070% s Max ram : %409.690112% MiB Start Ram: %409.632768% MiB, End Ram: %409.74336% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:20,976 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %409.74336% MiB Start Ram: %409.74336% MiB, End Ram: %409.796608% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:20,976 :: INFO ::  Close cluster ...
+2026-07-02 13:51:20,977 :: INFO ::  subsampling method not specified, default  rasterio is used
+2026-07-02 13:51:20,977 :: INFO ::  The subsampling(rasterio) application will be used
+2026-07-02 13:51:20,978 :: PROGRESS ::  Starting subsampling pipeline
+2026-07-02 13:51:20,978 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:51:25,310 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %4.2316% s Max ram : %410.062848% MiB Start Ram: %409.796608% MiB, End Ram: %410.68544% MiB,  Max CPU usage: %19.9%
+2026-07-02 13:51:25,312 :: INFO ::  Registered task subsampling under pipeline Subsampling with weight 1.0 and expected runs 1
+2026-07-02 13:51:25,515 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0007% s Max ram : %410.816512% MiB Start Ram: %410.68544% MiB, End Ram: %410.86976% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:25,720 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %410.86976% MiB Start Ram: %410.86976% MiB, End Ram: %410.86976% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:25,921 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0011% s Max ram : %410.86976% MiB Start Ram: %410.86976% MiB, End Ram: %410.86976% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:26,123 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %410.86976% MiB Start Ram: %410.86976% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:26,325 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0004% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:26,531 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %10.0%
+2026-07-02 13:51:26,740 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:26,957 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0121% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:27,191 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0055% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:27,482 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0175% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:27,693 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:27,896 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0005% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:28,125 :: PROFILING_LOG ::  CarsProfiling# %Get paths and bands%: %0.0115% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:28,544 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0199% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:28,748 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0006% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:28,957 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0033% s Max ram : %410.873856% MiB Start Ram: %410.873856% MiB, End Ram: %410.873856% MiB,  Max CPU usage: %0%
+2026-07-02 13:51:28,966 :: INFO ::  Compute delayed ...
+2026-07-02 13:51:28,967 :: INFO ::  Wait for futures results ...
+2026-07-02 13:51:28,967 :: PROGRESS ::  Data list to process: [ subsampling_im_res_4 , subsampling_texture_0_res_4 , subsampling_im_res_16 , subsampling_classif_res_4 , subsampling_classif_res_16 , subsampling_texture_0_res_16 ] ...
+2026-07-02 13:51:28,967 :: PROGRESS ::  Started task subsampling in pipeline Subsampling, total: 4
+2026-07-02 13:51:28,968 :: INFO ::  Processing 4 tiles: [ subsampling_im_res_4 , subsampling_texture_0_res_4 , subsampling_im_res_16 , subsampling_classif_res_4 , subsampling_classif_res_16 , subsampling_texture_0_res_16 ] ...
+2026-07-02 13:51:29,744 :: PROGRESS ::  Data list to process: 20% complete (1/4 tiles) [run 1/1]
+2026-07-02 13:51:30,053 :: PROGRESS ::  Data list to process: 50% complete (2/4 tiles) [run 1/1]
+2026-07-02 13:51:30,362 :: PROGRESS ::  Data list to process: 70% complete (3/4 tiles) [run 1/1]
+2026-07-02 13:51:30,586 :: PROGRESS ::  Data list to process: 100% complete (4/4 tiles) [run 1/1]
+2026-07-02 13:51:30,587 :: INFO ::  Close files ...
+2026-07-02 13:51:30,695 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %1.6312% s Max ram : %423.77216% MiB Start Ram: %410.873856% MiB, End Ram: %415.309824% MiB,  Max CPU usage: %107.8%
+2026-07-02 13:51:30,695 :: INFO ::  Close cluster ...
+2026-07-02 13:51:30,695 :: INFO ::  Save profiling plots ...
+2026-07-02 13:51:33,341 :: INFO ::  Clean removing thread pool ...
+2026-07-02 13:51:33,342 :: INFO ::  Clean tmp directory ...
+2026-07-02 13:51:33,343 :: INFO ::  Clean shared directory ...
+2026-07-02 13:51:33,444 :: PROFILING_LOG ::  CarsProfiling# %Run_subsampling_pipeline%: %12.3668% s Max ram : %429.133824% MiB Start Ram: %409.796608% MiB, End Ram: %429.13792% MiB,  Max CPU usage: %99.9%
+2026-07-02 13:51:33,446 :: PROFILING_LOG ::  
+ 
+ 
+ ---------------------------------------- SUMMARY PROFILLING  ---------------------------------------- 
+ 
+ 
+
+2026-07-02 13:51:33,447 :: PROFILING_LOG ::  Task generate_subsampled_images_wrapper ran 4 times, with mean time 0.20482499999999998 sec, total time: 0.8192999999999999 sec, Max cpu: 79.1 % max ram in process during task: 416.25395199999997 MiB, max ram - start ram: 31.62112000000002,   end - start ram : 29.81887999999998
+2026-07-02 13:51:33,448 :: PROFILING_LOG ::  Task Multiprocessing orchestrator initialization ran 2 times, with mean time 2.1193 sec, total time: 4.2386 sec, Max cpu: 19.9 % max ram in process during task: 409.87648 MiB, max ram - start ram: 0.26623999999998205,   end - start ram : 0.8888320000000363
+2026-07-02 13:51:33,449 :: PROFILING_LOG ::  Task Compute futures ran 2 times, with mean time 0.8158 sec, total time: 1.6316 sec, Max cpu: 107.8 % max ram in process during task: 416.75775999999996 MiB, max ram - start ram: 12.898303999999996,   end - start ram : 4.435968000000003
+2026-07-02 13:51:33,450 :: PROFILING_LOG ::  Task Get paths and bands ran 4 times, with mean time 0.0045249999999999995 sec, total time: 0.018099999999999998 sec, Max cpu: 0.0 % max ram in process during task: 410.85952 MiB, max ram - start ram: 0.13107199999996055,   end - start ram : 0.18431999999995696
+2026-07-02 13:51:33,450 :: PROFILING_LOG ::  Task Add to save lists ran 12 times, with mean time 0.004758333333333333 sec, total time: 0.0571 sec, Max cpu: 10.0 % max ram in process during task: 410.872832 MiB, max ram - start ram: 0.0,   end - start ram : 0.004096000000004096
+2026-07-02 13:51:33,451 :: PROFILING_LOG ::  Task Run_subsampling_pipeline ran 1 times, with mean time 12.3668 sec, total time: 12.3668 sec, Max cpu: 99.9 % max ram in process during task: 429.133824 MiB, max ram - start ram: 19.337216000000012,   end - start ram : 19.341312000000016

@@ -1,0 +1,13 @@
+2026-07-02 12:12:01,074 :: PROGRESS ::  Starting formatting pipeline
+2026-07-02 12:12:01,275 :: PROFILING_LOG ::  CarsProfiling# %run_formatting_pipeline%: %0.0022% s Max ram : %689.803264% MiB Start Ram: %689.803264% MiB, End Ram: %689.803264% MiB,  Max CPU usage: %10.0%
+2026-07-02 12:12:01,276 :: PROFILING_LOG ::  
+ 
+ 
+ ---------------------------------------- SUMMARY PROFILLING  ---------------------------------------- 
+ 
+ 
+
+2026-07-02 12:12:01,278 :: PROFILING_LOG ::  Task run_formatting_pipeline ran 1 times, with mean time 0.0022 sec, total time: 0.0022 sec, Max cpu: 10.0 % max ram in process during task: 689.803264 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-07-02 12:12:09,116 :: INFO ::  PDF profiling summary generated: ROI_INDUS/DSM_1-2-2/logs/profiling_summary.pdf
+2026-07-02 12:12:09,218 :: PROFILING_LOG ::  CarsProfiling# %Run_default_pipeline%: %405.0531% s Max ram : %1196.05248% MiB Start Ram: %454.848512% MiB, End Ram: %1101.582336% MiB,  Max CPU usage: %108.4%
+2026-07-02 12:12:09,218 :: PROGRESS ::  CARS has successfully completed the pipeline.

@@ -1,4 +1,4 @@
-version: 1.0.0
+version: 1.2.0rc2
 applications:
   grid_generation:
     img1_img2:
@@ -8,7 +8,7 @@ applications:
       epipolar_origin_y: -150.0
       epipolar_spacing_x: 30.0
       epipolar_spacing_y: 30.0
-      disp_to_alt_ratio: 41.141990397303644
+      disp_to_alt_ratio: 41.14263387531189
       left_azimuth_angle: 151.07529833209725
       left_elevation_angle: 72.10802529459934
       right_azimuth_angle: 111.37718832888098
@@ -19,23 +19,25 @@ applications:
       method: bicubic
   sparse_matching:
     img1_img2:
-      disp_lower_bound: -218.7546084447543
-      disp_upper_bound: 24.3060676049727
+      disp_lower_bound: -218.7511870843192
+      disp_upper_bound: 24.305687453813245
   match_filtering:
     img1_img2:
-      number_matches: 89
-      raw_number_matches: 92
-      before_correction_epi_error_mean: -0.003619327973783686
-      before_correction_epi_error_std: 0.5383094638237939
-      before_correction_epi_error_max: 3.312417984008789
+      number_matches: 178
+      raw_number_matches: 178
+      before_correction_epi_error_mean: -0.03839934809824054
+      before_correction_epi_error_std: 0.5407611162636559
+      before_correction_epi_error_max: 3.287562370300293
+  grid_correction:
+    img1_img2: {}
   disparity_range_computation:
     img1_img2:
-      minimum_disparity: -29.477061867668013
-      maximum_disparity: 10.62924931762307
+      minimum_disparity: -25.60872277028053
+      maximum_disparity: 14.431545203957398
   dense_matching:
     img1_img2:
-      global_disp_min: -30.0
-      global_disp_max: 11.0
+      global_disp_min: -26.0
+      global_disp_max: 15.0
   triangulation:
     img1_img2:
       alt_reference: geoid
@@ -45,7 +47,7 @@ applications:
   rasterization:
     epsg: 2154
     dsm_no_data: -32768.0
-    texture_no_data: 3.4028234663852886e+38
+    texture_no_data: 65535.0
 pair_preprocessing:
   img1_img2:
     left_envelope:

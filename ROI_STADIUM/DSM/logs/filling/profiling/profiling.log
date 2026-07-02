@@ -1,0 +1,146 @@
+2026-07-02 13:57:37,111 :: INFO ::  CARS will use its own internal file as geoid reference
+2026-07-02 13:57:37,213 :: INFO ::  The default altitude will be used as reference altitude.
+2026-07-02 13:57:37,213 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:57:37,296 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:57:37,319 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:57:37,320 :: INFO ::  No orchestrator configuration given:  multiprocessing mode is used
+2026-07-02 13:57:37,320 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:57:37,321 :: INFO ::  auto mode : nb_workers will be set automatically
+2026-07-02 13:57:37,335 :: INFO ::  Available CPUs  in SLURM : 1
+2026-07-02 13:57:37,335 :: INFO ::  Available RAM  in SLURM : 7168
+2026-07-02 13:57:37,335 :: WARNING ::  Only one CPU detected.
+2026-07-02 13:57:37,336 :: INFO ::  Number of workers : 1
+2026-07-02 13:57:37,336 :: INFO ::  Max memory per worker : 2000 MB
+2026-07-02 13:57:37,521 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.0212% s Max ram : %635.641856% MiB Start Ram: %635.641856% MiB, End Ram: %635.641856% MiB,  Max CPU usage: %10.0%
+2026-07-02 13:57:37,752 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0004% s Max ram : %635.641856% MiB Start Ram: %635.641856% MiB, End Ram: %635.654144% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:37,752 :: INFO ::  Close cluster ...
+2026-07-02 13:57:37,753 :: INFO ::  The DsmFilling exogenous_filling application will be used
+2026-07-02 13:57:37,753 :: INFO ::  The DsmFilling bulldozer application will be used
+2026-07-02 13:57:37,753 :: INFO ::  The DsmFilling border_interpolation application will be used
+2026-07-02 13:57:37,753 :: INFO ::  3 dsm filling apps registered:
+ - dsm_filling.1=exogenous_filling
+ - dsm_filling.2=bulldozer
+ - dsm_filling.3=border_interpolation
+2026-07-02 13:57:37,753 :: INFO ::  Auxiliary filling method not specified, default auxiliary_filling_from_sensors is used
+2026-07-02 13:57:37,753 :: INFO ::  The AuxiliaryFilling(auxiliary_filling_from_sensors) application will be used
+2026-07-02 13:57:37,753 :: INFO ::  MntGeneration method not specified, default bulldozer_on_raster is used
+2026-07-02 13:57:37,754 :: INFO ::  The DemGeneration bulldozer_on_raster application will be used
+2026-07-02 13:57:37,800 :: PROGRESS ::  Starting filling pipeline
+2026-07-02 13:57:37,800 :: INFO ::  The AbstractCluster multiprocessing will be used
+2026-07-02 13:57:38,203 :: PROFILING_LOG ::  CarsProfiling# %Multiprocessing orchestrator initialization%: %0.3020% s Max ram : %635.973632% MiB Start Ram: %635.6992% MiB, End Ram: %635.981824% MiB,  Max CPU usage: %20.0%
+2026-07-02 13:57:38,239 :: INFO ::  Registered task dem_generation under pipeline Filling with weight 10.0 and expected runs 1
+2026-07-02 13:57:38,239 :: INFO ::  Registered task dsm_filling_exogenous_filling under pipeline Filling with weight 20.0 and expected runs 1
+2026-07-02 13:57:38,239 :: INFO ::  Registered task dsm_filling_bulldozer under pipeline Filling with weight 20.0 and expected runs 1
+2026-07-02 13:57:38,239 :: INFO ::  Registered task dsm_filling_border_interpolation under pipeline Filling with weight 20.0 and expected runs 1
+2026-07-02 13:57:38,239 :: INFO ::  Registered task auxiliary_filling under pipeline Filling with weight 20.0 and expected runs 1
+2026-07-02 13:57:38,249 :: PROGRESS ::  Started task dem_generation in pipeline Filling, total: 1
+2026-07-02 13:57:38,508 :: INFO ::  Generation of DEM min
+2026-07-02 13:57:38,594 :: INFO ::  Generation of DEM max
+2026-07-02 13:57:38,755 :: INFO ::  Generation of DEM median
+2026-07-02 13:57:39,480 :: INFO ::  Launch Bulldozer on DEM min
+2026-07-02 13:57:39,821 :: INFO ::  Launch Bulldozer on DEM max
+2026-07-02 13:57:40,104 :: INFO ::  Statistics of difference between subsampled DSM and DEM min (in meters)
+2026-07-02 13:57:40,109 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
+2026-07-02 13:57:40,109 :: INFO ::  |   9.79 |  24.51 |  36.54 |  41.62 |  48.09 |  61.11 |
+2026-07-02 13:57:40,109 :: INFO ::  Statistics of difference between DEM max and subsampled DSM (in meters)
+2026-07-02 13:57:40,113 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
+2026-07-02 13:57:40,113 :: INFO ::  |  13.49 |  30.62 |  39.56 |  42.89 |  48.31 |  58.38 |
+2026-07-02 13:57:40,113 :: INFO ::  Statistics of difference between DEM max and DEM min (in meters)
+2026-07-02 13:57:40,117 :: INFO ::  | Min    | Median | p90    | p95    | p99    | Max    |
+2026-07-02 13:57:40,117 :: INFO ::  |  42.71 |  57.92 |  66.94 |  69.59 |  72.85 |  77.21 |
+2026-07-02 13:57:40,224 :: PROFILING_LOG ::  CarsProfiling# %DEM Generation%: %1.8670% s Max ram : %647.016448% MiB Start Ram: %635.981824% MiB, End Ram: %647.073792% MiB,  Max CPU usage: %91.7%
+2026-07-02 13:57:40,225 :: PROGRESS ::  Data list to process: 100% complete (1/1 tiles) [run 1/1]
+2026-07-02 13:57:40,226 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:57:40,310 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:57:40,329 :: INFO ::  The AbstractGeometry SharelocGeometry plugin will be used
+2026-07-02 13:57:40,489 :: INFO ::  Median value of DEM (141.56512451171875) will be used as default_alt
+2026-07-02 13:57:40,491 :: INFO ::  DEM bounds : 1.3870326826325157, 43.62808242648024, 1.4993068646229966, 43.5185097406878
+2026-07-02 13:57:40,491 :: INFO ::  ROI bounds : 1.387032682632516, 43.518539973278855, 1.499328147296733, 43.62808242648023
+2026-07-02 13:57:41,191 :: PROFILING_LOG ::  CarsProfiling# %Load geomodels%: %0.0007% s Max ram : %702.345216% MiB Start Ram: %702.345216% MiB, End Ram: %702.345216% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:41,392 :: PROFILING_LOG ::  CarsProfiling# %Generate pairs%: %0.0004% s Max ram : %702.345216% MiB Start Ram: %702.345216% MiB, End Ram: %702.345216% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:41,734 :: PROFILING_LOG ::  CarsProfiling# %Ground intersection envelopes%: %0.2393% s Max ram : %702.394368% MiB Start Ram: %702.345216% MiB, End Ram: %702.394368% MiB,  Max CPU usage: %66.6%
+2026-07-02 13:57:42,012 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0008% s Max ram : %702.394368% MiB Start Ram: %702.394368% MiB, End Ram: %702.447616% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:42,214 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0014% s Max ram : %702.447616% MiB Start Ram: %702.447616% MiB, End Ram: %702.451712% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:42,340 :: PROFILING_LOG ::  CarsProfiling# %Exogeneous filling%: %0.4950% s Max ram : %702.451712% MiB Start Ram: %702.394368% MiB, End Ram: %702.451712% MiB,  Max CPU usage: %30.0%
+2026-07-02 13:57:42,350 :: INFO ::  Compute delayed ...
+2026-07-02 13:57:42,350 :: INFO ::  Wait for futures results ...
+2026-07-02 13:57:42,350 :: PROGRESS ::  Data list to process: [ exogenous_filled_dsm , exogenous_filled_filling ] ...
+2026-07-02 13:57:42,351 :: PROGRESS ::  Started task dsm_filling_exogenous_filling in pipeline Filling, total: 1
+2026-07-02 13:57:42,351 :: INFO ::  Processing 1 tiles: [ exogenous_filled_dsm , exogenous_filled_filling ] ...
+2026-07-02 13:57:43,619 :: PROGRESS ::  Data list to process: 100% complete (1/1 tiles) [run 1/1]
+2026-07-02 13:57:43,619 :: INFO ::  Close files ...
+2026-07-02 13:57:43,729 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %1.2882% s Max ram : %702.50496% MiB Start Ram: %702.451712% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %85.6%
+2026-07-02 13:57:44,956 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0006% s Max ram : %702.50496% MiB Start Ram: %702.50496% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:45,157 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %702.50496% MiB Start Ram: %702.50496% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:45,370 :: PROFILING_LOG ::  CarsProfiling# %Bulldozer filling%: %1.4578% s Max ram : %702.50496% MiB Start Ram: %702.50496% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %95.3%
+2026-07-02 13:57:45,371 :: INFO ::  Compute delayed ...
+2026-07-02 13:57:45,371 :: INFO ::  Wait for futures results ...
+2026-07-02 13:57:45,372 :: PROGRESS ::  Data list to process: [ bulldozer_filled_filling , bulldozer_filled_dsm ] ...
+2026-07-02 13:57:45,372 :: PROGRESS ::  Started task dsm_filling_bulldozer in pipeline Filling, total: 1
+2026-07-02 13:57:45,372 :: INFO ::  Processing 1 tiles: [ bulldozer_filled_filling , bulldozer_filled_dsm ] ...
+2026-07-02 13:57:45,812 :: PROGRESS ::  Data list to process: 100% complete (1/1 tiles) [run 1/1]
+2026-07-02 13:57:45,813 :: INFO ::  Close files ...
+2026-07-02 13:57:46,003 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.4543% s Max ram : %702.50496% MiB Start Ram: %702.50496% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %101.0%
+2026-07-02 13:57:46,215 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0014% s Max ram : %702.50496% MiB Start Ram: %702.50496% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:46,416 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %702.50496% MiB Start Ram: %702.50496% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:46,605 :: PROFILING_LOG ::  CarsProfiling# %Border interpolation filling%: %0.4275% s Max ram : %702.50496% MiB Start Ram: %702.50496% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %30.0%
+2026-07-02 13:57:46,606 :: INFO ::  Compute delayed ...
+2026-07-02 13:57:46,607 :: INFO ::  Wait for futures results ...
+2026-07-02 13:57:46,607 :: PROGRESS ::  Data list to process: [ border_interp_filled_dsm , border_interp_filled_filling ] ...
+2026-07-02 13:57:46,607 :: PROGRESS ::  Started task dsm_filling_border_interpolation in pipeline Filling, total: 1
+2026-07-02 13:57:46,607 :: INFO ::  Processing 1 tiles: [ border_interp_filled_dsm , border_interp_filled_filling ] ...
+2026-07-02 13:57:47,492 :: PROGRESS ::  Data list to process: 100% complete (1/1 tiles) [run 1/1]
+2026-07-02 13:57:47,492 :: INFO ::  Close files ...
+2026-07-02 13:57:47,655 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.9013% s Max ram : %702.50496% MiB Start Ram: %702.50496% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %96.7%
+2026-07-02 13:57:47,900 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0006% s Max ram : %702.50496% MiB Start Ram: %702.50496% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:48,108 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %702.50496% MiB Start Ram: %702.50496% MiB, End Ram: %702.50496% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:48,201 :: INFO ::  Compute delayed ...
+2026-07-02 13:57:49,127 :: INFO ::  Wait for futures results ...
+2026-07-02 13:57:49,127 :: PROGRESS ::  Data list to process: [ filled_texture , filled_classification ] ...
+2026-07-02 13:57:49,128 :: PROGRESS ::  Started task auxiliary_filling in pipeline Filling, total: 1
+2026-07-02 13:57:49,128 :: INFO ::  Processing 1 tiles: [ filled_texture , filled_classification ] ...
+2026-07-02 13:57:52,958 :: PROGRESS ::  Data list to process: 100% complete (1/1 tiles) [run 1/1]
+2026-07-02 13:57:52,958 :: INFO ::  Close files ...
+2026-07-02 13:57:53,125 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %4.7595% s Max ram : %846.286848% MiB Start Ram: %702.521344% MiB, End Ram: %804.122624% MiB,  Max CPU usage: %103.5%
+2026-07-02 13:57:53,334 :: PROFILING_LOG ::  CarsProfiling# %Add to save lists%: %0.0004% s Max ram : %804.122624% MiB Start Ram: %804.122624% MiB, End Ram: %804.122624% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:53,435 :: PROFILING_LOG ::  CarsProfiling# %merge filling bands%: %0.2097% s Max ram : %804.122624% MiB Start Ram: %804.122624% MiB, End Ram: %804.122624% MiB,  Max CPU usage: %20.0%
+2026-07-02 13:57:53,436 :: INFO ::  Compute delayed ...
+2026-07-02 13:57:53,436 :: INFO ::  Wait for futures results ...
+2026-07-02 13:57:53,436 :: PROGRESS ::  Data list to process: [ MonoBand Filling ] ...
+2026-07-02 13:57:53,436 :: INFO ::  Processing 1 tiles: [ MonoBand Filling ] ...
+2026-07-02 13:57:54,035 :: INFO ::  Close files ...
+2026-07-02 13:57:54,136 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.6003% s Max ram : %804.122624% MiB Start Ram: %804.122624% MiB, End Ram: %804.122624% MiB,  Max CPU usage: %88.6%
+2026-07-02 13:57:54,137 :: INFO ::  Compute delayed ...
+2026-07-02 13:57:54,137 :: INFO ::  No Object to compute
+2026-07-02 13:57:54,337 :: PROFILING_LOG ::  CarsProfiling# %Compute futures%: %0.0009% s Max ram : %804.122624% MiB Start Ram: %804.122624% MiB, End Ram: %804.122624% MiB,  Max CPU usage: %0%
+2026-07-02 13:57:54,337 :: INFO ::  Close cluster ...
+2026-07-02 13:57:54,337 :: INFO ::  Save profiling plots ...
+2026-07-02 13:57:58,230 :: INFO ::  Clean removing thread pool ...
+2026-07-02 13:57:58,230 :: INFO ::  Clean tmp directory ...
+2026-07-02 13:57:58,231 :: INFO ::  Clean shared directory ...
+2026-07-02 13:57:58,337 :: PROFILING_LOG ::  CarsProfiling# %Run_filling_pipeline%: %20.4447% s Max ram : %804.27008% MiB Start Ram: %635.6992% MiB, End Ram: %804.27008% MiB,  Max CPU usage: %102.8%
+2026-07-02 13:57:58,338 :: PROFILING_LOG ::  
+ 
+ 
+ ---------------------------------------- SUMMARY PROFILLING  ---------------------------------------- 
+ 
+ 
+
+2026-07-02 13:57:58,339 :: PROFILING_LOG ::  Task exogenous_filling_wrapper ran 1 times, with mean time 0.5487 sec, total time: 0.5487 sec, Max cpu: 58.4 % max ram in process during task: 411.721728 MiB, max ram - start ram: 30.801919999999996,   end - start ram : 29.003776000000016
+2026-07-02 13:57:58,340 :: PROFILING_LOG ::  Task bulldozer_filling_wrapper ran 1 times, with mean time 0.0895 sec, total time: 0.0895 sec, Max cpu: 38.1 % max ram in process during task: 410.341376 MiB, max ram - start ram: 0.0,   end - start ram : -3.0679039999999986
+2026-07-02 13:57:58,341 :: PROFILING_LOG ::  Task border_interp_filled_dsm_filling_wrapper ran 1 times, with mean time 0.5425 sec, total time: 0.5425 sec, Max cpu: 30.0 % max ram in process during task: 423.882752 MiB, max ram - start ram: 12.640255999999965,   end - start ram : 12.64435199999997
+2026-07-02 13:57:58,342 :: PROFILING_LOG ::  Task filling_from_sensor_wrapper ran 1 times, with mean time 2.813 sec, total time: 2.813 sec, Max cpu: 57.9 % max ram in process during task: 712.523776 MiB, max ram - start ram: 240.365568,   end - start ram : 107.92550399999999
+2026-07-02 13:57:58,342 :: PROFILING_LOG ::  Task merge_filling_bands_wrapper ran 1 times, with mean time 0.1211 sec, total time: 0.1211 sec, Max cpu: 29.1 % max ram in process during task: 580.087808 MiB, max ram - start ram: 0.004096000000004096,   end - start ram : 0.008192000000008193
+2026-07-02 13:57:58,343 :: PROFILING_LOG ::  Task Multiprocessing orchestrator initialization ran 2 times, with mean time 0.1616 sec, total time: 0.3232 sec, Max cpu: 20.0 % max ram in process during task: 635.807744 MiB, max ram - start ram: 0.2744319999999334,   end - start ram : 0.2826239999999416
+2026-07-02 13:57:58,344 :: PROFILING_LOG ::  Task Compute futures ran 7 times, with mean time 1.1435571428571427 sec, total time: 8.0049 sec, Max cpu: 103.5 % max ram in process during task: 742.5269759999999 MiB, max ram - start ram: 143.76550399999996,   end - start ram : 101.60127999999997
+2026-07-02 13:57:58,345 :: PROFILING_LOG ::  Task DEM Generation ran 1 times, with mean time 1.867 sec, total time: 1.867 sec, Max cpu: 91.7 % max ram in process during task: 647.016448 MiB, max ram - start ram: 11.034624000000008,   end - start ram : 11.091968000000065
+2026-07-02 13:57:58,345 :: PROFILING_LOG ::  Task Load geomodels ran 1 times, with mean time 0.0007 sec, total time: 0.0007 sec, Max cpu: 0.0 % max ram in process during task: 702.345216 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-07-02 13:57:58,346 :: PROFILING_LOG ::  Task Generate pairs ran 1 times, with mean time 0.0004 sec, total time: 0.0004 sec, Max cpu: 0.0 % max ram in process during task: 702.345216 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-07-02 13:57:58,347 :: PROFILING_LOG ::  Task Ground intersection envelopes ran 1 times, with mean time 0.2393 sec, total time: 0.2393 sec, Max cpu: 66.6 % max ram in process during task: 702.394368 MiB, max ram - start ram: 0.04915199999993547,   end - start ram : 0.04915199999993547
+2026-07-02 13:57:58,348 :: PROFILING_LOG ::  Task Add to save lists ran 9 times, with mean time 0.0007111111111111111 sec, total time: 0.0064 sec, Max cpu: 0.0 % max ram in process during task: 713.777152 MiB, max ram - start ram: 0.0,   end - start ram : 0.05324800000005325
+2026-07-02 13:57:58,348 :: PROFILING_LOG ::  Task Exogeneous filling ran 1 times, with mean time 0.495 sec, total time: 0.495 sec, Max cpu: 30.0 % max ram in process during task: 702.451712 MiB, max ram - start ram: 0.05734400000005735,   end - start ram : 0.05734400000005735
+2026-07-02 13:57:58,349 :: PROFILING_LOG ::  Task Bulldozer filling ran 1 times, with mean time 1.4578 sec, total time: 1.4578 sec, Max cpu: 95.3 % max ram in process during task: 702.50496 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-07-02 13:57:58,350 :: PROFILING_LOG ::  Task Border interpolation filling ran 1 times, with mean time 0.4275 sec, total time: 0.4275 sec, Max cpu: 30.0 % max ram in process during task: 702.50496 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-07-02 13:57:58,350 :: PROFILING_LOG ::  Task merge filling bands ran 1 times, with mean time 0.2097 sec, total time: 0.2097 sec, Max cpu: 20.0 % max ram in process during task: 804.122624 MiB, max ram - start ram: 0.0,   end - start ram : 0.0
+2026-07-02 13:57:58,351 :: PROFILING_LOG ::  Task Run_filling_pipeline ran 1 times, with mean time 20.4447 sec, total time: 20.4447 sec, Max cpu: 102.8 % max ram in process during task: 804.27008 MiB, max ram - start ram: 168.57088,   end - start ram : 168.57088
+2026-07-02 13:58:01,388 :: PROGRESS ::  Started task Formatting in pipeline Formatting, total: 1

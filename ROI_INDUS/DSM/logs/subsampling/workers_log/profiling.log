@@ -1,0 +1,4 @@
+2026-07-02 12:05:32,456 :: PROFILING_LOG :: 22819602461248 :: 831549 :: CarsProfiling# %generate_subsampled_images_wrapper%: %0.2813% s Max ram : %408.178688% MiB Start Ram: %376.393728% MiB, End Ram: %406.638592% MiB,  Max CPU usage: %38.6%
+2026-07-02 12:05:32,781 :: PROFILING_LOG :: 22819602461248 :: 831549 :: CarsProfiling# %generate_subsampled_images_wrapper%: %0.1683% s Max ram : %412.844032% MiB Start Ram: %406.790144% MiB, End Ram: %412.868608% MiB,  Max CPU usage: %49.6%
+2026-07-02 12:05:33,076 :: PROFILING_LOG :: 22819602461248 :: 831549 :: CarsProfiling# %generate_subsampled_images_wrapper%: %0.1391% s Max ram : %413.106176% MiB Start Ram: %412.868608% MiB, End Ram: %413.106176% MiB,  Max CPU usage: %89.9%
+2026-07-02 12:05:33,454 :: PROFILING_LOG :: 22819602461248 :: 831549 :: CarsProfiling# %generate_subsampled_images_wrapper%: %0.2165% s Max ram : %413.63456% MiB Start Ram: %413.106176% MiB, End Ram: %413.63456% MiB,  Max CPU usage: %30.0%
