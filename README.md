@@ -1,4 +1,4 @@
-# TP: Using CNES Software for 3D Reconstruction
+# TP: Getting Started with CNES Open-Source 3D Tools in Python
 
 Welcome to this tutorial on using open-source software developed by CNES for 3D reconstruction. This TP was created for the release of version 1.0 of CARS.
 
