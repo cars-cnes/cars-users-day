@@ -46,7 +46,17 @@ Run `tutorial.ipynb` and enjoy :)
 1. `ml git`
 2. `git glone https://github.com/cars-cnes/cars-users-day.git`
 
-#### Step 3: Open the notebook
+#### Step 3: Create your kernel
 
-1.Open the notebook `tutorial.ipynb`
+1. `python -m env venv`
+2. `source activate venv/bin/activate`
+3. `pip install cars==1.2.0rc2`
+4. `pip install slurp_masks-0.1-cp312-cp312-linux_x86_64.whl`
+5. `pip install xdem[opt]`
+6. `pip install ipykernel`
+7. `ipykernel ...`
+
+#### Step 4: Open the notebook
+
+1. Open the notebook `tutorial.ipynb`
 
