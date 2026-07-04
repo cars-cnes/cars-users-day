@@ -1,6 +1,6 @@
 # TP: Using CNES Software for 3D Reconstruction
 
-Welcome to this tutorial on using open-source software developed by CNES for 3D reconstruction. This TP was created for the release of version 1.0 of CARS and the CARS Users Day (January 30, 2026).
+Welcome to this tutorial on using open-source software developed by CNES for 3D reconstruction. This TP was created for the release of version 1.0 of CARS.
 
 ## Software Used
 
@@ -23,10 +23,30 @@ The tutorial will focus on two areas around Toulouse:
 
 ## Installation and Usage
 
-### Step 1: Open the Notebook on Google Colab
+### On Google Colab
+
+#### Step 1: Open the Notebook on Google Colab
 1. Go to [Google Colab](https://colab.research.google.com/)
 2. Click on "New Notebook"
 3. In the menu, go to "File" > "Open Notebook" and select the `.ipynb` file present in the GitHub repository
 
-### Step 2: Run the Google Colab
+#### Step 2: Run the Google Colab
 Run `tutorial.ipynb` and enjoy :)
+
+### On the CNES jupyterhub
+
+#### Step 1: Connect to the CNES jupyterhub 
+
+1. Go to [the CNES JupyterHub](https://jupyterhub.cnes.fr/)
+2. Used the correct username and password.
+3. Choose the VRE
+
+#### Step 2: Get the repo Github 
+
+1. `ml git`
+2. `git glone https://github.com/cars-cnes/cars-users-day.git`
+
+#### Step 3: Open the notebook
+
+1.Open the notebook `tutorial.ipynb`
+
