@@ -38,25 +38,28 @@ Run `tutorial.ipynb` and enjoy :)
 #### Step 1: Connect to the CNES jupyterhub 
 
 1. Go to [the CNES JupyterHub](https://jupyterhub.cnes.fr/)
-2. Used the correct username and password.
+2. Use the correct username and password.
 3. Choose the VRE
 
 #### Step 2: Get the repo Github 
 
-1. `ml git`
-2. `git glone https://github.com/cars-cnes/cars-users-day.git`
+1. Open a terminal
+2. `ml git`
+3. `git glone https://github.com/cars-cnes/cars-users-day.git`
 
 #### Step 3: Create your kernel
 
-1. `python -m env venv`
-2. `source activate venv/bin/activate`
-3. `pip install cars==1.2.0rc2`
-4. `pip install slurp_masks-0.1-cp312-cp312-linux_x86_64.whl`
-5. `pip install xdem[opt]`
-6. `pip install ipykernel`
-7. `ipykernel ...`
+1. Open a terminal
+2. `python -m env venv`
+3. `source activate venv/bin/activate`
+4. `pip install cars==1.2.0rc2`
+5. `pip install slurp_masks-0.1-cp312-cp312-linux_x86_64.whl`
+6. `pip install xdem[opt]`
+7. `pip install ipykernel`
+8. `python -m ipykernel ipykernel install --user --name=tuto_CNES --display-name="tuto CNES"`
 
-#### Step 4: Open the notebook
+#### Step 4: Run the notebook
 
 1. Open the notebook `tutorial.ipynb`
+2. Run it and enjoy :) 
 
