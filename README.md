@@ -18,7 +18,7 @@ The tutorial will focus on two areas around Toulouse:
 - **ROI_STADIUM**: The area around the Stadium, located on an island surrounded by the Garonne
 
 ## Prerequisites
-- A Google account to use Google Colab
+- A Google account to use Google Colab or a CNES account
 - A stable internet connection
 
 ## Installation and Usage
@@ -45,7 +45,7 @@ Run `tutorial.ipynb` and enjoy :)
 
 1. Open a terminal
 2. `ml git`
-3. `git glone https://github.com/cars-cnes/cars-users-day.git`
+3. `git clone https://github.com/cars-cnes/cars-users-day.git`
 
 #### Step 3: Create your kernel
 
