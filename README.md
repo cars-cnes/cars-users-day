@@ -23,14 +23,38 @@ The tutorial will focus on two areas around Toulouse:
 
 ## Installation and Usage
 
+### On Onyxia
+
+#### Step 1: Connexion
+1. Go to [Onyxia](https://datalab.sspcloud.fr/)
+2. Authenticate yourself or create an account if you don't already have one
+
+#### Step 2: Use
+1. Launch a `Jupyter-python` instance
+2. Open a terminal and run `git clone https://github.com/cars-cnes/cars-users-day.git`
+3. Go to `cars-users-day` folder and open the file `tutorial.ipynb` in a jupyter notebook
+
+#### Step 3: Run the notebook
+
+1. Open the notebook `tutorial.ipynb`
+2. Run it and enjoy :) 
+
 ### On Google Colab
 
-#### Step 1: Open the Notebook on Google Colab
+#### Step 1: Connexion
 1. Go to [Google Colab](https://colab.research.google.com/)
-2. Click on "New Notebook"
-3. In the menu, go to "File" > "Open Notebook" and select the `.ipynb` file present in the GitHub repository
+2. Authenticate yourself to Google Colab
 
-#### Step 2: Run the Google Colab
+#### Step 2: Use
+Download the file locally 
+1. Click on "New Notebook"
+2. Download this file on your computer: https://github.com/cars-cnes/cars-users-day/blob/main/tutorial.ipynb
+3. In the menu, go to "File" > "Open Notebook" and select the `.ipynb` file present in your computer
+Open the file from Github
+1. Click on "Upload Notebook"
+2. Select Github and add the following link: https://github.com/cars-cnes/cars-users-day/blob/main/tutorial.ipynb
+
+#### Step 3: Run the Google Colab
 Run `tutorial.ipynb` and enjoy :)
 
 ### On the CNES jupyterhub
